@@ -4,18 +4,20 @@ class GopiesController < ApplicationController
   def index
     session[:taikhoan] = "hung"
     @t = session[:taikhoan]
-    @taikhoan = Taikhoan.find_by_tentk(@t)
-    @congty = Congty.find_by_id(@taikhoan.mact)
 
-    @chuyens = Chuyen.find_all_by_mact(@congty.id);
+      @taikhoan = Taikhoan.find_by_tentk(@t)
+    if (@taikhoan != nil) then
+      @congty = Congty.find_by_id(@taikhoan.mact)
 
-    @gopies = Array.new
-    @chuyens.each do |bs|
-      @gopy = Gopy.find_all_by_biensoxe(bs.biensoxe)
-     if (@gopy != []) then
-        @gopies.append(@gopy)
-    end
+      @chuyens = Chuyen.find_all_by_mact(@congty.id);
 
+      @gopies = Array.new
+      @chuyens.each do |bs|
+        @gopy = Gopy.find_all_by_biensoxe(bs.biensoxe)
+        if (@gopy != []) then
+          @gopies.append(@gopy)
+        end
+      end
     end
 
 
@@ -30,12 +32,12 @@ class GopiesController < ApplicationController
 
   def gopies_android
     puts "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxparams[:gopy]xx"
-    puts   params[:gopy]
+    puts params[:gopy]
     @gopy = Gopy.new(params[:gopy])
     if @gopy.save
-      render :json =>  {"status" => 200}
+      render :json => {"status" => 200}
     else
-      render :json =>   {"status" => 403}
+      render :json => {"status" => 403}
     end
   end
 
@@ -70,7 +72,6 @@ class GopiesController < ApplicationController
   # POST /gopies.json
   def create
     @gopy = Gopy.new(params[:gopy])
-
 
 
     respond_to do |format|
