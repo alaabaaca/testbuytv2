@@ -26,9 +26,6 @@ gem 'bootstrap-sass'
 
 gem 'simple_form'
 
-gem 'thin'
-
-gem 'therubyracer'
 
 
 # To use ActiveModel has_secure_password
