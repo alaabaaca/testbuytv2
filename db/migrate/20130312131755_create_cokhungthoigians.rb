@@ -3,7 +3,7 @@ class CreateCokhungthoigians < ActiveRecord::Migration
     create_table :cokhungthoigians do |t|
       t.integer :id
       t.string :biensoxe
-      t.int :makhungtg
+      t.integer :makhungtg
 
       t.timestamps
     end
