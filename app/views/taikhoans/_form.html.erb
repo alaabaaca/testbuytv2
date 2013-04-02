@@ -1,0 +1,32 @@
+<%= simple_form_for @taikhoan, :html => {:class => 'form-horizontal'} do |f| %>
+  <% if @taikhoan.errors.any? %>
+    <div id="error_explanation">
+      <h2>Có <%= pluralize(@taikhoan.errors.count, "") %>lỗi :</h2>
+
+      <ul>
+        <% @taikhoan.errors.values.each do |msg| %>
+            <% msg.each do |m| %>
+                <li><%= m %></li>
+            <% end %>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label "Công ty:" %><br />
+    <%= f.select("mact", Congty.all.collect { |c| [c.tenct, c.id]}, {:promt => "Chọn công ty"}) %>
+  </div>
+  <div class="field">
+    <%= f.label "Tên tài khoản" %><br />
+    <%= f.text_field :tentk %>
+  </div>
+  <div class="field">
+    <%= f.label "Mật khẩu" %><br />
+    <%= f.text_field :matkhau %>
+  </div>
+  <div class="actions">
+    <button class="btn btn-primary" type="submit">Lưu</button>
+    <%= link_to "Hủy", taikhoans_path, :class => 'btn'  %>
+  </div>
+<% end %>

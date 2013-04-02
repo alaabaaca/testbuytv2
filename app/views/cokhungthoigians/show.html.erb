@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Mã:</b>
+  <%= @cokhungthoigian.id %>
+</p>
+
+<p>
+  <b>Biển số xe:</b>
+  <%= @cokhungthoigian.biensoxe %>
+</p>
+
+<p>
+  <b>Khung thời gian:</b>
+  <% @khungthoigian = Khungthoigian.find(@cokhungthoigian.makhungtg)
+     @di = @khungthoigian.di
+     @den = @khungthoigian.den %>
+  <%= @di.strftime("%H:%M:%S") %> - <%= @den.strftime("%H:%M:%S") %>
+</p>
+
+
+<%= link_to 'Cập nhật', edit_cokhungthoigian_path(@khungthoigian), :class => 'btn' %> |
+<%= link_to 'Quay lại danh sách', cokhungthoigians_path, :class => 'btn' %>

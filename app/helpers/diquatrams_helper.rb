@@ -1,0 +1,2 @@
+module DiquatramsHelper
+end

@@ -1,0 +1,28 @@
+<%= simple_form_for @khungthoigian, :html => {:class => 'form-horizontal'} do |f| %>
+  <% if @khungthoigian.errors.any? %>
+    <div id="error_explanation">
+      <h2>Có <%= pluralize(@khungthoigian.errors.count, "") %>lỗi :</h2>
+
+      <ul>
+        <% @khungthoigian.errors.values.each do |msg| %>
+            <% msg.each do |m| %>
+                <li><%= m %></li>
+            <% end %>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label "Giờ xuất phát:" %><br />
+    <%= f.time_select :di %>
+  </div>
+  <div class="field">
+    <%= f.label "Giờ đến trạm cuối" %><br />
+    <%= f.time_select :den %>
+  </div>
+  <div class="actions">
+    <button class="btn btn-primary" type="submit">Lưu</button>
+    <%= link_to "Hủy", khungthoigians_path, :class => 'btn'  %>
+  </div>
+<% end %>

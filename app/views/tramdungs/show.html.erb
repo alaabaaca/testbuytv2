@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Mã:</b>
+  <%= @tramdung.id %>
+</p>
+
+<p>
+  <b>Tên trạm:</b>
+  <%= @tramdung.tentram %>
+</p>
+
+<p>
+  <b>Địa chỉ:</b>
+  <%= @tramdung.diachitram %>
+</p>
+
+
+<%= link_to 'Cập nhật', edit_tramdung_path(@tramdung), :class => 'btn' %> |
+<%= link_to 'Quay lại danh sách', tramdungs_path, :class => 'btn' %>

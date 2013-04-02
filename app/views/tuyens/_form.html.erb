@@ -1,0 +1,52 @@
+<%= simple_form_for @tuyen, :html => {:class => 'form-horizontal'} do |f| %>
+  <% if @tuyen.errors.any? %>
+    <div id="error_explanation">
+      <h2>Có <%= pluralize(@tuyen.errors.count, "") %>lỗi :</h2>
+
+      <ul>
+        <% @tuyen.errors.values.each do |msg| %>
+            <% msg.each do |m| %>
+                <li><%= m %></li>
+            <% end %>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label "Mã tuyến:" %><br />
+    <%= f.number_field :matuyen %>
+  </div>
+  <div class="field">
+    <%= f.label "Tên tuyến:" %><br />
+    <%= f.text_field :tentuyen %>
+  </div>
+  <div class="field">
+    <%= f.label "Loại hình:" %><br />
+    <%= f.text_field :loaihinh %>
+  </div>
+  <div class="field">
+    <%= f.label "Cự ly:" %><br />
+    <%= f.number_field :culy %>
+  </div>
+  <div class="field">
+    <%= f.label "Số chuyến:" %><br />
+    <%= f.number_field :sochuyen %>
+  </div>
+  <div class="field">
+    <%= f.label "Thời gian chuyến:" %><br />
+    <%= f.number_field :thoigianchuyen %>
+  </div>
+  <div class="field">
+    <%= f.label "Giãn cách:" %><br />
+    <%= f.number_field :giancach %>
+  </div>
+  <div class="field">
+    <%= f.label "Thời gian hoạt động:" %><br />
+    <%= f.text_field :tghoatdong %>
+  </div>
+  <div class="actions">
+    <button class="btn btn-primary" type="submit">Lưu</button>
+    <%= link_to "Hủy", tuyens_path, :class => 'btn'  %>
+  </div>
+<% end %>

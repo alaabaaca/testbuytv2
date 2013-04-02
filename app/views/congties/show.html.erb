@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Mã:</b>
+  <%= @congty.id %>
+</p>
+
+<p>
+  <b>Tên công ty:</b>
+  <%= @congty.tenct %>
+</p>
+
+<p>
+  <b>Địa chỉ:</b>
+  <%= @congty.diachict %>
+</p>
+
+<p>
+  <b>Điện thoại:</b>
+  <%= @congty.sodtct %>
+</p>
+
+<%= link_to 'Cập nhật', edit_congty_path(@congty), :class => 'btn' %> |
+<%= link_to 'Quay lại danh sách', congties_path, :class => 'btn' %>

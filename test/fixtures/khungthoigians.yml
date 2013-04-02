@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  di: 2013-03-12 19:19:18
+  den: 2013-03-12 19:19:18
+
+two:
+  id: 1
+  di: 2013-03-12 19:19:18
+  den: 2013-03-12 19:19:18

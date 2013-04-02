@@ -1,0 +1,39 @@
+<h1>Các khung thời gian</h1>
+
+<table class="table table-striped">
+  <tr>
+    <th>Mã</th>
+    <th>Giờ xuất phát</th>
+    <th>Giờ đến trạm cuối</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @khungthoigians.each do |khungthoigian| %>
+  <tr>
+    <td><%= khungthoigian.id %></td>
+    <td><%= khungthoigian.di.strftime("%H:%M:%S") %></td>
+    <td><%= khungthoigian.den.strftime("%H:%M:%S") %></td>
+    <td>
+      <%= link_to khungthoigian, :class => 'btn  btn-mini btn-info' do %>
+          <i class="icon-info-sign"></i>
+      <% end %>
+    </td>
+    <td>
+      <%= link_to edit_khungthoigian_path(khungthoigian), :class => 'btn  btn-mini btn-warning' do %>
+          <i class="icon-pencil"></i>
+      <% end %>
+    </td>
+    <td>
+      <%= link_to khungthoigian_path(khungthoigian), method: :delete, data: {confirm: "Bạn có chắc chắn muốn xóa"}, :class => 'btn  btn-mini btn-danger' do %>
+          <i class="icon-remove"></i>
+      <% end %>
+    </td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Thêm mới', new_khungthoigian_path, :class =>'btn btn-success' %>

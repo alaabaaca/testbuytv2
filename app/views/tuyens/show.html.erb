@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Mã tuyến:</b>
+  <%= @tuyen.matuyen %>
+</p>
+
+<p>
+  <b>Tên tuyến:</b>
+  <%= @tuyen.tentuyen %>
+</p>
+
+<p>
+  <b>Loại hình:</b>
+  <%= @tuyen.loaihinh %>
+</p>
+
+<p>
+  <b>Cự ly:</b>
+  <%= @tuyen.culy %>
+</p>
+
+<p>
+  <b>Số chuyến:</b>
+  <%= @tuyen.sochuyen %>
+</p>
+
+<p>
+  <b>Thời gian chuyến:</b>
+  <%= @tuyen.thoigianchuyen %>
+</p>
+
+<p>
+  <b>Giãn cách:</b>
+  <%= @tuyen.giancach %>
+</p>
+
+<p>
+  <b>Thời gian hoạt động:</b>
+  <%= @tuyen.tghoatdong %>
+</p>
+
+
+<%= link_to 'Cập nhật', edit_tuyen_path(@tuyen), :class => 'btn' %> |
+<%= link_to 'Quay lại danh sách', tuyens_path, :class => 'btn' %>

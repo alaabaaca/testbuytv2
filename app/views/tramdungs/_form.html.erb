@@ -1,0 +1,28 @@
+<%= simple_form_for @tramdung, :html => {:class => 'form-horizontal'} do |f| %>
+  <% if @tramdung.errors.any? %>
+    <div id="error_explanation">
+      <h2>Có <%= pluralize(@tramdung.errors.count, "") %>lỗi :</h2>
+
+      <ul>
+        <% @tramdung.errors.values.each do |msg| %>
+            <% msg.each do |m| %>
+                <li><%= m %></li>
+            <% end %>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label "Tên trạm:" %><br />
+    <%= f.text_field :tentram %>
+  </div>
+  <div class="field">
+    <%= f.label "Địa chỉ:" %><br />
+    <%= f.text_field :diachitram %>
+  </div>
+  <div class="actions">
+    <button class="btn btn-primary" type="submit">Lưu</button>
+    <%= link_to "Hủy", tramdungs_path, :class => 'btn'  %>
+  </div>
+<% end %>

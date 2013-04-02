@@ -1,0 +1,2 @@
+module TramdungsHelper
+end

@@ -1,0 +1,2 @@
+module TuyensHelper
+end

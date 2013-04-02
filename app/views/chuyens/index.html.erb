@@ -1,0 +1,44 @@
+<h2>Danh sách chuyến xe</h2>
+
+<table class="table table-striped">
+  <tr>
+    <th>Biển số xe</th>
+    <th>Tuyến</th>
+    <th>Công ty</th>
+    <th>Số ghế</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+  <% @chuyens.each do |chuyen| %>
+      <tr>
+        <td><%= chuyen.biensoxe %></td>
+        <td><%= chuyen.matuyen %></td>
+        <% @mact = chuyen.mact
+           @congty = Congty.find(@mact) %>
+        <td><%= @congty.tenct %></td>
+        <td><%= chuyen.soghe %></td>
+        <td>
+          <%= link_to chuyen, :class => 'btn  btn-mini btn-info' do %>
+              <i class="icon-info-sign"></i>
+          <% end %>
+        </td>
+        <td>
+          <%= link_to edit_chuyen_path(chuyen), :class => 'btn  btn-mini btn-warning' do %>
+              <i class="icon-pencil"></i>
+          <% end %>
+        </td>
+        <td>
+          <%= link_to chuyen_path(chuyen), method: :delete, data: {confirm: "Bạn có chắc chắn muốn xóa"}, :class => 'btn  btn-mini btn-danger' do %>
+              <i class="icon-remove"></i>
+          <% end %>
+        </td>
+      </tr>
+  <% end %>
+</table>
+
+<br/>
+
+<%= link_to 'Thêm mới', new_chuyen_path, :class =>'btn btn-success' %>
+

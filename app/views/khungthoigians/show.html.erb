@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Mã:</b>
+  <%= @khungthoigian.id %>
+</p>
+
+<p>
+  <b>Giờ xuất phát:</b>
+  <%= @khungthoigian.di.strftime("%H:%M:%S") %>
+</p>
+
+<p>
+  <b>Giờ đến trạm cuối:</b>
+  <%= @khungthoigian.den.strftime("%H:%M:%S") %>
+</p>
+
+<%= link_to 'Cập nhật', edit_khungthoigian_path(@khungthoigian), :class => 'btn' %> |
+<%= link_to 'Quay lại danh sách', khungthoigians_path, :class => 'btn' %>

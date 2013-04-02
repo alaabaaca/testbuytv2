@@ -1,0 +1,2 @@
+module KhungthoigiansHelper
+end

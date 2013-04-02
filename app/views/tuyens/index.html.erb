@@ -1,0 +1,48 @@
+<h1>Tuyến xe</h1>
+
+<table  class="table table-striped">
+  <tr>
+    <th>Mã tuyến</th>
+    <th>Tên tuyến</th>
+    <th>Loại hình</th>
+    <th>Cự ly</th>
+    <th>Số chuyến trong ngày</th>
+    <th>Thời gian chuyến</th>
+    <th>Giãn cách</th>
+    <th>Thời gian hoạt động</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @tuyens.each do |tuyen| %>
+  <tr>
+    <td><%= tuyen.matuyen %></td>
+    <td><%= tuyen.tentuyen %></td>
+    <td><%= tuyen.loaihinh %></td>
+    <td><%= tuyen.culy %></td>
+    <td><%= tuyen.sochuyen %></td>
+    <td><%= tuyen.thoigianchuyen %></td>
+    <td><%= tuyen.giancach %></td>
+    <td><%= tuyen.tghoatdong %></td>
+    <td>
+      <%= link_to tuyen, :class => 'btn  btn-mini btn-info' do %>
+          <i class="icon-info-sign"></i>
+      <% end %>
+    </td>
+    <td>
+      <%= link_to edit_tuyen_path(tuyen), :class => 'btn  btn-mini btn-warning' do %>
+          <i class="icon-pencil"></i>
+      <% end %>
+    </td>
+    <td>
+      <%= link_to tuyen_path(tuyen), method: :delete, data: {confirm: "Bạn có chắc chắn muốn xóa"}, :class => 'btn  btn-mini btn-danger' do %>
+          <i class="icon-remove"></i>
+      <% end  %>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Thêm mới', new_tuyen_path, :class =>'btn btn-success' %>

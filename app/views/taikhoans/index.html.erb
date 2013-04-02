@@ -1,0 +1,41 @@
+<h1>Danh sách tài khoản người dùng</h1>
+
+
+<table class="table table-striped">
+  <tr>
+    <th>Tên tài khoản</th>
+    <th>Công ty</th>
+    <th></th>
+
+  </tr>
+
+<% @taikhoans.each do |taikhoan| %>
+  <tr>
+    <td><%= taikhoan.tentk %></td>
+    <% @mact = taikhoan.mact
+        @congty = Congty.find(@mact)%>
+    <td><%= @congty.tenct %></td>
+    <td>
+      <%= link_to taikhoan, :class => 'btn  btn-mini btn-info' do %>
+          <i class="icon-info-sign"></i>
+      <% end %>
+
+      &nbsp;
+
+      <%= link_to edit_taikhoan_path(taikhoan), :class => 'btn  btn-mini btn-warning' do %>
+          <i class="icon-pencil"></i>
+      <% end %>
+
+      &nbsp;
+
+      <%= link_to taikhoan_path(taikhoan), method: :delete, data: {confirm: "Bạn có chắc chắn muốn xóa"}, :class => 'btn  btn-mini btn-danger' do %>
+          <i class="icon-remove"></i>
+      <% end %>
+    </td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Thêm mới', new_taikhoan_path, :class =>'btn btn-success' %>

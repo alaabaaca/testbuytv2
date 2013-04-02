@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Mã:</b>
+  <%= @diquatram.id %>
+</p>
+
+<p>
+  <b>Tuyến xe:</b>
+  <%= @diquatram.matuyen %>
+</p>
+
+<p>
+  <b>Trạm dừng:</b>
+  <%= @diquatram.matram %>
+</p>
+
+
+<%= link_to 'Cập nhật', edit_diquatram_path(@diquatram), :class => 'btn' %> |
+<%= link_to 'Quay lại danh sách', diquatrams_path, :class => 'btn' %>

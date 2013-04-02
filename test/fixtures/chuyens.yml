@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  biensoxe: MyString
+  mact: 1
+  matuyen: 1
+  soghe: 1
+
+two:
+  id: 1
+  biensoxe: MyString
+  mact: 1
+  matuyen: 1
+  soghe: 1

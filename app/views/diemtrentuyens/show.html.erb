@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+
+<p>
+  <b>Tuyến xe:</b>
+  <%= @diemtrentuyen.matuyen %>
+</p>
+
+<p>
+  <b>Vĩ độ:</b>
+  <%= @diemtrentuyen.vido %>
+</p>
+
+<p>
+  <b>Kinh độ:</b>
+  <%= @diemtrentuyen.kinhdo %>
+</p>
+
+
+<%= link_to 'Cập nhật', edit_diemtrentuyen_path(@chuyen), :class => 'btn' %> |
+<%= link_to 'Quay lại danh sách', diemtrentuyen_path, :class => 'btn' %>

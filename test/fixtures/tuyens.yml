@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  matuyen: 1
+  tentuyen: MyString
+  loaihinh: MyString
+  culy: 1
+  sochuyen: 1
+  thoigianchuyen: 1
+  giancach: 1
+  tghoatdong: MyString
+
+two:
+  id: 1
+  matuyen: 1
+  tentuyen: MyString
+  loaihinh: MyString
+  culy: 1
+  sochuyen: 1
+  thoigianchuyen: 1
+  giancach: 1
+  tghoatdong: MyString

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Mã:</b>
+  <%= @gopy.id %>
+</p>
+
+<p>
+  <b>Biển số xe:</b>
+  <%= @gopy.biensoxe %>
+</p>
+
+<p>
+  <b>Nội dung:</b>
+  <%= @gopy.noidung %>
+</p>
+
+
+<%= link_to 'Quay lại danh sách', gopies_path, :class => 'btn' %>

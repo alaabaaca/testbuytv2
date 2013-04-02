@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Mã:</b>
+  <%= @chuyen.id %>
+</p>
+
+<p>
+  <b>Biển số xe:</b>
+  <%= @chuyen.biensoxe %>
+</p>
+
+<p>
+  <b>Công ty:</b>
+  <%
+     @congty = Congty.find(@chuyen.mact) %>
+  <%= @congty.tenct %>
+</p>
+
+<p>
+  <b>Tuyến:</b>
+  <%= @chuyen.matuyen %>
+</p>
+
+<p>
+  <b>Số ghế:</b>
+  <%= @chuyen.soghe %>
+</p>
+
+
+<%= link_to 'Cập nhật', edit_chuyen_path(@chuyen), :class => 'btn' %> |
+<%= link_to 'Quay lại danh sách', chuyens_path, :class => 'btn' %>
