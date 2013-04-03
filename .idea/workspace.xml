@@ -65,6 +65,7 @@
     <file path="$USER_HOME$/Rails/De/app/views/layouts/application.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1364977608743" ignored="false" />
     <file path="$USER_HOME$/Rails/De/config/routes.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1364977520581" ignored="false" />
     <file path="/trangchu_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1364978445333" ignored="false" />
+    <file path="/20130403034347_add_tentuyens_to_tuyens.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1364979476764" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,37 +82,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="taikhoans_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/taikhoans_controller.rb">
+      <file leaf-file-name="20130403034347_add_tentuyens_to_tuyens.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20130403034347_add_tentuyens_to_tuyens.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="0" selection-start="2034" selection-end="2034" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="126" column="30" selection-start="2517" selection-end="2517" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="trangchu_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/trangchu_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="4" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/trangchu/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="6" selection-start="358" selection-end="358" vertical-scroll-proportion="0.36302522">
+            <state line="5" column="69" selection-start="120" selection-end="120" vertical-scroll-proportion="0.16853933">
               <folding />
             </state>
           </provider>
@@ -127,7 +101,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130312131755_create_cokhungthoigians.rb" />
         <option value="$PROJECT_DIR$/app/views/gopies/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/gopies_controller.rb" />
@@ -143,6 +116,7 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/trangchu_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/trangchu/index.html.erb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130403034347_add_tentuyens_to_tuyens.rb" />
       </list>
     </option>
   </component>
@@ -154,10 +128,10 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
-    <option name="y" value="24" />
-    <option name="width" value="1301" />
-    <option name="height" value="744" />
+    <option name="x" value="346" />
+    <option name="y" value="156" />
+    <option name="width" value="1281" />
+    <option name="height" value="656" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -431,6 +405,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/assets/images" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/db/migrate" />
+    </key>
   </component>
   <component name="RunManager" selected="Rails.Development: BuytCanTho">
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
@@ -693,14 +670,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
+    <frame x="346" y="156" width="1281" height="656" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24940239" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2549801" sideWeight="0.95679015" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3748988" sideWeight="0.95679015" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -771,31 +748,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/taikhoans/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="24" selection-end="45" vertical-scroll-proportion="-0.6666667" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/taikhoans/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="0" selection-end="956" vertical-scroll-proportion="-12.666667" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/tuyens/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="36" selection-start="820" selection-end="820" vertical-scroll-proportion="0.9197861" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/tuyens_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="18" selection-start="554" selection-end="554" vertical-scroll-proportion="-1.1632653" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/tuyens/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="32" selection-start="627" selection-end="627" vertical-scroll-proportion="0.19251336" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/taikhoans/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="19" selection-start="654" selection-end="850" vertical-scroll-proportion="0.5187166" />
@@ -843,23 +795,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/taikhoans_controller.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130312050642_create_tuyens.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="0" selection-start="2034" selection-end="2034" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130312121917_create_khungthoigians.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="30" selection-start="2517" selection-end="2517" vertical-scroll-proportion="0.0">
+        <state line="0" column="52" selection-start="43" selection-end="52" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/trangchu_controller.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130312091623_add_daxemxet_to_gopy.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="4" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130312131755_create_cokhungthoigians.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -867,6 +826,34 @@
     <entry file="file://$PROJECT_DIR$/app/views/trangchu/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="6" selection-start="358" selection-end="358" vertical-scroll-proportion="0.36302522">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/trangchu_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="4" selection-start="62" selection-end="62" vertical-scroll-proportion="0.08681672">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="126" column="30" selection-start="2517" selection-end="2517" vertical-scroll-proportion="0.60755336">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/taikhoans_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="0" selection-start="2034" selection-end="2034" vertical-scroll-proportion="0.75533664">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130403034347_add_tentuyens_to_tuyens.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="69" selection-start="120" selection-end="120" vertical-scroll-proportion="0.16853933">
           <folding />
         </state>
       </provider>
