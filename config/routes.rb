@@ -1,4 +1,8 @@
 BuytCanTho::Application.routes.draw do
+
+
+  devise_for :users
+
   resources :diemtrentuyens  do
     member do
       get 'diemtrentuyens_android'
@@ -35,7 +39,12 @@ BuytCanTho::Application.routes.draw do
   end
 
 
-  resources :taikhoans
+  resources :taikhoans    do
+    collection do
+      post 'login'
+      post 'authen'
+    end
+  end
 
 
   resources :congties
@@ -115,7 +124,7 @@ BuytCanTho::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+   root :to => 'trangchu#index'
 
   # See how all your routes lay out with "rake routes"
 

@@ -11,14 +11,12 @@
     <th>Giãn cách</th>
     <th>Thời gian hoạt động</th>
     <th></th>
-    <th></th>
-    <th></th>
   </tr>
 
 <% @tuyens.each do |tuyen| %>
   <tr>
     <td><%= tuyen.matuyen %></td>
-    <td><%= tuyen.tentuyen %></td>
+    <td><%= tuyen.tentuyen + " - " + tuyen.tentuyen2 %></td>
     <td><%= tuyen.loaihinh %></td>
     <td><%= tuyen.culy %></td>
     <td><%= tuyen.sochuyen %></td>
@@ -29,13 +27,15 @@
       <%= link_to tuyen, :class => 'btn  btn-mini btn-info' do %>
           <i class="icon-info-sign"></i>
       <% end %>
-    </td>
-    <td>
+
+    &nbsp;
+
       <%= link_to edit_tuyen_path(tuyen), :class => 'btn  btn-mini btn-warning' do %>
           <i class="icon-pencil"></i>
       <% end %>
-    </td>
-    <td>
+
+    &nbsp;
+
       <%= link_to tuyen_path(tuyen), method: :delete, data: {confirm: "Bạn có chắc chắn muốn xóa"}, :class => 'btn  btn-mini btn-danger' do %>
           <i class="icon-remove"></i>
       <% end  %>

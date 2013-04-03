@@ -11,7 +11,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: Buyt
+  database: BuytCanTho
   pool: 5
   username: postgres
   password:   huynhgia
@@ -32,7 +32,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: Buyt
+  database: BuytCanTho
   pool: 5
   username: postgres
   password:   huynhgia
