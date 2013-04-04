@@ -28,13 +28,13 @@
     <file path="/application.css.scss" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365057548788" ignored="false" />
     <file path="/_navigation.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365075813363" ignored="false" />
     <file path="/application_helper.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1363140851202" ignored="false" />
-    <file path="/chuyens_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365087598057" ignored="false" />
+    <file path="/chuyens_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365090602474" ignored="false" />
     <file path="/edit.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1363230415059" ignored="false" />
     <file path="/new.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365051826183" ignored="false" />
     <file path="/show.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365069036455" ignored="false" />
     <file path="/taikhoans_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365080855836" ignored="false" />
     <file path="/gopies_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365073809277" ignored="false" />
-    <file path="/tuyens_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365089753493" ignored="false" />
+    <file path="/tuyens_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365090534832" ignored="false" />
     <file path="/routes.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1364978436220" ignored="false" />
     <file path="/Gemfile" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1364976843976" ignored="false" />
     <file path="/tramdungs_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365080865759" ignored="false" />
@@ -88,10 +88,19 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="tuyens_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="tuyens_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/tuyens_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="40" selection-start="550" selection-end="550" vertical-scroll-proportion="0.27884614">
+            <state line="111" column="50" selection-start="2662" selection-end="2662" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chuyens_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/chuyens_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="142" column="46" selection-start="3824" selection-end="3824" vertical-scroll-proportion="0.49918166">
               <folding />
             </state>
           </provider>
@@ -121,8 +130,8 @@
         <option value="$PROJECT_DIR$/app/views/diemtrentuyens/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/diemtrentuyens/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/cokhungthoigians/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/chuyens_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/tuyens_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/chuyens_controller.rb" />
       </list>
     </option>
   </component>
@@ -1030,13 +1039,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/chuyens_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="153" column="137" selection-start="4129" selection-end="4129" vertical-scroll-proportion="0.5581015">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/cokhungthoigians/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="35" selection-start="848" selection-end="848" vertical-scroll-proportion="0.38356164">
@@ -1046,7 +1048,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/tuyens_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="40" selection-start="550" selection-end="550" vertical-scroll-proportion="0.27884614">
+        <state line="111" column="50" selection-start="2662" selection-end="2662" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/chuyens_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="142" column="46" selection-start="3824" selection-end="3824" vertical-scroll-proportion="0.49918166">
           <folding />
         </state>
       </provider>

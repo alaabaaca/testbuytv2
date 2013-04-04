@@ -105,7 +105,7 @@ class ChuyensController < ApplicationController
   def chuyens_tuyen_android
     # @tuyen = Tuyen.find_by_id(params[:id])
     #@chuyens = Chuyen.find_all_by_matuyen(@tuyen.matuyen)
-    @chuyens = Chuyen.find_all_by_matuyen(params[:id])
+    @chuyens = Chuyen.order('biensoxe ASC').find_all_by_matuyen(params[:id])
 
     @congties = Array.new
     @tuyens = Tuyen.find_by_id(params[:id])
@@ -140,7 +140,7 @@ class ChuyensController < ApplicationController
   end
 
   def chuyens_tram_android
-    @diquatrams = Diquatram.find_all_by_matram(params[:id])
+    @diquatrams = Diquatram.order('matuyen ASC').find_all_by_matram(params[:id])
     @chuyens = Array.new
     @tuyens = Array.new
     @congties = Array.new

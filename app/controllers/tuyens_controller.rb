@@ -109,7 +109,7 @@ class TuyensController < ApplicationController
   end
 
   def tuyens_tram_android
-        @diquatrams = Diquatram.find_all_by_matram(params[:id])
+        @diquatrams = Diquatram.order('matuyen ASC').find_all_by_matram(params[:id])
     @tuyens = Array.new
 
     @diquatrams.each do |d|
