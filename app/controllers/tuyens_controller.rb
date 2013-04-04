@@ -21,7 +21,7 @@ class TuyensController < ApplicationController
   end
 
   def tuyens_android
-    @tuyens = Tuyen.all.order('matuyen ASC');
+    @tuyens = Tuyen.order('matuyen ASC').all
     result = {"success" => 1, "tuyens" => @tuyens}
     #result = []#{name: @tuyens.first.culy}
     #@tuyens.each do |tuyen|
