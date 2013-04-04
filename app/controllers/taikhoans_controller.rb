@@ -1,13 +1,14 @@
 class TaikhoansController < ApplicationController
 
+=begin
   before_filter :kiemtra_admin
 
   def kiemtra_admin
-    if current_user.admin != 1 then
+    if current_user.email != 'admin@buytcantho.com' then
       redirect_to root_path
     end
   end
-
+=end
 
   # GET /taikhoans
   # GET /taikhoans.json

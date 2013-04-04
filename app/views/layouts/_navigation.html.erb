@@ -3,7 +3,7 @@
 
 
   <% if user_signed_in? %>
-      <% if current_user.admin ==1 %>
+      <% if current_user.email == 'admin@buytcantho.com' %>
           <div class="btn-group">
             <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
               Tuyến - Trạm

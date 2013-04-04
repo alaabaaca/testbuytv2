@@ -1,14 +1,16 @@
 class TramdungsController < ApplicationController
 
+=begin
   before_filter :authenticate_user!
 
   before_filter :kiemtra_admin
 
   def kiemtra_admin
-    if current_user.admin != 1 then
+    if current_user.email != 'admin@buytcantho.com' then
       redirect_to root_path
     end
   end
+=end
 
   # GET /tramdungs
   # GET /tramdungs.json

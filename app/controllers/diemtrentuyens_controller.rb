@@ -1,4 +1,18 @@
 class DiemtrentuyensController < ApplicationController
+
+
+=begin
+  before_filter :authenticate_user!
+
+  before_filter :kiemtra_admin
+
+  def kiemtra_admin
+    if current_user.email != 'admin@buytcantho.com' then
+      redirect_to root_path
+    end
+  end
+=end
+
   # GET /diemtrentuyens
   # GET /diemtrentuyens.json
   def index

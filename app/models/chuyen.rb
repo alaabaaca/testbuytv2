@@ -2,7 +2,7 @@
 class Chuyen < ActiveRecord::Base
   attr_accessible :biensoxe, :id, :mact, :matuyen, :soghe
 
-  self.per_page = 1
+  self.per_page = 5
 
   belongs_to :tuyen
   belongs_to :congty

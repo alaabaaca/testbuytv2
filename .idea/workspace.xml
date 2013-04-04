@@ -26,19 +26,19 @@
     <file path="/application.css" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1363093275841" ignored="false" />
     <file path="/cokhungthoigian.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365066501615" ignored="false" />
     <file path="/application.css.scss" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365057548788" ignored="false" />
-    <file path="/_navigation.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365067431163" ignored="false" />
+    <file path="/_navigation.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365075813363" ignored="false" />
     <file path="/application_helper.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1363140851202" ignored="false" />
-    <file path="/chuyens_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365066022420" ignored="false" />
+    <file path="/chuyens_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365075916465" ignored="false" />
     <file path="/edit.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1363230415059" ignored="false" />
     <file path="/new.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365051826183" ignored="false" />
     <file path="/show.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365069036455" ignored="false" />
-    <file path="/taikhoans_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365068226938" ignored="false" />
+    <file path="/taikhoans_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365080855836" ignored="false" />
     <file path="/gopies_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365073809277" ignored="false" />
-    <file path="/tuyens_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365068932173" ignored="false" />
+    <file path="/tuyens_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365080766819" ignored="false" />
     <file path="/routes.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1364978436220" ignored="false" />
     <file path="/Gemfile" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1364976843976" ignored="false" />
-    <file path="/tramdungs_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365068319930" ignored="false" />
-    <file path="/diquatrams_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365069321370" ignored="false" />
+    <file path="/tramdungs_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365080865759" ignored="false" />
+    <file path="/diquatrams_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365080836637" ignored="false" />
     <file path="/cokhungthoigians_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365074869932" ignored="false" />
     <file path="/diemtrentuyens_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365067462308" ignored="false" />
     <file path="/diemtrentuyen.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1364894844486" ignored="false" />
@@ -69,7 +69,7 @@
     <file path="/devise.en.yml" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1364980665785" ignored="false" />
     <file path="/user.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1364984146109" ignored="false" />
     <file path="/_links.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365052155941" ignored="false" />
-    <file path="/congties_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365067225386" ignored="false" />
+    <file path="/congties_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365080795319" ignored="false" />
     <file path="/khungthoigians_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365068132193" ignored="false" />
     <file path="/will_paginate_array_fix.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365072674692" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -97,22 +97,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/khungthoigian.rb" />
-        <option value="$PROJECT_DIR$/app/models/diquatram.rb" />
-        <option value="$PROJECT_DIR$/app/models/diemtrentuyen.rb" />
-        <option value="$PROJECT_DIR$/app/models/congty.rb" />
-        <option value="$PROJECT_DIR$/app/models/cokhungthoigian.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/diquatrams_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/chuyens/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/diquatrams/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/diquatrams/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/cokhungthoigians/_form.html.erb" />
         <option value="$PROJECT_DIR$/config/initializers/will_paginate_array_fix.rb" />
         <option value="$PROJECT_DIR$/app/views/gopies/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/gopies_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/gopy.rb" />
         <option value="$PROJECT_DIR$/app/views/cokhungthoigians/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_navigation.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/chuyens_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/chuyen.rb" />
         <option value="$PROJECT_DIR$/app/controllers/cokhungthoigians_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/congties_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/diemtrentuyens_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/diquatrams_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/taikhoans_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/tramdungs_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/tuyens_controller.rb" />
       </list>
     </option>
   </component>
@@ -257,6 +257,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trangchu" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -411,6 +415,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="diemtrentuyens" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BuytCanTho" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BuytCanTho" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -907,97 +929,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/tuyen.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="19" selection-start="1525" selection-end="1525" vertical-scroll-proportion="0.74038464">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/diquatrams_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="60" selection-start="337" selection-end="337" vertical-scroll-proportion="0.43269232">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/chuyens/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/diquatrams/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="37" selection-start="342" selection-end="342" vertical-scroll-proportion="0.27568492">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/diquatrams/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="11" selection-start="538" selection-end="538" vertical-scroll-proportion="0.52397263">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/cokhungthoigians/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="38" selection-start="682" selection-end="682" vertical-scroll-proportion="0.6164383">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/diquatram.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="509" selection-end="528" vertical-scroll-proportion="0.46153846">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/chuyens/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="30" selection-end="57" vertical-scroll-proportion="0.05650685">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/khungthoigian.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="276" selection-end="295" vertical-scroll-proportion="0.26865673">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/will_paginate_array_fix.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="1" selection-start="1" selection-end="1" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/gopy.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="3" selection-start="112" selection-end="112" vertical-scroll-proportion="0.14423077">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/chuyens_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="24" selection-start="548" selection-end="580" vertical-scroll-proportion="0.5008183">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/cokhungthoigians_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="34" selection-start="772" selection-end="772" vertical-scroll-proportion="0.1767594">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/cokhungthoigians/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="2" selection-start="233" selection-end="273" vertical-scroll-proportion="0.29109588">
@@ -1012,9 +943,104 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/cokhungthoigian.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/chuyen.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="19" selection-start="130" selection-end="130" vertical-scroll-proportion="0.115384616">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_navigation.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="56" selection-start="165" selection-end="165" vertical-scroll-proportion="0.15075377">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/cokhungthoigians_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="56" selection-start="263" selection-end="263" vertical-scroll-proportion="0.23567921">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/chuyens_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="3" selection-start="132" selection-end="185" vertical-scroll-proportion="0.20621932">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/congties_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="13" selection-start="249" selection-end="249" vertical-scroll-proportion="0.34615386">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/diemtrentuyens_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="5" selection-start="138" selection-end="138" vertical-scroll-proportion="0.23076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/diquatrams_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="4" selection-start="251" selection-end="251" vertical-scroll-proportion="0.31730768">
+          <folding>
+            <marker date="1365080836000" expanded="true" signature="-1:-1" placeholder="=begin ... =end" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/gopies_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="4" selection-start="100" selection-end="129" vertical-scroll-proportion="0.086538464">
+        <state line="4" column="4" selection-start="100" selection-end="129" vertical-scroll-proportion="0.115384616">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/khungthoigians_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/taikhoans_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="4" selection-start="213" selection-end="213" vertical-scroll-proportion="0.28846154">
+          <folding>
+            <marker date="1365080855000" expanded="true" signature="-1:-1" placeholder="=begin ... =end" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/tramdungs_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="4" selection-start="250" selection-end="250" vertical-scroll-proportion="0.34615386">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/trangchu_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/tuyens_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="5" selection-start="91" selection-end="91" vertical-scroll-proportion="0.028846154">
           <folding />
         </state>
       </provider>

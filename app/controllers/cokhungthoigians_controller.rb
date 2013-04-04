@@ -6,7 +6,7 @@ class CokhungthoigiansController < ApplicationController
     require 'will_paginate/array'
     #@cokhungthoigians = Cokhungthoigian.all
 
-    if current_user.admin != 1 then
+    if current_user.email != 'admin@buytcantho.com' then
       session[:taikhoan] = current_user.email
       @t = session[:taikhoan]
 
