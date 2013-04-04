@@ -1,8 +1,19 @@
 class DiquatramsController < ApplicationController
+
+  before_filter :authenticate_user!
+
+  before_filter :kiemtra_admin
+
+  def kiemtra_admin
+    if current_user.admin != 1 then
+      redirect_to root_path
+    end
+  end
+
   # GET /diquatrams
   # GET /diquatrams.json
   def index
-    @diquatrams = Diquatram.all
+    @diquatrams = Diquatram.paginate(:page => params[:page]).order('matuyen ASC')
 
     respond_to do |format|
       format.html # index.html.erb

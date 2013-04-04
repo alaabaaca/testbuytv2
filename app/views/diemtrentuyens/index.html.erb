@@ -1,13 +1,14 @@
 <h1>Danh sách điểm trên các tuyến</h1>
 
+<%= will_paginate @posts %>
+
 <table class="table table-striped">
   <tr>
     <th>Tuyến xe</th>
     <th>Vĩ độ</th>
     <th>Kinh độ</th>
     <th></th>
-    <th></th>
-    <th></th>
+
   </tr>
 
 <% @diemtrentuyens.each do |diemtrentuyen| %>
@@ -20,13 +21,11 @@
       <%= link_to diemtrentuyen, :class => 'btn  btn-mini btn-info' do %>
           <i class="icon-info-sign"></i>
       <% end %>
-    </td>
-    <td>
+      &nbsp;
       <%= link_to edit_diemtrentuyen_path(diemtrentuyen), :class => 'btn  btn-mini btn-warning' do %>
           <i class="icon-pencil"></i>
       <% end %>
-    </td>
-    <td>
+      &nbsp;
       <%= link_to diemtrentuyen_path(diemtrentuyen), method: :delete, data: {confirm: "Bạn có chắc chắn muốn xóa"}, :class => 'btn  btn-mini btn-danger' do %>
           <i class="icon-remove"></i>
       <% end %>

@@ -11,7 +11,14 @@
 </p>
 
 <p>
-  <b>Khung thời gian:</b>
+  <b>Lượt:</b>
+  <% @luot = @cokhungthoigian.luot %>
+ <% if @luot == 0  %>  Đi <% else %> Về    <% end %>
+
+</p>
+
+<p>
+  <b>Thời gian:</b>
   <% @khungthoigian = Khungthoigian.find(@cokhungthoigian.makhungtg)
      @di = @khungthoigian.di
      @den = @khungthoigian.den %>

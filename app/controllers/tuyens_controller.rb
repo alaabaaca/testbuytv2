@@ -1,8 +1,20 @@
 class TuyensController < ApplicationController
+
+
+  before_filter :authenticate_user!
+
+  before_filter :kiemtra_admin
+
+  def kiemtra_admin
+    if current_user.admin != 1 then
+        redirect_to root_path
+    end
+  end
+
   # GET /tuyens
   # GET /tuyens.json
   def index
-    @tuyens = Tuyen.all
+    @tuyens = Tuyen.paginate(:page => params[:page]).order('matuyen ASC')
 
     respond_to do |format|
       format.html # index.html.erb

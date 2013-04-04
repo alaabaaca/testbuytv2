@@ -7,4 +7,6 @@ class Khungthoigian < ActiveRecord::Base
   validates :di, :presence => {:message => "Thời gian đi không được rỗng"}
   validates  :den, :presence => {:message => "Thời gian đến không được rỗng"}
 
+  self.per_page = 5
+
 end

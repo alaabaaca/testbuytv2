@@ -2,7 +2,7 @@ class KhungthoigiansController < ApplicationController
   # GET /khungthoigians
   # GET /khungthoigians.json
   def index
-    @khungthoigians = Khungthoigian.all
+    @khungthoigians = Khungthoigian.paginate(:page => params[:page]).order('di ASC')
 
     respond_to do |format|
       format.html # index.html.erb

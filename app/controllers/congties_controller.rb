@@ -1,8 +1,19 @@
 class CongtiesController < ApplicationController
+
+  before_filter :authenticate_user!
+
+  before_filter :kiemtra_admin
+
+  def kiemtra_admin
+    if current_user.admin != 1 then
+      redirect_to root_path
+    end
+  end
+
   # GET /congties
   # GET /congties.json
   def index
-    @congties = Congty.all
+    @congties = Congty.paginate(:page => params[:page]).order('tenct ASC')
 
     respond_to do |format|
       format.html # index.html.erb

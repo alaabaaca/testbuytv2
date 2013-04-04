@@ -1,12 +1,13 @@
 <h1>Trạm dừng</h1>
 
+<%= will_paginate @posts %>
+
 <table  class="table table-striped">
   <tr>
     <th>Tên trạm dừng</th>
     <th>Địa chỉ</th>
     <th></th>
-    <th></th>
-    <th></th>
+
   </tr>
 
 <% @tramdungs.each do |tramdung| %>
@@ -17,13 +18,11 @@
       <%= link_to tramdung, :class => 'btn  btn-mini btn-info' do %>
           <i class="icon-info-sign"></i>
       <% end %>
-    </td>
-    <td>
+      &nbsp;
       <%= link_to edit_tramdung_path(tramdung), :class => 'btn  btn-mini btn-warning' do %>
           <i class="icon-pencil"></i>
       <% end %>
-    </td>
-    <td>
+      &nbsp;
       <%= link_to tramdung_path(tramdung), method: :delete, data: {confirm: "Bạn có chắc chắn muốn xóa"}, :class => 'btn  btn-mini btn-danger' do %>
           <i class="icon-remove"></i>
       <% end %>

@@ -10,4 +10,6 @@ class Diemtrentuyen < ActiveRecord::Base
             :presence =>  { :message => "Kinh do không được rỗng"}
   validates :vido,
             :presence =>  { :message => "Vi do không được rỗng"}
+
+  self.per_page = 5
 end

@@ -1,5 +1,7 @@
 <h1>Danh sách tài khoản người dùng</h1>
 
+<%= will_paginate @posts %>
+
 
 <table class="table table-striped">
   <tr>
@@ -38,4 +40,6 @@
 
 <br />
 
-<%= link_to 'Thêm mới', new_taikhoan_path, :class =>'btn btn-success' %>
+
+<%= link_to 'Thêm mới', new_taikhoan_path, :class =>'btn btn-success'%>
+

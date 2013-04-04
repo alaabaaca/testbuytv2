@@ -21,6 +21,14 @@
     <%= f.label "Địa chỉ:" %><br />
     <%= f.text_field :diachitram %>
   </div>
+    <div class="field">
+      <%= f.label "Vĩ độ:" %><br />
+      <%= f.text_field :vido %>
+    </div>
+    <div class="field">
+      <%= f.label "Kinh độ:" %><br />
+      <%= f.text_field :kinhdo %>
+    </div>
   <div class="actions">
     <button class="btn btn-primary" type="submit">Lưu</button>
     <%= link_to "Hủy", tramdungs_path, :class => 'btn'  %>

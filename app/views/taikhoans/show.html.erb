@@ -12,7 +12,9 @@
 
 <p>
   <b>Công ty:</b>
-  <%= @taikhoan.mact %>
+  <%
+     @congty = Congty.find(@taikhoan.mact) %>
+  <%= @congty.tenct %>
 </p>
 
 

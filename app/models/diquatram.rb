@@ -13,4 +13,7 @@ class Diquatram < ActiveRecord::Base
             :presence => {:message => "Tuyến xe không được rỗng"}
   validates :matram, :uniqueness => {:scope => :matuyen,
   :message => 'Dữ liệu này đã bị trùng. Vui lòng chọn giá trị khác cho mã trạm hoặc mã tuyến'}
+
+  self.per_page = 5
+
 end

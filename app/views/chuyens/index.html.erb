@@ -1,5 +1,7 @@
 <h2>Danh sách chuyến xe</h2>
 
+<%= will_paginate @posts %>
+
 <table class="table table-striped">
   <tr>
     <th>Biển số xe</th>
@@ -7,38 +9,38 @@
     <th>Công ty</th>
     <th>Số ghế</th>
     <th></th>
-    <th></th>
-    <th></th>
+
   </tr>
 
-  <% @chuyens.each do |chuyen| %>
-      <tr>
-        <td><%= chuyen.biensoxe %></td>
-        <td><%= chuyen.matuyen %></td>
-        <% @mact = chuyen.mact
-           @congty = Congty.find(@mact) %>
-        <td><%= @congty.tenct %></td>
-        <td><%= chuyen.soghe %></td>
-        <td>
-          <%= link_to chuyen, :class => 'btn  btn-mini btn-info' do %>
-              <i class="icon-info-sign"></i>
-          <% end %>
-        </td>
-        <td>
-          <%= link_to edit_chuyen_path(chuyen), :class => 'btn  btn-mini btn-warning' do %>
-              <i class="icon-pencil"></i>
-          <% end %>
-        </td>
-        <td>
-          <%= link_to chuyen_path(chuyen), method: :delete, data: {confirm: "Bạn có chắc chắn muốn xóa"}, :class => 'btn  btn-mini btn-danger' do %>
-              <i class="icon-remove"></i>
-          <% end %>
-        </td>
-      </tr>
+  <% if (@chuyens != nil) then %>
+      <% @chuyens.each do |chuyen| %>
+          <tr>
+            <td><%= chuyen.biensoxe %></td>
+            <% @tuyen = Tuyen.find_by_matuyen(chuyen.matuyen) %>
+            <td><%= @tuyen.tentuyen + ' - ' + @tuyen.tentuyen2 %></td>
+            <% @mact = chuyen.mact
+               @congty = Congty.find(@mact) %>
+            <td><%= @congty.tenct %></td>
+            <td><%= chuyen.soghe %></td>
+            <td>
+              <%= link_to chuyen, :class => 'btn  btn-mini btn-info' do %>
+                  <i class="icon-info-sign"></i>
+              <% end %>
+              &nbsp;
+              <%= link_to edit_chuyen_path(chuyen), :class => 'btn  btn-mini btn-warning' do %>
+                  <i class="icon-pencil"></i>
+              <% end %>
+              &nbsp;
+              <%= link_to chuyen_path(chuyen), method: :delete, data: {confirm: "Bạn có chắc chắn muốn xóa"}, :class => 'btn  btn-mini btn-danger' do %>
+                  <i class="icon-remove"></i>
+              <% end %>
+            </td>
+          </tr>
+      <% end %>
   <% end %>
 </table>
 
 <br/>
 
-<%= link_to 'Thêm mới', new_chuyen_path, :class =>'btn btn-success' %>
+<%= link_to 'Thêm mới', new_chuyen_path, :class => 'btn btn-success' %>
 

@@ -2,23 +2,33 @@ class GopiesController < ApplicationController
   # GET /gopies
   # GET /gopies.json
   def index
-    session[:taikhoan] = "hung"
+    require 'will_paginate/array'
+
+    session[:taikhoan] = current_user.email
     @t = session[:taikhoan]
 
       @taikhoan = Taikhoan.find_by_tentk(@t)
     if (@taikhoan != nil) then
       @congty = Congty.find_by_id(@taikhoan.mact)
 
-      @chuyens = Chuyen.find_all_by_mact(@congty.id);
+      @chuyens = Chuyen.order('biensoxe').find_all_by_mact(@congty.id);
 
-      @gopies = Array.new
+      #@gopies = Array.new
+      @gop =  []
       @chuyens.each do |bs|
         @gopy = Gopy.find_all_by_biensoxe(bs.biensoxe)
         if (@gopy != []) then
-          @gopies.append(@gopy)
+          #@gopies.append(@gopy)
+          @gopy.each do |g|
+            @gop << g
+          end
         end
       end
+       @gopies = @gop.paginate(:page => 1, :per_page => 15)
     end
+
+
+
 
 
     #@gopies = Gopy.find_all_by_congty(@congty.id)

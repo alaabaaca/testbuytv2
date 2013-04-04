@@ -2,7 +2,7 @@ class DiemtrentuyensController < ApplicationController
   # GET /diemtrentuyens
   # GET /diemtrentuyens.json
   def index
-    @diemtrentuyens = Diemtrentuyen.all
+    @diemtrentuyens = Diemtrentuyen.paginate(:page => params[:page]).order('matuyen ASC')
 
     respond_to do |format|
       format.html # index.html.erb

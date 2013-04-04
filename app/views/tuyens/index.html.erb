@@ -1,15 +1,13 @@
 <h1>Tuyến xe</h1>
 
+<%= will_paginate @posts %>
+
 <table  class="table table-striped">
   <tr>
     <th>Mã tuyến</th>
     <th>Tên tuyến</th>
     <th>Loại hình</th>
-    <th>Cự ly</th>
-    <th>Số chuyến trong ngày</th>
-    <th>Thời gian chuyến</th>
-    <th>Giãn cách</th>
-    <th>Thời gian hoạt động</th>
+    <th>Cự ly (km)</th>
     <th></th>
   </tr>
 
@@ -19,10 +17,6 @@
     <td><%= tuyen.tentuyen + " - " + tuyen.tentuyen2 %></td>
     <td><%= tuyen.loaihinh %></td>
     <td><%= tuyen.culy %></td>
-    <td><%= tuyen.sochuyen %></td>
-    <td><%= tuyen.thoigianchuyen %></td>
-    <td><%= tuyen.giancach %></td>
-    <td><%= tuyen.tghoatdong %></td>
     <td>
       <%= link_to tuyen, :class => 'btn  btn-mini btn-info' do %>
           <i class="icon-info-sign"></i>

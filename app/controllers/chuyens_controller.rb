@@ -3,9 +3,20 @@ class ChuyensController < ApplicationController
   # GET /chuyens.json
 
 
-
   def index
-    @chuyens = Chuyen.all
+    # @chuyens = Chuyen.all
+    if current_user.admin != 1 then
+      session[:taikhoan] = current_user.email
+      @t = session[:taikhoan]
+
+      @taikhoan = Taikhoan.find_by_tentk(@t)
+      if (@taikhoan != nil) then
+        @congty = Congty.find_by_id(@taikhoan.mact)
+        @chuyens = Chuyen.paginate(:page => params[:page]).order('biensoxe ASC').find_all_by_mact(@congty.id)
+      end
+    else #@chuyens = Chuyen.all
+      @chuyens = Chuyen.paginate(:page => params[:page]).order('biensoxe ASC')
+    end
 
     respond_to do |format|
       format.html # index.html.erb
@@ -92,12 +103,12 @@ class ChuyensController < ApplicationController
   end
 
   def chuyens_tuyen_android
-   # @tuyen = Tuyen.find_by_id(params[:id])
+    # @tuyen = Tuyen.find_by_id(params[:id])
     #@chuyens = Chuyen.find_all_by_matuyen(@tuyen.matuyen)
     @chuyens = Chuyen.find_all_by_matuyen(params[:id])
 
     @congties = Array.new
-    @tuyens  = Tuyen.find_by_id(params[:id])
+    @tuyens = Tuyen.find_by_id(params[:id])
 
     @chuyens.each do |c|
       @congty = Congty.find_by_id(c.mact)
@@ -119,7 +130,7 @@ class ChuyensController < ApplicationController
 
     @tuyens = Array.new
     @chuyens.each do |c|
-      @tuyen =   Tuyen.find_by_id(c.matuyen)
+      @tuyen = Tuyen.find_by_id(c.matuyen)
       @tuyens.append(@tuyen.tentuyen)
     end
 
@@ -143,7 +154,6 @@ class ChuyensController < ApplicationController
       @congty = Congty.find_by_id(@chuyen.mact)
       @congties.append(@congty.tenct)
     end
-
 
 
     @result = {"success" => 1, "chuyens" => @chuyens, "tuyens" => @tuyens, "congties" => @congties}

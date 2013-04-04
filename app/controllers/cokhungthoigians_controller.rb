@@ -1,8 +1,37 @@
 class CokhungthoigiansController < ApplicationController
+
   # GET /cokhungthoigians
   # GET /cokhungthoigians.json
   def index
-    @cokhungthoigians = Cokhungthoigian.all
+    require 'will_paginate/array'
+    #@cokhungthoigians = Cokhungthoigian.all
+
+    if current_user.admin != 1 then
+      session[:taikhoan] = current_user.email
+      @t = session[:taikhoan]
+
+      @taikhoan = Taikhoan.find_by_tentk(@t)
+      if (@taikhoan != nil) then
+        @congty = Congty.find_by_id(@taikhoan.mact)
+
+        @chuyens = Chuyen.find_all_by_mact(@congty.id);
+
+        @cokhungtgs = Array.new
+        @chuyens.each do |bs|
+          @cokhungtg = Cokhungthoigian.order('biensoxe ASC').find_all_by_biensoxe(bs.biensoxe)
+          if (@cokhungtg != []) then
+
+            @cokhungtg.each do |c|
+              @cokhungtgs.append(c)
+            end
+            #@cokhungtgs.append(@cokhungtg)
+          end
+        end
+        @cokhungthoigians = @cokhungtgs.paginate(:page => 1, :per_page => 10)
+      end
+    else
+      @cokhungthoigians = Cokhungthoigian.paginate(:page => params[:page]).order('biensoxe ASC')
+    end
 
     respond_to do |format|
       format.html # index.html.erb
@@ -95,6 +124,6 @@ class CokhungthoigiansController < ApplicationController
       @luots.append(@luot.luot)
     end
     @result = {"success" => 1, "khungtgs" => @khungtg, "luots" => @luots}
-    render :json =>@result
+    render :json => @result
   end
 end

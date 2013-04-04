@@ -15,8 +15,15 @@
 
   <div class="field">
     <%= f.label "Biển số xe:" %><br />
-    <%= f.select("biensoxe", Chuyen.all.collect { |c| [c.biensoxe, c.biensoxe] }, {:prompt => "Chọn biển số xe"}) %>
+    <%
+        @taikhoan = Taikhoan.find_by_tentk(current_user.email);
+       @biensoxe = Chuyen.find_all_by_mact(@taikhoan.mact) %>
+    <%= f.select("biensoxe", @biensoxe.collect { |c| [c.biensoxe, c.biensoxe] }, {:prompt => "Chọn biển số xe"}) %>
   </div>
+    <div class="field">
+      <%= f.label "Lượt:" %><br />
+      <%= f.select("luot",[["Đi", 0], ["Về", 1]], {:prompt => "Chọn lượt đi hoặc về"}) %>
+    </div>
   <div class="field">
     <%= f.label "Khung thời gian:" %><br />
     <%= f.select("makhungtg", Khungthoigian.all.collect { |k| [k.di.strftime("%H:%M:%S")+' - '+k.den.strftime("%H:%M:%S"), k.id] }, {:prompt => "Chọn khung thời gian"}) %>

@@ -3,4 +3,6 @@ class Gopy < ActiveRecord::Base
 
   belongs_to :chuyen
 
+  #self.per_page = 1
+
 end

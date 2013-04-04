@@ -1,8 +1,19 @@
 class TramdungsController < ApplicationController
+
+  before_filter :authenticate_user!
+
+  before_filter :kiemtra_admin
+
+  def kiemtra_admin
+    if current_user.admin != 1 then
+      redirect_to root_path
+    end
+  end
+
   # GET /tramdungs
   # GET /tramdungs.json
   def index
-    @tramdungs = Tramdung.all
+    @tramdungs = Tramdung.paginate(:page => params[:page]).order('tentram ASC')
 
     respond_to do |format|
       format.html # index.html.erb

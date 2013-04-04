@@ -1,42 +1,53 @@
 <h2>Khung thời gian của các chuyến xe</h2>
 
+<%= will_paginate @cokhungthoigians %>
+
 <table class="table table-striped">
   <tr>
     <th>Mã</th>
     <th>Biển số xe</th>
-    <th>Khung thời gian</th>
-    <th></th>
-    <th></th>
+    <th>Lượt</th>
+    <th>Thời gian</th>
     <th></th>
   </tr>
 
-  <% @cokhungthoigians.each do |cokhungthoigian| %>
-      <tr>
-        <td><%= cokhungthoigian.id %></td>
-        <td><%= cokhungthoigian.biensoxe %></td>
-        <% @khungthoigian = Khungthoigian.find(cokhungthoigian.makhungtg)
-           @di = @khungthoigian.di
-           @den = @khungthoigian.den %>
-        <td><%= @di.strftime("%H:%M:%S")  %> - <%= @den.strftime("%H:%M:%S")  %></td>
-        <td>
-          <%= link_to cokhungthoigian, :class => 'btn  btn-mini btn-info' do %>
-              <i class="icon-info-sign"></i>
+  <% if (@cokhungthoigians != nil) then %>
+
+          <% @cokhungthoigians.each do |cokhungthoigian| %>
+              <tr>
+                <td><%= cokhungthoigian.id %></td>
+                <td><%= cokhungthoigian.biensoxe %></td>
+                <% @luot = cokhungthoigian.luot %>
+                <% if @luot == 0 %>
+                    <td>Đi</td>
+                <% else %>
+                    <td>Về</td>
+                <% end %>
+                <% @khungthoigian = Khungthoigian.find(cokhungthoigian.makhungtg)
+                   @di = @khungthoigian.di
+                   @den = @khungthoigian.den %>
+                <td><%= @di.strftime("%H:%M:%S") %> - <%= @den.strftime("%H:%M:%S") %></td>
+                <td>
+                  <%= link_to cokhungthoigian, :class => 'btn  btn-mini btn-info' do %>
+                      <i class="icon-info-sign"></i>
+                  <% end %>
+                  &nbsp;
+                  <%= link_to edit_cokhungthoigian_path(cokhungthoigian), :class => 'btn  btn-mini btn-warning' do %>
+                      <i class="icon-pencil"></i>
+                  <% end %>
+                  &nbsp;
+                  <%= link_to cokhungthoigian_path(cokhungthoigian), method: :delete, data: {confirm: "Bạn có chắc chắn muốn xóa"}, :class => 'btn  btn-mini btn-danger' do %>
+                      <i class="icon-remove"></i>
+                  <% end %>
+                </td>
+              </tr>
           <% end %>
-        </td>
-        <td>
-          <%= link_to edit_cokhungthoigian_path(cokhungthoigian), :class => 'btn  btn-mini btn-warning' do %>
-              <i class="icon-pencil"></i>
-          <% end %>
-        </td>
-        <td>
-          <%= link_to cokhungthoigian_path(cokhungthoigian), method: :delete, data: {confirm: "Bạn có chắc chắn muốn xóa"}, :class => 'btn  btn-mini btn-danger' do %>
-              <i class="icon-remove"></i>
-          <% end %>
-        </td>
-      </tr>
+
   <% end %>
+
+
 </table>
 
 <br/>
 
-<%= link_to 'Thêm mới', new_cokhungthoigian_path, :class =>'btn btn-success' %>
+<%= link_to 'Thêm mới', new_cokhungthoigian_path, :class => 'btn btn-success' %>

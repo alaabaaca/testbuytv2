@@ -15,6 +15,16 @@
   <%= @tramdung.diachitram %>
 </p>
 
+<p>
+  <b>Vĩ độ:</b>
+  <%= @tramdung.vido %>
+</p>
+
+<p>
+  <b>Kinh độ:</b>
+  <%= @tramdung.kinhdo %>
+</p>
+
 
 <%= link_to 'Cập nhật', edit_tramdung_path(@tramdung), :class => 'btn' %> |
 <%= link_to 'Quay lại danh sách', tramdungs_path, :class => 'btn' %>

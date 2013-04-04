@@ -1,6 +1,8 @@
 # encoding: UTF-8
 class Cokhungthoigian < ActiveRecord::Base
-  attr_accessible :biensoxe, :id, :makhungtg
+  attr_accessible :biensoxe, :id, :makhungtg, :luot
+
+  self.per_page = 5
 
   belongs_to :khungthoigian
   belongs_to :chuyen

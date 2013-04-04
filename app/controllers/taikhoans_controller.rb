@@ -1,11 +1,21 @@
 class TaikhoansController < ApplicationController
+
+  before_filter :kiemtra_admin
+
+  def kiemtra_admin
+    if current_user.admin != 1 then
+      redirect_to root_path
+    end
+  end
+
+
   # GET /taikhoans
   # GET /taikhoans.json
 
 
 
   def index
-    @taikhoans = Taikhoan.all
+    @taikhoans = Taikhoan.paginate(:page => params[:page]).order('tentk ASC')
 
 
     respond_to do |format|

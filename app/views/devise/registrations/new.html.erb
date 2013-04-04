@@ -1,0 +1,32 @@
+<h2>Đăng kí</h2>
+
+<%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+
+
+    <% if resource.errors.any? %>
+        <div id="error_explanation">
+          <h2>Có lỗi :</h2>
+
+          <p>Phải điền đầy đủ tất cả thông tin</p>
+
+        </div>
+    <% end %>
+
+  <div class="form-inputs">
+    <%= f.label "Email: " %>
+    <%= f.text_field :email, :autofocus => true %>
+    <br/>
+    <%= f.label "Mật khẩu: " %>
+    <%= f.password_field :password %>
+    <br/>
+    <%= f.label "Nhắc lại mật khẩu: " %>
+    <%= f.password_field :password %>
+    <br/>
+  </div>
+
+  <div class="actions">
+    <button class="btn btn-primary" type="submit">Đăng kí</button>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>

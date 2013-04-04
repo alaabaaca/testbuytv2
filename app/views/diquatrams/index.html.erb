@@ -1,17 +1,18 @@
 <h2>Danh sách các trạm mà các tuyến xe đi qua</h2>
 
+<%= will_paginate @posts %>
+
 <table class="table table-striped">
   <tr>
     <th>Tuyến xe</th>
     <th>Trạm xe</th>
     <th></th>
-    <th></th>
-    <th></th>
   </tr>
 
   <% @diquatrams.each do |diquatram| %>
       <tr>
-        <td><%= diquatram.matuyen %></td>
+        <% @tuyen = Tuyen.find_by_matuyen(diquatram.matuyen) %>
+        <td> [<%=  @tuyen.matuyen %>] <%=  @tuyen.tentuyen + ' - ' + @tuyen.tentuyen2 %></td>
 
         <% @matram = diquatram.matram
             @tramdung = Tramdung.find_by_id(@matram) %>
@@ -20,13 +21,11 @@
           <%= link_to diquatram, :class => 'btn  btn-mini btn-info' do %>
               <i class="icon-info-sign"></i>
           <% end %>
-        </td>
-        <td>
+          &nbsp;
           <%= link_to edit_diquatram_path(diquatram), :class => 'btn  btn-mini btn-warning' do %>
               <i class="icon-pencil"></i>
           <% end %>
-        </td>
-        <td>
+          &nbsp;
           <%= link_to diquatram_path(diquatram), method: :delete, data: {confirm: "Bạn có chắc chắn muốn xóa"}, :class => 'btn  btn-mini btn-danger' do %>
               <i class="icon-remove"></i>
           <% end %>

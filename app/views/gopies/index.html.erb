@@ -1,16 +1,18 @@
 <h1>Danh sách góp ý</h1>
 
+<%= will_paginate @gopies %>
+
+
 <table class="table table-striped">
   <tr>
     <th>Biển số xe</th>
     <th>Nội dung</th>
     <th></th>
-    <th></th>
   </tr>
 
   <% if( @gopies != nil) then%>
-  <% @gopies.each do |g|%>
-  <% g.each do |gopy| %>
+
+  <% @gopies.each do  |gopy| %>
       <tr>
         <td><%= gopy.biensoxe %></td>
         <td><%= gopy.noidung %></td>
@@ -18,8 +20,7 @@
           <%= link_to gopy, :class => 'btn  btn-mini btn-info' do %>
               <i class="icon-info-sign"></i>
           <% end %>
-        </td>
-        <td>
+
           <%= link_to gopy_path(gopy), method: :delete, data: {confirm: "Bạn có chắc chắn muốn xóa"}, :class => 'btn  btn-mini btn-danger' do %>
               <i class="icon-remove"></i>
           <% end %>
@@ -27,7 +28,7 @@
         </td>
       </tr>
   <% end %>
-  <% end %>
+
 </table>
 
 
