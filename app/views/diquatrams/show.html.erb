@@ -7,12 +7,15 @@
 
 <p>
   <b>Tuyến xe:</b>
-  <%= @diquatram.matuyen %>
+  <% @tuyen = Tuyen.find_by_matuyen(@diquatram.matuyen) %>
+ [<%=  @tuyen.matuyen %>] <%=  @tuyen.tentuyen + ' - ' + @tuyen.tentuyen2 %>
 </p>
 
 <p>
   <b>Trạm dừng:</b>
-  <%= @diquatram.matram %>
+  <% @matram = @diquatram.matram
+     @tramdung = Tramdung.find_by_id(@matram) %>
+<%= @tramdung.tentram %>
 </p>
 
 

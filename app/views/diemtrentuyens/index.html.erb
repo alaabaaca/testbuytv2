@@ -13,7 +13,9 @@
 
 <% @diemtrentuyens.each do |diemtrentuyen| %>
   <tr>
-    <td><%= diemtrentuyen.matuyen %></td>
+    <% @tuyen = Tuyen.find_by_matuyen(diemtrentuyen.matuyen) %>
+    <td> [<%=  @tuyen.matuyen %>] <%=  @tuyen.tentuyen + ' - ' + @tuyen.tentuyen2 %></td>
+
     <td><%= diemtrentuyen.vido %></td>
     <td><%= diemtrentuyen.kinhdo %></td>
 

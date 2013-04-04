@@ -17,7 +17,7 @@
     <div class="field">
       <%= f.label "Tuyến xe: " %>
       <br/>
-      <%= f.select("matuyen", Tuyen.all.collect { |c| [c.matuyen, c.matuyen]}, {:promt => "Chọn tuyen"}) %>
+      <%= f.select("matuyen", Tuyen.all.collect { |c| [c.tentuyen+ " - " + c.tentuyen2, c.matuyen]}, {:promt => "Chọn tuyen"}) %>
     </div>
 
     <div class="field">

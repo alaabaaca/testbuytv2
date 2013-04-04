@@ -114,7 +114,7 @@ class ChuyensController < ApplicationController
       @congty = Congty.find_by_id(c.mact)
       @congties.append(@congty.tenct)
     end
-    @tuyen = @tuyens.tentuyen
+    @tuyen = @tuyens.tentuyen + " - " + @tuyens.tentuyen2
 
     @result = {"success" => 1, "chuyens" => @chuyens, "congties" => @congties, "tuyens" => @tuyen}
     #@result = {"success" => 1, "chuyens" => @chuyens}
@@ -131,7 +131,7 @@ class ChuyensController < ApplicationController
     @tuyens = Array.new
     @chuyens.each do |c|
       @tuyen = Tuyen.find_by_id(c.matuyen)
-      @tuyens.append(@tuyen.tentuyen)
+      @tuyens.append(@tuyen.tentuyen + " - " + @tuyens.tentuyen2 )
     end
 
     @result = {"success" => 1, "chuyens" => @chuyens, "tuyens" => @tuyens, "congties" => @congty}
@@ -149,7 +149,7 @@ class ChuyensController < ApplicationController
       @chuyens.append(@chuyen)
 
       @tuyen = Tuyen.find_by_id(d.matuyen)
-      @tuyens.append(@tuyen.tentuyen)
+      @tuyens.append(@tuyen.tentuyen + " - " + @tuyens.tentuyen2)
 
       @congty = Congty.find_by_id(@chuyen.mact)
       @congties.append(@congty.tenct)

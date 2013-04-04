@@ -17,8 +17,12 @@
     <%= f.label "Biển số xe:" %><br />
     <%
         @taikhoan = Taikhoan.find_by_tentk(current_user.email);
-       @biensoxe = Chuyen.find_all_by_mact(@taikhoan.mact) %>
+        if @taikhoan != nil then  %>
+       @biensoxe = Chuyen.find_all_by_mact(@taikhoan.mact)
     <%= f.select("biensoxe", @biensoxe.collect { |c| [c.biensoxe, c.biensoxe] }, {:prompt => "Chọn biển số xe"}) %>
+        <% else %>
+        <%= f.select("biensoxe", [], {:prompt => "Chọn biển số xe"}) %>
+        <% end %>
   </div>
     <div class="field">
       <%= f.label "Lượt:" %><br />

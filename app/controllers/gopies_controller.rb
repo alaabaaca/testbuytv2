@@ -24,7 +24,7 @@ class GopiesController < ApplicationController
           end
         end
       end
-       @gopies = @gop.paginate(:page => 1, :per_page => 15)
+       @gopies = @gop.paginate(:page => params[:page], :per_page => 5)
     end
 
 
