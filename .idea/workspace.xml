@@ -28,7 +28,7 @@
     <file path="/application.css.scss" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365057548788" ignored="false" />
     <file path="/_navigation.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365075813363" ignored="false" />
     <file path="/application_helper.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1363140851202" ignored="false" />
-    <file path="/chuyens_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365086644114" ignored="false" />
+    <file path="/chuyens_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365087598057" ignored="false" />
     <file path="/edit.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1363230415059" ignored="false" />
     <file path="/new.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365051826183" ignored="false" />
     <file path="/show.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365069036455" ignored="false" />
@@ -100,7 +100,7 @@
       <file leaf-file-name="chuyens_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/chuyens_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="151" column="64" selection-start="4089" selection-end="4089" vertical-scroll-proportion="0.82487726">
+            <state line="134" column="27" selection-start="3585" selection-end="3585" vertical-scroll-proportion="-0.0016366612">
               <folding />
             </state>
           </provider>
@@ -1055,7 +1055,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/chuyens_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="151" column="64" selection-start="4089" selection-end="4089" vertical-scroll-proportion="0.82487726">
+        <state line="134" column="27" selection-start="3585" selection-end="3585" vertical-scroll-proportion="-0.0016366612">
           <folding />
         </state>
       </provider>
