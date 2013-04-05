@@ -119,8 +119,27 @@ class TuyensController < ApplicationController
 
     @result = {"success" => 1, "tuyens" => @tuyens}
     render :json => @result
-
-
-
   end
+
+  def tuyens_timtheoma_android
+    @tuyens = Tuyen.find_all_by_matuyen(params[:id])
+
+    @result = {"success" => "1", "tuyens" => @tuyens}
+    render :json => @result
+  end
+
+  def tuyens_timtheotramdau_android
+    @tuyens = Tuyen.find_all_by_tentuyen(params[:id])
+
+    @result = {"success" => "1", "tuyens" => @tuyens}
+    render :json => @result
+  end
+
+  def tuyens_timtheotramcuoi_android
+    @tuyens = Tuyen.find_all_by_tentuyen2(params[:id])
+
+    @result = {"success" => "1", "tuyens" => @tuyens}
+    render :json => @result
+  end
+
 end
