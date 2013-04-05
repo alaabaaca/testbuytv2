@@ -68,11 +68,12 @@ BuytCanTho::Application.routes.draw do
   resources :tuyens   do
     collection do
       get 'tuyens_android'
+      post 'tuyens_timtheotramdau_android'
     end
     member do
       get :tuyens_tram_android
       get :tuyens_timtheoma_android
-      get :tuyens_timtheotramdau_android
+
       get :tuyens_timtheotramcuoi_android
     end
   end
