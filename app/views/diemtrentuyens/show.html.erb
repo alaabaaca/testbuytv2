@@ -3,7 +3,7 @@
 
 <p>
   <b>Tuyến xe:</b>
-  <% @tuyen = Tuyen.find_by_matuyen(@diquatram.matuyen) %>
+  <% @tuyen = Tuyen.find_by_matuyen(@diemtrentuyen.matuyen) %>
   [<%=  @tuyen.matuyen %>] <%=  @tuyen.tentuyen + ' - ' + @tuyen.tentuyen2 %>
 </p>
 

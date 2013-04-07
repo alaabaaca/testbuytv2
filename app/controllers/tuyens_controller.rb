@@ -138,6 +138,8 @@ class TuyensController < ApplicationController
   end
 
   def tuyens_timtheotramcuoi_android
+    #puts "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    #puts params[:id]
     @tuyens = Tuyen.find_all_by_tentuyen2(params[:id])
 
     @result = {"success" => "1", "tuyens" => @tuyens}
