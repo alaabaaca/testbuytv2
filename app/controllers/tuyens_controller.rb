@@ -1,7 +1,11 @@
 class TuyensController < ApplicationController
 
+=begin
+  before_filter :authenticate_user!, :except => [:tuyens_tram_android,
+                                                 :tuyens_timtheoma_android, :tuyens_timtheotramdau_android,
+                                                  :tuyens_timtheotramcuoi_android]
+=end
 
-  #before_filter :authenticate_user!
   #before_filter :kiemtra_admin
   #def kiemtra_admin
     #if current_user.email != 'admin@buytcantho.com' then
