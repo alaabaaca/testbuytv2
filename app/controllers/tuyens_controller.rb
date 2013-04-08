@@ -126,7 +126,7 @@ class TuyensController < ApplicationController
   end
 
   def tuyens_timtheoma_android
-    @tuyens = Tuyen.find_all_by_matuyen(params[:id])
+    @tuyens = Tuyen.order('matuyen ASC').find_all_by_matuyen(params[:id])
 
     @result = {"success" => "1", "tuyens" => @tuyens}
     render :json => @result
@@ -135,7 +135,7 @@ class TuyensController < ApplicationController
   def tuyens_timtheotramdau_android
     #puts "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
     #puts params[:id]
-    @tuyens = Tuyen.find_all_by_tentuyen(params[:id])
+    @tuyens = Tuyen.order('matuyen ASC').find_all_by_tentuyen(params[:id])
 
     @result = {"success" => "1", "tuyens" => @tuyens}
     render :json => @result
@@ -144,7 +144,7 @@ class TuyensController < ApplicationController
   def tuyens_timtheotramcuoi_android
     #puts "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
     #puts params[:id]
-    @tuyens = Tuyen.find_all_by_tentuyen2(params[:id])
+    @tuyens = Tuyen.order('matuyen ASC').find_all_by_tentuyen2(params[:id])
 
     @result = {"success" => "1", "tuyens" => @tuyens}
     render :json => @result
