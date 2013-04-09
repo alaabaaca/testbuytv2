@@ -1,8 +1,8 @@
 <h2>Danh sách chuyến xe</h2>
 
-<%= will_paginate @posts %>
 
-<table class="table">
+
+<table class="table ">
   <tr>
     <th>Biển số xe</th>
     <th>Tuyến</th>
@@ -22,7 +22,7 @@
                @congty = Congty.find(@mact) %>
             <td><%= @congty.tenct %></td>
             <td><%= chuyen.soghe %></td>
-            <td>
+            <td style="text-align: right">
               <%= link_to chuyen, :class => 'btn  btn-mini btn-info' do %>
                   <i class="icon-info-sign"></i>
               <% end %>
@@ -42,5 +42,11 @@
 
 <br/>
 
+
 <%= link_to 'Thêm mới', new_chuyen_path, :class => 'btn btn-success' %>
+
+
+<div style=" float: right;" class="flickr_pagination">
+  <%= will_paginate @posts %>
+</div>
 

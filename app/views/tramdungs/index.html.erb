@@ -1,6 +1,6 @@
 <h1>Trạm dừng</h1>
 
-<%= will_paginate @posts %>
+
 
 <table  class="table table-striped">
   <tr>
@@ -14,7 +14,7 @@
   <tr>
     <td><%= tramdung.tentram %></td>
     <td><%= tramdung.diachitram %></td>
-    <td>
+    <td style="text-align: right">
       <%= link_to tramdung, :class => 'btn  btn-mini btn-info' do %>
           <i class="icon-info-sign"></i>
       <% end %>
@@ -34,3 +34,7 @@
 <br />
 
 <%= link_to 'Thêm mới', new_tramdung_path, :class =>'btn btn-success' %>
+
+<div style=" float: right;" class="flickr_pagination">
+  <%= will_paginate @posts %>
+</div>

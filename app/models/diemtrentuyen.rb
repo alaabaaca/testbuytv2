@@ -11,5 +11,5 @@ class Diemtrentuyen < ActiveRecord::Base
   validates :vido,
             :presence =>  { :message => "Vi do không được rỗng"}
 
-  self.per_page = 5
+  self.per_page = 10
 end

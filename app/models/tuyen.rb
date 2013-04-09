@@ -32,6 +32,6 @@ class Tuyen < ActiveRecord::Base
             :numericality => {:only_integer => true, :greater_than => 0,
                               :message => "Cự ly phải là số nguyên dương"}
 
-  self.per_page = 5
+  self.per_page = 10
 
 end

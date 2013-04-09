@@ -16,6 +16,6 @@ class Taikhoan < ActiveRecord::Base
     #self.matkhau = Digest::MD5.hexdigest(self.matkhau)
  # end
 
-  self.per_page = 5
+  self.per_page = 10
 
 end

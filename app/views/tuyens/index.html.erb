@@ -1,8 +1,8 @@
 <h1>Tuyến xe</h1>
 
-<%= will_paginate @posts %>
 
-<table  class="table">
+
+<table  class="table table-striped">
   <tr>
     <th>Mã tuyến</th>
     <th>Tên tuyến</th>
@@ -17,7 +17,7 @@
     <td><%= tuyen.tentuyen + " - " + tuyen.tentuyen2 %></td>
     <td><%= tuyen.loaihinh %></td>
     <td><%= tuyen.culy %></td>
-    <td>
+    <td style="text-align: right">
       <%= link_to tuyen, :class => 'btn  btn-mini btn-info' do %>
           <i class="icon-info-sign"></i>
       <% end %>
@@ -40,3 +40,7 @@
 <br />
 
 <%= link_to 'Thêm mới', new_tuyen_path, :class =>'btn btn-success' %>
+
+<div style=" float: right;" class="flickr_pagination">
+  <%= will_paginate @posts %>
+</div>

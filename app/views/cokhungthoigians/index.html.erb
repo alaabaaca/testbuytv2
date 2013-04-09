@@ -1,6 +1,5 @@
 <h2>Khung thời gian của các chuyến xe</h2>
 
-<%= will_paginate @cokhungthoigians %>
 
 <table class="table table-striped">
   <tr>
@@ -27,7 +26,7 @@
                    @di = @khungthoigian.di
                    @den = @khungthoigian.den %>
                 <td><%= @di.strftime("%H:%M:%S") %> - <%= @den.strftime("%H:%M:%S") %></td>
-                <td>
+                <td style="text-align: right">
                   <%= link_to cokhungthoigian, :class => 'btn  btn-mini btn-info' do %>
                       <i class="icon-info-sign"></i>
                   <% end %>
@@ -51,3 +50,7 @@
 <br/>
 
 <%= link_to 'Thêm mới', new_cokhungthoigian_path, :class => 'btn btn-success' %>
+
+<div style=" float: right;" class="flickr_pagination">
+  <%= will_paginate @cokhungthoigians %>
+</div>

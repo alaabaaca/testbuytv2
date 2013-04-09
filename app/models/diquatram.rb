@@ -14,6 +14,6 @@ class Diquatram < ActiveRecord::Base
   validates :matram, :uniqueness => {:scope => :matuyen,
   :message => 'Dữ liệu này đã bị trùng. Vui lòng chọn giá trị khác cho mã trạm hoặc mã tuyến'}
 
-  self.per_page = 5
+  self.per_page = 10
 
 end

@@ -1,6 +1,5 @@
 <h1>Các khung thời gian</h1>
 
-<%= will_paginate @posts %>
 
 <table class="table table-striped">
   <tr>
@@ -15,7 +14,7 @@
     <td><%= khungthoigian.id %></td>
     <td><%= khungthoigian.di.strftime("%H:%M:%S") %></td>
     <td><%= khungthoigian.den.strftime("%H:%M:%S") %></td>
-    <td>
+    <td style="text-align: right">
       <%= link_to khungthoigian, :class => 'btn  btn-mini btn-info' do %>
           <i class="icon-info-sign"></i>
       <% end %>
@@ -35,3 +34,7 @@
 <br />
 
 <%= link_to 'Thêm mới', new_khungthoigian_path, :class =>'btn btn-success' %>
+
+<div style=" float: right;" class="flickr_pagination">
+  <%= will_paginate @posts %>
+</div>

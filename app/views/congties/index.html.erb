@@ -1,6 +1,6 @@
 <h1>Danh sách công ty</h1>
 
-<%= will_paginate @posts %>
+
 
 <table class="table table-striped">
   <tr>
@@ -15,7 +15,7 @@
     <td><%= congty.tenct %></td>
     <td><%= congty.diachict %></td>
     <td><%= congty.sodtct %></td>
-    <td>
+    <td style="text-align: right">
       <%= link_to congty, :class => 'btn  btn-mini btn-info' do %>
           <i class="icon-info-sign"></i>
       <% end %>
@@ -35,3 +35,8 @@
 <br />
 
 <%= link_to 'Thêm công ty', new_congty_path, :class =>'btn btn-success' %>
+
+
+<div style=" float: right;" class="flickr_pagination">
+  <%= will_paginate @posts %>
+</div>

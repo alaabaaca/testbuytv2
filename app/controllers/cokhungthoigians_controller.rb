@@ -27,7 +27,7 @@ class CokhungthoigiansController < ApplicationController
             #@cokhungtgs.append(@cokhungtg)
           end
         end
-        @cokhungthoigians = @cokhungtgs.paginate(:page => params[:page], :per_page => 5)
+        @cokhungthoigians = @cokhungtgs.paginate(:page => params[:page], :per_page => 10)
       end
     else
       @cokhungthoigians = Cokhungthoigian.paginate(:page => params[:page]).order('biensoxe ASC')

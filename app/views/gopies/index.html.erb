@@ -1,6 +1,6 @@
 <h1>Danh sách góp ý</h1>
 
-<%= will_paginate @gopies %>
+
 
 
 <table class="table table-striped">
@@ -16,7 +16,7 @@
       <tr>
         <td><%= gopy.biensoxe %></td>
         <td><%= gopy.noidung %></td>
-        <td>
+        <td style="text-align: right">
           <%= link_to gopy, :class => 'btn  btn-mini btn-info' do %>
               <i class="icon-info-sign"></i>
           <% end %>
@@ -30,5 +30,10 @@
   <% end %>
 
 </table>
+
+
+<div style=" float: right;" class="flickr_pagination">
+  <%= will_paginate @posts %>
+</div>
 
 

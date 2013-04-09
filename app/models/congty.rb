@@ -16,6 +16,6 @@ class Congty < ActiveRecord::Base
       :message => "Số điện thoại phải là chuỗi số nguyên dương"
   }
 
-  self.per_page = 5
+  self.per_page = 10
 
 end
