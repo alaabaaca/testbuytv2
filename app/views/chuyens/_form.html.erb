@@ -13,28 +13,46 @@
           </ul>
         </div>
     <% end %>
-    <div class="field">
-      <%= f.label "Biển số xe: " %>
-      <br/>
-      <%= f.text_field :biensoxe %>
-    </div>
-    <div class="field">
-      <%= f.label "Công ty: " %>
-      <br/>
-      <%= f.select("mact", Congty.all.collect { |c| [c.tenct, c.id] }, {:prompt => "Chọn công ty"}) %>
-    </div>
-    <div class="field">
-      <%= f.label "Tuyến xe: " %>
-      <br/>
-      <%= f.select("matuyen", Tuyen.all.collect { |t| [t.tentuyen + " - " + t.tentuyen2, t.matuyen] }, {:prompt => "Chọn tuyến"}) %>
-    </div>
-    <div class="field">
-      <%= f.label "Số ghế: " %>
-      <br/>
-      <%= f.number_field :soghe %>
-    </div>
-    <div class="actions">
-      <button class="btn btn-primary" type="submit">Lưu</button>
-      <%= link_to "Hủy", chuyens_path, :class => 'btn'  %>
-    </div>
+
+    <table style="margin-left: auto;
+            margin-right: auto; ">
+      <tr>
+        <td>
+          <div class="field" style="text-align: left">
+            <%= f.label "Biển số xe: " %>
+
+            <%= f.text_field :biensoxe %>
+          </div>
+          <div class="field">
+            <%= f.label "Công ty: " %>
+            <br/>
+            <%= f.select("mact", Congty.all.collect { |c| [c.tenct, c.id] }, {:prompt => "Chọn công ty"}) %>
+          </div>
+          <div class="field">
+            <%= f.label "Tuyến xe: " %>
+            <br/>
+            <%= f.select("matuyen", Tuyen.all.collect { |t| [t.tentuyen + " - " + t.tentuyen2, t.matuyen] }, {:prompt => "Chọn tuyến"}) %>
+          </div>
+          <div class="field">
+            <%= f.label "Số ghế: " %>
+            <br/>
+            <%= f.number_field :soghe %>
+          </div>
+        </td>
+      </tr>
+      </table>
+
+    </br>
+
+    <table style="margin-left: auto;
+            margin-right: auto; ">
+      <tr>
+        <td>
+          <div class="actions">
+            <button class="btn btn-primary" type="submit">Lưu</button>
+            <%= link_to "Hủy", chuyens_path, :class => 'btn' %>
+        </td>
+        </div>
+      </tr>
+    </table>
 <% end %>

@@ -1,30 +1,47 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Mã:</b>
-  <%= @cokhungthoigian.id %>
-</p>
 
-<p>
-  <b>Biển số xe:</b>
-  <%= @cokhungthoigian.biensoxe %>
-</p>
+<table style="margin-left: auto;
+        margin-right: auto;">
+  <tr>
+    <td>
+      <p>
+        <b>Mã:</b>
+        <%= @cokhungthoigian.id %>
+      </p>
 
-<p>
-  <b>Lượt:</b>
-  <% @luot = @cokhungthoigian.luot %>
- <% if @luot == 0  %>  Đi <% else %> Về    <% end %>
+      <p>
+        <b>Biển số xe:</b>
+        <%= @cokhungthoigian.biensoxe %>
+      </p>
 
-</p>
+      <p>
+        <b>Lượt:</b>
+        <% @luot = @cokhungthoigian.luot %>
+        <% if @luot == 0 %> Đi
+        <% else %> Về
+        <% end %>
 
-<p>
-  <b>Thời gian:</b>
-  <% @khungthoigian = Khungthoigian.find(@cokhungthoigian.makhungtg)
-     @di = @khungthoigian.di
-     @den = @khungthoigian.den %>
-  <%= @di.strftime("%H:%M:%S") %> - <%= @den.strftime("%H:%M:%S") %>
-</p>
+      </p>
 
+      <p>
+        <b>Thời gian:</b>
+        <% @khungthoigian = Khungthoigian.find(@cokhungthoigian.makhungtg)
+           @di = @khungthoigian.di
+           @den = @khungthoigian.den %>
+        <%= @di.strftime("%H:%M:%S") %> - <%= @den.strftime("%H:%M:%S") %>
+      </p>
 
-<%= link_to 'Cập nhật', edit_cokhungthoigian_path(@khungthoigian), :class => 'btn' %> |
-<%= link_to 'Quay lại danh sách', cokhungthoigians_path, :class => 'btn' %>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+
+      <%= link_to 'Cập nhật', edit_cokhungthoigian_path(@khungthoigian), :class => 'btn' %> |
+      <%= link_to 'Quay lại danh sách', cokhungthoigians_path, :class => 'btn' %>
+    </td>
+  </tr>
+
+</table>
+

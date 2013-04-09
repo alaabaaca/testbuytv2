@@ -1,19 +1,31 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Mã:</b>
-  <%= @gopy.id %>
-</p>
+<table style="margin-left: auto;
+        margin-right: auto;">
+  <tr>
+    <td>
+      <p>
+        <b>Mã:</b>
+        <%= @gopy.id %>
+      </p>
 
-<p>
-  <b>Biển số xe:</b>
-  <%= @gopy.biensoxe %>
-</p>
+      <p>
+        <b>Biển số xe:</b>
+        <%= @gopy.biensoxe %>
+      </p>
 
-<p>
-  <b>Nội dung:</b>
-  <%= @gopy.noidung %>
-</p>
+      <p>
+        <b>Nội dung:</b>
+        <%= @gopy.noidung %>
+      </p>
+    </td>
+  </tr>
 
+  <tr>
+    <td>
 
-<%= link_to 'Quay lại danh sách', gopies_path, :class => 'btn' %>
+      <%= link_to 'Quay lại danh sách', gopies_path, :class => 'btn' %>
+    </td>
+  </tr>
+
+</table>

@@ -1,45 +1,58 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Mã tuyến:</b>
-  <%= @tuyen.matuyen %>
-</p>
+<table style="margin-left: auto;
+        margin-right: auto;">
+  <tr>
+    <td>
+      <p>
+        <b>Mã tuyến:</b>
+        <%= @tuyen.matuyen %>
+      </p>
 
-<p>
-  <b>Tên tuyến:</b>
-  <%= @tuyen.tentuyen + " - " + @tuyen.tentuyen2 %>
-</p>
+      <p>
+        <b>Tên tuyến:</b>
+        <%= @tuyen.tentuyen + " - " + @tuyen.tentuyen2 %>
+      </p>
 
-<p>
-  <b>Loại hình:</b>
-  <%= @tuyen.loaihinh %>
-</p>
+      <p>
+        <b>Loại hình:</b>
+        <%= @tuyen.loaihinh %>
+      </p>
 
-<p>
-  <b>Cự ly:</b>
-  <%= @tuyen.culy %> km
-</p>
+      <p>
+        <b>Cự ly:</b>
+        <%= @tuyen.culy %> km
+      </p>
 
-<p>
-  <b>Số chuyến:</b>
-  <%= @tuyen.sochuyen %>
-</p>
+      <p>
+        <b>Số chuyến:</b>
+        <%= @tuyen.sochuyen %>
+      </p>
 
-<p>
-  <b>Thời gian chuyến:</b>
-  <%= @tuyen.thoigianchuyen %> phút
-</p>
+      <p>
+        <b>Thời gian chuyến:</b>
+        <%= @tuyen.thoigianchuyen %> phút
+      </p>
 
-<p>
-  <b>Giãn cách:</b>
-  <%= @tuyen.giancach %>  phút
-</p>
+      <p>
+        <b>Giãn cách:</b>
+        <%= @tuyen.giancach %>  phút
+      </p>
 
-<p>
-  <b>Thời gian hoạt động:</b>
-  <%= @tuyen.tghoatdong %>
-</p>
+      <p>
+        <b>Thời gian hoạt động:</b>
+        <%= @tuyen.tghoatdong %>
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <%= link_to 'Cập nhật', edit_tuyen_path(@tuyen), :class => 'btn' %> |
+      <%= link_to 'Quay lại danh sách', tuyens_path, :class => 'btn' %>
+    </td>
+  </tr>
+
+</table>
 
 
-<%= link_to 'Cập nhật', edit_tuyen_path(@tuyen), :class => 'btn' %> |
-<%= link_to 'Quay lại danh sách', tuyens_path, :class => 'btn' %>

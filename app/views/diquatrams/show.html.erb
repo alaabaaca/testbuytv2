@@ -1,23 +1,36 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Mã:</b>
-  <%= @diquatram.id %>
-</p>
+<table style="margin-left: auto;
+        margin-right: auto;">
+  <tr>
+    <td>
+      <p>
+        <b>Mã:</b>
+        <%= @diquatram.id %>
+      </p>
 
-<p>
-  <b>Tuyến xe:</b>
-  <% @tuyen = Tuyen.find_by_matuyen(@diquatram.matuyen) %>
- [<%=  @tuyen.matuyen %>] <%=  @tuyen.tentuyen + ' - ' + @tuyen.tentuyen2 %>
-</p>
+      <p>
+        <b>Tuyến xe:</b>
+        <% @tuyen = Tuyen.find_by_matuyen(@diquatram.matuyen) %>
+        [<%= @tuyen.matuyen %>] <%= @tuyen.tentuyen + ' - ' + @tuyen.tentuyen2 %>
+      </p>
 
-<p>
-  <b>Trạm dừng:</b>
-  <% @matram = @diquatram.matram
-     @tramdung = Tramdung.find_by_id(@matram) %>
-<%= @tramdung.tentram %>
-</p>
+      <p>
+        <b>Trạm dừng:</b>
+        <% @matram = @diquatram.matram
+           @tramdung = Tramdung.find_by_id(@matram) %>
+        <%= @tramdung.tentram %>
+      </p>
+    </td>
+  </tr>
 
+  <tr>
+    <td>
 
-<%= link_to 'Cập nhật', edit_diquatram_path(@diquatram), :class => 'btn' %> |
-<%= link_to 'Quay lại danh sách', diquatrams_path, :class => 'btn' %>
+      <%= link_to 'Cập nhật', edit_diquatram_path(@diquatram), :class => 'btn' %> |
+      <%= link_to 'Quay lại danh sách', diquatrams_path, :class => 'btn' %>
+
+    </td>
+  </tr>
+
+</table>

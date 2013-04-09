@@ -1,30 +1,42 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Mã:</b>
-  <%= @tramdung.id %>
-</p>
+<table style="margin-left: auto;
+        margin-right: auto;">
+  <tr>
+    <td>
+      <p>
+        <b>Mã:</b>
+        <%= @tramdung.id %>
+      </p>
 
-<p>
-  <b>Tên trạm:</b>
-  <%= @tramdung.tentram %>
-</p>
+      <p>
+        <b>Tên trạm:</b>
+        <%= @tramdung.tentram %>
+      </p>
 
-<p>
-  <b>Địa chỉ:</b>
-  <%= @tramdung.diachitram %>
-</p>
+      <p>
+        <b>Địa chỉ:</b>
+        <%= @tramdung.diachitram %>
+      </p>
 
-<p>
-  <b>Vĩ độ:</b>
-  <%= @tramdung.vido %>
-</p>
+      <p>
+        <b>Vĩ độ:</b>
+        <%= @tramdung.vido %>
+      </p>
 
-<p>
-  <b>Kinh độ:</b>
-  <%= @tramdung.kinhdo %>
-</p>
+      <p>
+        <b>Kinh độ:</b>
+        <%= @tramdung.kinhdo %>
+      </p>
+    </td>
+  </tr>
 
+  <tr>
+    <td>
 
-<%= link_to 'Cập nhật', edit_tramdung_path(@tramdung), :class => 'btn' %> |
-<%= link_to 'Quay lại danh sách', tramdungs_path, :class => 'btn' %>
+      <%= link_to 'Cập nhật', edit_tramdung_path(@tramdung), :class => 'btn' %> |
+      <%= link_to 'Quay lại danh sách', tramdungs_path, :class => 'btn' %>
+    </td>
+  </tr>
+
+</table>

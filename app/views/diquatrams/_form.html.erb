@@ -13,18 +13,28 @@
         </div>
     <% end %>
 
-    <div class="field">
-      <%= f.label "Tuyến xe:" %>
-      <br/>
-      <%= f.select("matuyen", Tuyen.all.collect { |t| [t.tentuyen+ " - " + t.tentuyen2, t.matuyen] }, {:prompt => "Chọn tuyến xe"}) %>
-    </div>
-    <div class="field">
-      <%= f.label "Trạm dừng:" %>
-      <br/>
-      <%= f.select("matram", Tramdung.all.collect { |t| [t.tentram, t.id] }, {:prompt => "Chọn tên trạm xe"}) %>
-    </div>
-    <div class="actions">
+    <table style="margin-left: auto;
+            margin-right: auto; ">
+      <tr>
+        <td>
+
+          <div class="field">
+            <%= f.label "Tuyến xe:" %>
+
+            <%= f.select("matuyen", Tuyen.all.collect { |t| [t.tentuyen+ " - " + t.tentuyen2, t.matuyen] }, {:prompt => "Chọn tuyến xe"}) %>
+          </div>
+          <div class="field">
+            <%= f.label "Trạm dừng:" %>
+            <br/>
+            <%= f.select("matram", Tramdung.all.collect { |t| [t.tentram, t.id] }, {:prompt => "Chọn tên trạm xe"}) %>
+          </div>
+        </td>
+      </tr>
+    </table>
+    </br>
+
+    <div class="actions" style="text-align: center">
       <button class="btn btn-primary" type="submit">Lưu</button>
-      <%= link_to "Hủy", diquatrams_path, :class => 'btn'  %>
+      <%= link_to "Hủy", diquatrams_path, :class => 'btn' %>
     </div>
 <% end %>

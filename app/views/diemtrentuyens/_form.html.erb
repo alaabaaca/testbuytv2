@@ -14,26 +14,35 @@
         </div>
     <% end %>
 
-    <div class="field">
-      <%= f.label "Tuyến xe: " %>
-      <br/>
-      <%= f.select("matuyen", Tuyen.all.collect { |c| [c.tentuyen+ " - " + c.tentuyen2, c.matuyen]}, {:promt => "Chọn tuyen"}) %>
-    </div>
+    <table style="margin-left: auto;
+            margin-right: auto; ">
+      <tr>
+        <td>
 
-    <div class="field">
-      <%= f.label "Vĩ độ: " %>
-      <br/>
-      <%= f.text_field :vido %>
-    </div>
+          <div class="field">
+            <%= f.label "Tuyến xe: " %>
 
-    <div class="field">
-      <%= f.label "Kinh độ: " %>
-      <br/>
-      <%= f.text_field :kinhdo %>
-    </div>
+            <%= f.select("matuyen", Tuyen.all.collect { |c| [c.tentuyen+ " - " + c.tentuyen2, c.matuyen] }, {:promt => "Chọn tuyen"}) %>
+          </div>
 
-    <div class="actions">
+          <div class="field">
+            <%= f.label "Vĩ độ: " %>
+            <br/>
+            <%= f.text_field :vido %>
+          </div>
+
+          <div class="field">
+            <%= f.label "Kinh độ: " %>
+            <br/>
+            <%= f.text_field :kinhdo %>
+          </div>
+        </td>
+      </tr>
+    </table>
+    </br>
+
+    <div class="actions" style="text-align: center">
       <button class="btn btn-primary" type="submit">Lưu</button>
-      <%= link_to "Hủy", diemtrentuyens_path, :class => 'btn'  %>
+      <%= link_to "Hủy", diemtrentuyens_path, :class => 'btn' %>
     </div>
 <% end %>
