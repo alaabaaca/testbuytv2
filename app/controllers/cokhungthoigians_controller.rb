@@ -123,7 +123,8 @@ class CokhungthoigiansController < ApplicationController
       @luot = Cokhungthoigian.find_by_id(c.id)
       @luots.append(@luot.luot)
     end
-    @result = {"success" => 1, "khungtgs" => @khungtg, "luots" => @luots}
+
+      @result = {"success" => 1, "khungtgs" => @khungtg, "luots" => @luots}
     render :json => @result
   end
 end
