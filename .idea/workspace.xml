@@ -16,7 +16,7 @@
     <file path="/tuyen.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1364961061353" ignored="false" />
     <file path="/diquatram.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1363167052813" ignored="false" />
     <file path="/tramdung.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365068643517" ignored="false" />
-    <file path="/_form.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365601862769" ignored="false" />
+    <file path="/_form.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365603468376" ignored="false" />
     <file path="/index.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365489088480" ignored="false" />
     <file path="/congty.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1363167000385" ignored="false" />
     <file path="/taikhoan.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365056101280" ignored="false" />
@@ -103,19 +103,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cokhungthoigian.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="cokhungthoigian.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/cokhungthoigian.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="119" selection-start="373" selection-end="373" vertical-scroll-proportion="0.4840336">
+            <state line="16" column="119" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/cokhungthoigians/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="56" selection-start="1320" selection-end="1320" vertical-scroll-proportion="-14.0">
+            <state line="37" column="54" selection-start="1318" selection-end="1318" vertical-scroll-proportion="0.64726025">
               <folding />
             </state>
           </provider>
@@ -159,9 +159,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="52" />
+    <option name="y" value="24" />
     <option name="width" value="1301" />
-    <option name="height" value="715" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -984,7 +984,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="52" width="1301" height="715" extended-state="7" />
+    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1133,13 +1133,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/cokhungthoigians/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="56" selection-start="1320" selection-end="1320" vertical-scroll-proportion="-14.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/cokhungthoigians_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="125" column="0" selection-start="3695" selection-end="3695" vertical-scroll-proportion="0.0">
@@ -1149,7 +1142,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/cokhungthoigian.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="119" selection-start="373" selection-end="373" vertical-scroll-proportion="0.4840336">
+        <state line="16" column="119" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/cokhungthoigians/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="54" selection-start="1318" selection-end="1318" vertical-scroll-proportion="0.64726025">
           <folding />
         </state>
       </provider>
