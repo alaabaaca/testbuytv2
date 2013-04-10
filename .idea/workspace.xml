@@ -16,7 +16,7 @@
     <file path="/tuyen.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1364961061353" ignored="false" />
     <file path="/diquatram.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1363167052813" ignored="false" />
     <file path="/tramdung.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365068643517" ignored="false" />
-    <file path="/_form.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365603468376" ignored="false" />
+    <file path="/_form.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365603946210" ignored="false" />
     <file path="/index.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365489088480" ignored="false" />
     <file path="/congty.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1363167000385" ignored="false" />
     <file path="/taikhoan.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365056101280" ignored="false" />
@@ -115,7 +115,7 @@
       <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/cokhungthoigians/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="52" selection-start="1482" selection-end="1482" vertical-scroll-proportion="0.7089041">
+            <state line="39" column="34" selection-start="1464" selection-end="1464" vertical-scroll-proportion="0.7089041">
               <folding />
             </state>
           </provider>
@@ -1149,7 +1149,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/cokhungthoigians/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="52" selection-start="1482" selection-end="1482" vertical-scroll-proportion="0.7089041">
+        <state line="39" column="34" selection-start="1464" selection-end="1464" vertical-scroll-proportion="0.7089041">
           <folding />
         </state>
       </provider>
