@@ -35,7 +35,9 @@
           <div class="field">
             <%= f.label "Lượt:" %>
             <br/>
-            <%= f.select :luot, options_for_select([["Di", 0], ["Ve", 1]]), {:prompt => "Chọn lượt đi hoặc về"} %>
+            <select id="cokhungthoigian_luot" name="cokhungthoigian[luot]"><option value="">Chọn lượt đi hoặc về</option>
+              <option value="0">Di</option>
+              <option value="1">Ve</option></select>
           </div>
           <div class="field">
             <%= f.label "Khung thời gian:" %>
