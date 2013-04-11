@@ -1,3 +1,4 @@
+# encoding: UTF-8
 class DiquatramsController < ApplicationController
 
 =begin
@@ -72,7 +73,7 @@ class DiquatramsController < ApplicationController
 
     respond_to do |format|
       if @diquatram.save
-        format.html { redirect_to @diquatram, notice: 'Diquatram was successfully created.' }
+        format.html { redirect_to @diquatram, notice: 'Thêm trạm của tuyến thành công.' }
         format.json { render json: @diquatram, status: :created, location: @diquatram }
       else
         format.html { render action: "new" }
@@ -88,7 +89,7 @@ class DiquatramsController < ApplicationController
 
     respond_to do |format|
       if @diquatram.update_attributes(params[:diquatram])
-        format.html { redirect_to @diquatram, notice: 'Diquatram was successfully updated.' }
+        format.html { redirect_to @diquatram, notice: 'Cập nhật trạm của tuyến thành công.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

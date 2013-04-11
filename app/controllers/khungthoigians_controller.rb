@@ -1,3 +1,4 @@
+# encoding: UTF-8
 class KhungthoigiansController < ApplicationController
   # GET /khungthoigians
   # GET /khungthoigians.json
@@ -44,7 +45,7 @@ class KhungthoigiansController < ApplicationController
 
     respond_to do |format|
       if @khungthoigian.save
-        format.html { redirect_to @khungthoigian, notice: 'Khungthoigian was successfully created.' }
+        format.html { redirect_to @khungthoigian, notice: 'Thêm khung thời gian thành công.' }
         format.json { render json: @khungthoigian, status: :created, location: @khungthoigian }
       else
         format.html { render action: "new" }
@@ -60,7 +61,7 @@ class KhungthoigiansController < ApplicationController
 
     respond_to do |format|
       if @khungthoigian.update_attributes(params[:khungthoigian])
-        format.html { redirect_to @khungthoigian, notice: 'Khungthoigian was successfully updated.' }
+        format.html { redirect_to @khungthoigian, notice: 'Cập nhật khung thời gian thành công.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

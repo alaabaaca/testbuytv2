@@ -1,3 +1,4 @@
+# encoding: UTF-8
 class TaikhoansController < ApplicationController
 
 =begin
@@ -59,7 +60,7 @@ class TaikhoansController < ApplicationController
 
     respond_to do |format|
       if @taikhoan.save
-        format.html { redirect_to @taikhoan, notice: 'Taikhoan was successfully created.' }
+        format.html { redirect_to @taikhoan, notice: 'Thêm tài khoản thành công.' }
         format.json { render json: @taikhoan, status: :created, location: @taikhoan }
       else
         format.html { render action: "new" }
@@ -75,7 +76,7 @@ class TaikhoansController < ApplicationController
 
     respond_to do |format|
       if @taikhoan.update_attributes(params[:taikhoan])
-        format.html { redirect_to @taikhoan, notice: 'Taikhoan was successfully updated.' }
+        format.html { redirect_to @taikhoan, notice: 'Cập nhật tài khoản thành công.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

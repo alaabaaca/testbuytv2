@@ -1,3 +1,4 @@
+# encoding: UTF-8
 class CokhungthoigiansController < ApplicationController
 
   # GET /cokhungthoigians
@@ -73,7 +74,7 @@ class CokhungthoigiansController < ApplicationController
 
     respond_to do |format|
       if @cokhungthoigian.save
-        format.html { redirect_to @cokhungthoigian, notice: 'Cokhungthoigian was successfully created.' }
+        format.html { redirect_to @cokhungthoigian, notice: 'Thêm giờ chạy của chuyến xe thành công.' }
         format.json { render json: @cokhungthoigian, status: :created, location: @cokhungthoigian }
       else
         format.html { render action: "new" }
@@ -89,7 +90,7 @@ class CokhungthoigiansController < ApplicationController
 
     respond_to do |format|
       if @cokhungthoigian.update_attributes(params[:cokhungthoigian])
-        format.html { redirect_to @cokhungthoigian, notice: 'Cokhungthoigian was successfully updated.' }
+        format.html { redirect_to @cokhungthoigian, notice: 'Cập nhật giờ chạy của chuyến xe thành công.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

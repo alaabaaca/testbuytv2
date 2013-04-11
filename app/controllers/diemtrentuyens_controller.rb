@@ -1,3 +1,4 @@
+# encoding: UTF-8
 class DiemtrentuyensController < ApplicationController
 
 
@@ -58,7 +59,7 @@ class DiemtrentuyensController < ApplicationController
 
     respond_to do |format|
       if @diemtrentuyen.save
-        format.html { redirect_to @diemtrentuyen, notice: 'Diemtrentuyen was successfully created.' }
+        format.html { redirect_to @diemtrentuyen, notice: 'Thêm điểm trên tuyến thành công.' }
         format.json { render json: @diemtrentuyen, status: :created, location: @diemtrentuyen }
       else
         format.html { render action: "new" }
@@ -74,7 +75,7 @@ class DiemtrentuyensController < ApplicationController
 
     respond_to do |format|
       if @diemtrentuyen.update_attributes(params[:diemtrentuyen])
-        format.html { redirect_to @diemtrentuyen, notice: 'Diemtrentuyen was successfully updated.' }
+        format.html { redirect_to @diemtrentuyen, notice: 'Cập nhật điểm trên tuyến thành công.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

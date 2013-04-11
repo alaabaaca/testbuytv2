@@ -1,8 +1,8 @@
 <h1>Tuyến xe</h1>
 
+<%= session[:quyen] %>
 
-
-<table  class="table ">
+<table class="table ">
   <tr>
     <th>Mã tuyến</th>
     <th>Tên tuyến</th>
@@ -11,35 +11,38 @@
     <th></th>
   </tr>
 
-<% @tuyens.each do |tuyen| %>
-  <tr>
-    <td><%= tuyen.matuyen %></td>
-    <td><%= tuyen.tentuyen + " - " + tuyen.tentuyen2 %></td>
-    <td><%= tuyen.loaihinh %></td>
-    <td><%= tuyen.culy %></td>
-    <td style="text-align: right">
-      <%= link_to tuyen, :class => 'btn  btn-mini btn-info' do %>
-          <i class="icon-info-sign"></i>
-      <% end %>
+  <% @tuyens.each do |tuyen| %>
+      <tr>
+        <td><%= tuyen.matuyen %></td>
+        <td><%= tuyen.tentuyen + " - " + tuyen.tentuyen2 %></td>
+        <td><%= tuyen.loaihinh %></td>
+        <td><%= tuyen.culy %></td>
+        <% if session[:quyen] != 'khach' %>
+            <td style="text-align: right">
+              <%= link_to tuyen, :class => 'btn  btn-mini btn-info' do %>
+                  <i class="icon-info-sign"></i>
+              <% end %>
 
-    &nbsp;
+              &nbsp;
 
-      <%= link_to edit_tuyen_path(tuyen), :class => 'btn  btn-mini btn-warning' do %>
-          <i class="icon-pencil"></i>
-      <% end %>
+              <%= link_to edit_tuyen_path(tuyen), :class => 'btn  btn-mini btn-warning' do %>
+                  <i class="icon-pencil"></i>
+              <% end %>
 
-    &nbsp;
+              &nbsp;
 
-      <%= link_to tuyen_path(tuyen), method: :delete, data: {confirm: "Bạn có chắc chắn muốn xóa"}, :class => 'btn  btn-mini btn-danger' do %>
-          <i class="icon-remove"></i>
-      <% end  %>
-  </tr>
-<% end %>
+              <%= link_to tuyen_path(tuyen), method: :delete, data: {confirm: "Bạn có chắc chắn muốn xóa"}, :class => 'btn  btn-mini btn-danger' do %>
+                  <i class="icon-remove"></i>
+              <% end %>
+            </td>
+        <% end %>
+      </tr>
+  <% end %>
 </table>
 
-<br />
+<br/>
 
-<%= link_to 'Thêm mới', new_tuyen_path, :class =>'btn btn-success' %>
+<%= link_to 'Thêm mới', new_tuyen_path, :class => 'btn btn-success' %>
 
 <div style=" float: right;" class="flickr_pagination">
   <%= will_paginate @posts %>

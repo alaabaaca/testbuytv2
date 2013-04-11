@@ -1,3 +1,4 @@
+# encoding: UTF-8
 class ChuyensController < ApplicationController
   # GET /chuyens
   # GET /chuyens.json
@@ -59,7 +60,8 @@ class ChuyensController < ApplicationController
 
     respond_to do |format|
       if @chuyen.save
-        format.html { redirect_to @chuyen, notice: 'Chuyen was successfully created.' }
+        #format.html { redirect_to @chuyen, notice: 'Chuyen was successfully created.' }
+        format.html { redirect_to @chuyen, notice: 'Thêm chuyến thành công.' }
         format.json { render json: @chuyen, status: :created, location: @chuyen }
       else
         format.html { render action: "new" }
@@ -75,7 +77,7 @@ class ChuyensController < ApplicationController
 
     respond_to do |format|
       if @chuyen.update_attributes(params[:chuyen])
-        format.html { redirect_to @chuyen, notice: 'Chuyen was successfully updated.' }
+        format.html { redirect_to @chuyen, notice: 'Cập nhật chuyến thành công.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

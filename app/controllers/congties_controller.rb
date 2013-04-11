@@ -1,3 +1,4 @@
+# encoding: UTF-8
 class CongtiesController < ApplicationController
 =begin
 
@@ -57,7 +58,7 @@ class CongtiesController < ApplicationController
 
     respond_to do |format|
       if @congty.save
-        format.html { redirect_to @congty, notice: 'Congty was successfully created.' }
+        format.html { redirect_to @congty, notice: 'Thêm công ty thành công.' }
         format.json { render json: @congty, status: :created, location: @congty }
       else
         format.html { render action: "new" }
@@ -73,7 +74,7 @@ class CongtiesController < ApplicationController
 
     respond_to do |format|
       if @congty.update_attributes(params[:congty])
-        format.html { redirect_to @congty, notice: 'Congty was successfully updated.' }
+        format.html { redirect_to @congty, notice: 'Cập nhật công ty thành công.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

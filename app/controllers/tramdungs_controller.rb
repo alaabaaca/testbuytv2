@@ -1,3 +1,4 @@
+# encoding: UTF-8
 class TramdungsController < ApplicationController
 
 =begin
@@ -65,7 +66,7 @@ class TramdungsController < ApplicationController
 
     respond_to do |format|
       if @tramdung.save
-        format.html { redirect_to @tramdung, notice: 'Tramdung was successfully created.' }
+        format.html { redirect_to @tramdung, notice: 'Thêm trạm dừng thành công.' }
         format.json { render json: @tramdung, status: :created, location: @tramdung }
       else
         format.html { render action: "new" }
@@ -81,7 +82,7 @@ class TramdungsController < ApplicationController
 
     respond_to do |format|
       if @tramdung.update_attributes(params[:tramdung])
-        format.html { redirect_to @tramdung, notice: 'Tramdung was successfully updated.' }
+        format.html { redirect_to @tramdung, notice: 'Cập nhật trạm dừng thành công.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

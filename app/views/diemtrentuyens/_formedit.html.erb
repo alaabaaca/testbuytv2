@@ -1,0 +1,41 @@
+<%= simple_form_for @diemtrentuyen, :html => {:class => 'form-horizontal'} do |f| %>
+
+    <% if @diemtrentuyen.errors.any? %>
+        <div id="error_explanation">
+          <h2>Có <%= pluralize(@diemtrentuyen.errors.count, "") %>lỗi :</h2>
+
+          <ul>
+            <% @diemtrentuyen.errors.values.each do |msg| %>
+                <% msg.each do |m| %>
+                    <li><%= m %></li>
+                <% end %>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <table style="margin-left: auto;
+            margin-right: auto; ">
+      <tr>
+        <td>
+          <div class="field">
+            <%= f.label "Vĩ độ: " %>
+
+            <%= f.text_field :vido %>
+          </div>
+
+          <div class="field">
+            <%= f.label "Kinh độ: " %>
+            <br/>
+            <%= f.text_field :kinhdo %>
+          </div>
+        </td>
+      </tr>
+    </table>
+    </br>
+
+    <div class="actions" style="text-align: center">
+      <button class="btn btn-primary" type="submit">Lưu</button>
+      <%= link_to "Hủy", diemtrentuyens_path, :class => 'btn' %>
+    </div>
+<% end %>

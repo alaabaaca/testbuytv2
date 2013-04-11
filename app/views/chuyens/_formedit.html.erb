@@ -1,0 +1,53 @@
+<%= simple_form_for @chuyen, :html => {:class => 'form-horizontal'} do |f| %>
+
+    <% if @chuyen.errors.any? %>
+        <div id="error_explanation">
+          <h2>Có <%= pluralize(@chuyen.errors.count, "") %>lỗi :</h2>
+
+          <ul>
+            <% @chuyen.errors.values.each do |msg| %>
+                <% msg.each do |m| %>
+                    <li><%= m %></li>
+                <% end %>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <table style="margin-left: auto;
+            margin-right: auto; ">
+      <tr>
+        <td>
+          <div class="field">
+            <%= f.label "Công ty: " %>
+
+            <%= f.select("mact", Congty.all.collect { |c| [c.tenct, c.id] }, {:prompt => "Chọn công ty"}) %>
+          </div>
+          <div class="field">
+            <%= f.label "Tuyến xe: " %>
+            <br/>
+            <%= f.select("matuyen", Tuyen.all.collect { |t| [t.tentuyen + " - " + t.tentuyen2, t.matuyen] }, {:prompt => "Chọn tuyến"}) %>
+          </div>
+          <div class="field">
+            <%= f.label "Số ghế: " %>
+            <br/>
+            <%= f.number_field :soghe %>
+          </div>
+        </td>
+      </tr>
+      </table>
+
+    </br>
+
+    <table style="margin-left: auto;
+            margin-right: auto; ">
+      <tr>
+        <td>
+          <div class="actions">
+            <button class="btn btn-primary" type="submit">Lưu</button>
+            <%= link_to "Hủy", chuyens_path, :class => 'btn' %>
+        </td>
+        </div>
+      </tr>
+    </table>
+<% end %>

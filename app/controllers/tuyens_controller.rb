@@ -1,17 +1,31 @@
+# encoding: UTF-8
 class TuyensController < ApplicationController
 
-=begin
-  before_filter :authenticate_user!, :except => [:tuyens_tram_android,
+
+  before_filter :authenticate_user!, :kiemtra_quyen, :except => [:tuyens_tram_android,
                                                  :tuyens_timtheoma_android, :tuyens_timtheotramdau_android,
                                                   :tuyens_timtheotramcuoi_android]
-=end
 
-  #before_filter :kiemtra_admin
-  #def kiemtra_admin
-    #if current_user.email != 'admin@buytcantho.com' then
-      #  redirect_to root_path
-    #end
-  #end
+  def kiemtra_quyen
+    if  user_signed_in?
+      if current_user.admin == 1 then
+        session[:quyen] = 'admin'
+      else
+        @taikhoan = Taikhoan.find_by_tentk(current_user.email);
+
+        if @taikhoan == nil
+          session[:quyen] = 'khach'
+        else
+          session[:quyen] = 'congty'
+        end
+      end
+    else
+      session[:quyen] = 'khach'
+    end
+  end
+
+
+
 
   # GET /tuyens
   # GET /tuyens.json
@@ -75,7 +89,7 @@ class TuyensController < ApplicationController
 
     respond_to do |format|
       if @tuyen.save
-        format.html { redirect_to @tuyen, notice: 'Tuyen was successfully created.' }
+        format.html { redirect_to @tuyen, notice: 'Thêm tuyến thành công.' }
         format.json { render json: @tuyen, status: :created, location: @tuyen }
       else
         format.html { render action: "new" }
@@ -91,7 +105,7 @@ class TuyensController < ApplicationController
 
     respond_to do |format|
       if @tuyen.update_attributes(params[:tuyen])
-        format.html { redirect_to @tuyen, notice: 'Tuyen was successfully updated.' }
+        format.html { redirect_to @tuyen, notice: 'Cập nhật tuyến thành công.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
@@ -113,7 +127,7 @@ class TuyensController < ApplicationController
   end
 
   def tuyens_tram_android
-        @diquatrams = Diquatram.order('matuyen ASC').find_all_by_matram(params[:id])
+    @diquatrams = Diquatram.order('matuyen ASC').find_all_by_matram(params[:id])
     @tuyens = Array.new
 
     @diquatrams.each do |d|
