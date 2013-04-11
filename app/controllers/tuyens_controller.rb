@@ -4,7 +4,7 @@ class TuyensController < ApplicationController
 
   before_filter :authenticate_user!, :kiemtra_quyen, :except => [:tuyens_tram_android,
                                                  :tuyens_timtheoma_android, :tuyens_timtheotramdau_android,
-                                                  :tuyens_timtheotramcuoi_android]
+                                                  :tuyens_timtheotramcuoi_android, :tuyens_android]
 
   def kiemtra_quyen
     if  user_signed_in?
