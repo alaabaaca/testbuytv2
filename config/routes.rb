@@ -11,8 +11,8 @@ BuytCanTho::Application.routes.draw do
 
 
   resources :cokhungthoigians     do
-    member do
-      get :cokhungtgs_android
+    collection do
+      post :cokhungtgs_android
     end
   end
 

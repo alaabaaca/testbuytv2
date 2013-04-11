@@ -111,6 +111,9 @@ class CokhungthoigiansController < ApplicationController
   end
 
   def cokhungtgs_android
+    puts "tessssssssssssssssssssst"
+    puts params[:id]
+
     @cokhungtgs = Cokhungthoigian.find_all_by_biensoxe(params[:id])
 
     @khungtg = Array.new

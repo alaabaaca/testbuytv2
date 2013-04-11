@@ -24,12 +24,6 @@ class ChuyensController < ApplicationController
     end
   end
 
-  def chuyens_android
-    @chuyens = Chuyen.all
-
-    result = {"success" => 1, "chuyens" => @chuyens}
-    render :json => result
-  end
 
   # GET /chuyens/1
   # GET /chuyens/1.json
@@ -101,6 +95,14 @@ class ChuyensController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def chuyens_android
+    @chuyens = Chuyen.all
+
+    result = {"success" => 1, "chuyens" => @chuyens}
+    render :json => result
+  end
+
 
   def chuyens_tuyen_android
     # @tuyen = Tuyen.find_by_id(params[:id])
