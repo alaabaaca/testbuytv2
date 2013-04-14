@@ -103,10 +103,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="cokhungthoigians_controller.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/cokhungthoigians_controller.rb">
+      <file leaf-file-name="_navigation.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/_navigation.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="2" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0330033">
+            <state line="41" column="13" selection-start="1781" selection-end="1781" vertical-scroll-proportion="0.21283785">
               <folding />
             </state>
           </provider>
@@ -125,7 +125,6 @@
         <option value="$PROJECT_DIR$/app/views/khungthoigians/show.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/khungthoigians_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/ability.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_navigation.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/tuyens_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/tramdungs_controller.rb" />
@@ -138,6 +137,7 @@
         <option value="$PROJECT_DIR$/app/controllers/taikhoans_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/gopies_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/diemtrentuyens_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_navigation.html.erb" />
       </list>
     </option>
   </component>
@@ -1001,11 +1001,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="2" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/tramdungs_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="51" selection-start="149" selection-end="149" vertical-scroll-proportion="0.0" />
@@ -1102,7 +1097,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/cokhungthoigians_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="2" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0330033">
+        <state line="16" column="37" selection-start="565" selection-end="565" vertical-scroll-proportion="-1.9075907">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_navigation.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="13" selection-start="1781" selection-end="1781" vertical-scroll-proportion="0.21283785">
           <folding />
         </state>
       </provider>

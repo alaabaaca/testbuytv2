@@ -39,9 +39,9 @@
               <li><%= link_to "Công ty kinh doanh xe buýt", congties_path %></li>
               <li><%= link_to "Tài khoản", taikhoans_path %></li>
           </div>
-          <% elseif @quyen.name == 'Congty'
-             @taikhoan = Taikhoan.find_by_tentk(current_user.email)
-             if @taikhoan != nil %>
+      <% else
+           @taikhoan = Taikhoan.find_by_tentk(current_user.email)
+           if @taikhoan != nil %>
 
               <div class="btn-group">
                 <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
