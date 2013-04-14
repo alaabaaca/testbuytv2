@@ -1,7 +1,14 @@
 BuytCanTho::Application.routes.draw do
 
 
+  resources :roles_users
+
+
+  resources :roles
+
+
   devise_for :users
+  resources :users
 
   resources :diemtrentuyens  do
     member do

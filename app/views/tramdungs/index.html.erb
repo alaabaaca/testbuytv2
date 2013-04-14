@@ -19,13 +19,17 @@
           <i class="icon-info-sign"></i>
       <% end %>
       &nbsp;
+<% if can? :update, Tramdung %>
       <%= link_to edit_tramdung_path(tramdung), :class => 'btn  btn-mini btn-warning' do %>
           <i class="icon-pencil"></i>
       <% end %>
+<% end %>
       &nbsp;
+<% if can? :destroy, Tramdung %>
       <%= link_to tramdung_path(tramdung), method: :delete, data: {confirm: "Bạn có chắc chắn muốn xóa"}, :class => 'btn  btn-mini btn-danger' do %>
           <i class="icon-remove"></i>
       <% end %>
+<% end %>
     </td>
   </tr>
 <% end %>

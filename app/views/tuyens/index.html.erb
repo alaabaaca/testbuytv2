@@ -26,16 +26,18 @@
               <% end %>
 
               &nbsp;
-
+<% if can? :update, Tuyen %>
               <%= link_to edit_tuyen_path(tuyen), :class => 'btn  btn-mini btn-warning' do %>
                   <i class="icon-pencil"></i>
               <% end %>
+<% end %>
 
               &nbsp;
-
+<% if can? :destroy, Tuyen %>
               <%= link_to tuyen_path(tuyen), method: :delete, data: {confirm: "Bạn có chắc chắn muốn xóa"}, :class => 'btn  btn-mini btn-danger' do %>
                   <i class="icon-remove"></i>
               <% end %>
+<% end %>
             </td>
         <% end %>
       </tr>

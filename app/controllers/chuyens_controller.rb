@@ -1,21 +1,28 @@
 # encoding: UTF-8
 class ChuyensController < ApplicationController
+  load_and_authorize_resource
+  skip_authorize_resource  :only => [:index, :show]
+
   # GET /chuyens
   # GET /chuyens.json
-
-
   def index
-    # @chuyens = Chuyen.all
-    if current_user.email != 'admin@buytcantho.com' then
-      session[:taikhoan] = current_user.email
-      @t = session[:taikhoan]
+    if (user_signed_in?) then
+      @user = User.find_by_email(current_user.email)
+      @coquyen = RolesUser.find_by_user_id(@user.id)
+      @quyen = Role.find_by_id(@coquyen.role_id)
+      if @quyen.name != 'Admin' then
+        session[:taikhoan] = current_user.email
+        @t = session[:taikhoan]
 
-      @taikhoan = Taikhoan.find_by_tentk(@t)
-      if (@taikhoan != nil) then
-        @congty = Congty.find_by_id(@taikhoan.mact)
-        @chuyens = Chuyen.paginate(:page => params[:page]).order('biensoxe ASC').find_all_by_mact(@congty.id)
+        @taikhoan = Taikhoan.find_by_tentk(@t)
+        if (@taikhoan != nil) then
+          @congty = Congty.find_by_id(@taikhoan.mact)
+          @chuyens = Chuyen.paginate(:page => params[:page]).order('biensoxe ASC').find_all_by_mact(@congty.id)
+        end
+      else
+        @chuyens = Chuyen.paginate(:page => params[:page]).order('biensoxe ASC')
       end
-    else #@chuyens = Chuyen.all
+    else
       @chuyens = Chuyen.paginate(:page => params[:page]).order('biensoxe ASC')
     end
 
@@ -51,6 +58,7 @@ class ChuyensController < ApplicationController
   # GET /chuyens/1/edit
   def edit
     @chuyen = Chuyen.find(params[:id])
+    #authorize! :update, @chuyen
   end
 
   # POST /chuyens
@@ -135,7 +143,7 @@ class ChuyensController < ApplicationController
     @tuyens = Array.new
     @chuyens.each do |c|
       @tuyen = Tuyen.find_by_id(c.matuyen)
-      @ten =   @tuyen.tentuyen + " - " + @tuyen.tentuyen2
+      @ten = @tuyen.tentuyen + " - " + @tuyen.tentuyen2
       @tuyens.append(@tuyen)
     end
 
@@ -154,7 +162,7 @@ class ChuyensController < ApplicationController
       @chuyens.append(@chuyen)
 
       @tuyen = Tuyen.find_by_id(d.matuyen)
-      @ten =   @tuyen.tentuyen + " - " + @tuyen.tentuyen2
+      @ten = @tuyen.tentuyen + " - " + @tuyen.tentuyen2
       @tuyens.append(@ten)
 
       @congty = Congty.find_by_id(@chuyen.mact)

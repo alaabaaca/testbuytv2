@@ -1,4 +1,7 @@
 class GopiesController < ApplicationController
+  load_and_authorize_resource
+  #skip_authorize_resource :only => [:index]
+
   # GET /gopies
   # GET /gopies.json
   def index

@@ -5,7 +5,6 @@
 
 <table class="table">
   <tr>
-    <th>Mã</th>
     <th>Biển số xe</th>
     <th>Lượt</th>
     <th>Thời gian</th>
@@ -14,35 +13,38 @@
 
   <% if (@cokhungthoigians != nil) then %>
 
-          <% @cokhungthoigians.each do |cokhungthoigian| %>
-              <tr>
-                <td><%= cokhungthoigian.id %></td>
-                <td><%= cokhungthoigian.biensoxe %></td>
-                <% @luot = cokhungthoigian.luot %>
-                <% if @luot == 0 %>
-                    <td>Đi</td>
-                <% else %>
-                    <td>Về</td>
-                <% end %>
-                <% @khungthoigian = Khungthoigian.find(cokhungthoigian.makhungtg)
-                   @di = @khungthoigian.di
-                   @den = @khungthoigian.den %>
-                <td><%= @di.strftime("%H:%M:%S") %> - <%= @den.strftime("%H:%M:%S") %></td>
-                <td style="text-align: right">
-                  <%= link_to cokhungthoigian, :class => 'btn  btn-mini btn-info' do %>
-                      <i class="icon-info-sign"></i>
-                  <% end %>
-                  &nbsp;
+      <% @cokhungthoigians.each do |cokhungthoigian| %>
+          <tr>
+            <td><%= cokhungthoigian.biensoxe %></td>
+            <% @luot = cokhungthoigian.luot %>
+            <% if @luot == 0 %>
+                <td>Đi</td>
+            <% else %>
+                <td>Về</td>
+            <% end %>
+            <% @khungthoigian = Khungthoigian.find(cokhungthoigian.makhungtg)
+               @di = @khungthoigian.di
+               @den = @khungthoigian.den %>
+            <td><%= @di.strftime("%H:%M:%S") %> - <%= @den.strftime("%H:%M:%S") %></td>
+            <td style="text-align: right">
+              <%= link_to cokhungthoigian, :class => 'btn  btn-mini btn-info' do %>
+                  <i class="icon-info-sign"></i>
+              <% end %>
+              &nbsp;
+              <% if can? :update, Cokhungthoigian %>
                   <%= link_to edit_cokhungthoigian_path(cokhungthoigian), :class => 'btn  btn-mini btn-warning' do %>
                       <i class="icon-pencil"></i>
                   <% end %>
-                  &nbsp;
+              <% end %>
+              &nbsp;
+              <% if can? :destroy, Cokhungthoigian %>
                   <%= link_to cokhungthoigian_path(cokhungthoigian), method: :delete, data: {confirm: "Bạn có chắc chắn muốn xóa"}, :class => 'btn  btn-mini btn-danger' do %>
                       <i class="icon-remove"></i>
                   <% end %>
-                </td>
-              </tr>
-          <% end %>
+              <% end %>
+            </td>
+          </tr>
+      <% end %>
 
   <% end %>
 

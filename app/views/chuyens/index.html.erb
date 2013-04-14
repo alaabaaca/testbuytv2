@@ -27,12 +27,16 @@
                   <i class="icon-info-sign"></i>
               <% end %>
               &nbsp;
-              <%= link_to edit_chuyen_path(chuyen), :class => 'btn  btn-mini btn-warning' do %>
-                  <i class="icon-pencil"></i>
+              <% if can? :update, Chuyen %>
+                  <%= link_to edit_chuyen_path(chuyen), :class => 'btn  btn-mini btn-warning' do %>
+                      <i class="icon-pencil"></i>
+                  <% end %>
               <% end %>
               &nbsp;
-              <%= link_to chuyen_path(chuyen), method: :delete, data: {confirm: "Bạn có chắc chắn muốn xóa"}, :class => 'btn  btn-mini btn-danger' do %>
-                  <i class="icon-remove"></i>
+              <% if can? :destroy, Chuyen %>
+                  <%= link_to chuyen_path(chuyen), method: :delete, data: {confirm: "Bạn có chắc chắn muốn xóa"}, :class => 'btn  btn-mini btn-danger' do %>
+                      <i class="icon-remove"></i>
+                  <% end %>
               <% end %>
             </td>
           </tr>

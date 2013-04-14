@@ -13,33 +13,37 @@
 
   </tr>
 
-<% @diemtrentuyens.each do |diemtrentuyen| %>
-  <tr>
-    <% @tuyen = Tuyen.find_by_matuyen(diemtrentuyen.matuyen) %>
-    <td> [<%=  @tuyen.matuyen %>] <%=  @tuyen.tentuyen + ' - ' + @tuyen.tentuyen2 %></td>
+  <% @diemtrentuyens.each do |diemtrentuyen| %>
+      <tr>
+        <% @tuyen = Tuyen.find_by_matuyen(diemtrentuyen.matuyen) %>
+        <td> [<%= @tuyen.matuyen %>] <%= @tuyen.tentuyen + ' - ' + @tuyen.tentuyen2 %></td>
 
-    <td><%= diemtrentuyen.vido %></td>
-    <td><%= diemtrentuyen.kinhdo %></td>
-    <td style="text-align: right">
-      <%= link_to diemtrentuyen, :class => 'btn  btn-mini btn-info' do %>
-          <i class="icon-info-sign"></i>
-      <% end %>
-      &nbsp;
-      <%= link_to edit_diemtrentuyen_path(diemtrentuyen), :class => 'btn  btn-mini btn-warning' do %>
-          <i class="icon-pencil"></i>
-      <% end %>
-      &nbsp;
-      <%= link_to diemtrentuyen_path(diemtrentuyen), method: :delete, data: {confirm: "Bạn có chắc chắn muốn xóa"}, :class => 'btn  btn-mini btn-danger' do %>
-          <i class="icon-remove"></i>
-      <% end %>
-    </td>
-  </tr>
-<% end %>
+        <td><%= diemtrentuyen.vido %></td>
+        <td><%= diemtrentuyen.kinhdo %></td>
+        <td style="text-align: right">
+          <%= link_to diemtrentuyen, :class => 'btn  btn-mini btn-info' do %>
+              <i class="icon-info-sign"></i>
+          <% end %>
+          &nbsp;
+          <% if can? :update, Diemtrentuyen %>
+              <%= link_to edit_diemtrentuyen_path(diemtrentuyen), :class => 'btn  btn-mini btn-warning' do %>
+                  <i class="icon-pencil"></i>
+              <% end %>
+          <% end %>
+          &nbsp;
+          <% if can? :destroy, Diemtrentuyen %>
+              <%= link_to diemtrentuyen_path(diemtrentuyen), method: :delete, data: {confirm: "Bạn có chắc chắn muốn xóa"}, :class => 'btn  btn-mini btn-danger' do %>
+                  <i class="icon-remove"></i>
+              <% end %>
+          <% end %>
+        </td>
+      </tr>
+  <% end %>
 </table>
 
-<br />
+<br/>
 
-<%= link_to 'Thêm mới', new_diemtrentuyen_path, :class =>'btn btn-success' %>
+<%= link_to 'Thêm mới', new_diemtrentuyen_path, :class => 'btn btn-success' %>
 
 <div style=" float: right;" class="flickr_pagination">
   <%= will_paginate @posts %>

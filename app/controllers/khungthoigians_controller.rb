@@ -1,5 +1,7 @@
 # encoding: UTF-8
 class KhungthoigiansController < ApplicationController
+  load_and_authorize_resource
+
   # GET /khungthoigians
   # GET /khungthoigians.json
   def index

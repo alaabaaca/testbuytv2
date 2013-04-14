@@ -1,4 +1,3 @@
-
 <table style="margin-left: auto;
         margin-right: auto;">
   <tr>
@@ -35,8 +34,11 @@
 
   <tr>
     <td>
-
-      <%= link_to 'Cập nhật', edit_cokhungthoigian_path(@khungthoigian), :class => 'btn' %> |
+      <!--
+      % if can? :update, Cokhungthoigian %>
+          %= link_to 'Cập nhật', edit_cokhungthoigian_path(@cokhungthoigian), :class => 'btn' %> |
+      % end %>
+      -->
       <%= link_to 'Quay lại danh sách', cokhungthoigians_path, :class => 'btn' %>
     </td>
   </tr>

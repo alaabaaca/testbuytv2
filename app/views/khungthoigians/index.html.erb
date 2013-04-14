@@ -11,31 +11,35 @@
     <th></th>
   </tr>
 
-<% @khungthoigians.each do |khungthoigian| %>
-  <tr>
-    <td><%= khungthoigian.id %></td>
-    <td><%= khungthoigian.di.strftime("%H:%M:%S") %></td>
-    <td><%= khungthoigian.den.strftime("%H:%M:%S") %></td>
-    <td style="text-align: right">
-      <%= link_to khungthoigian, :class => 'btn  btn-mini btn-info' do %>
-          <i class="icon-info-sign"></i>
-      <% end %>
-      &nbsp;
-      <%= link_to edit_khungthoigian_path(khungthoigian), :class => 'btn  btn-mini btn-warning' do %>
-          <i class="icon-pencil"></i>
-      <% end %>
-      &nbsp;
-      <%= link_to khungthoigian_path(khungthoigian), method: :delete, data: {confirm: "Bạn có chắc chắn muốn xóa"}, :class => 'btn  btn-mini btn-danger' do %>
-          <i class="icon-remove"></i>
-      <% end %>
-    </td>
-  </tr>
-<% end %>
+  <% @khungthoigians.each do |khungthoigian| %>
+      <tr>
+        <td><%= khungthoigian.id %></td>
+        <td><%= khungthoigian.di.strftime("%H:%M:%S") %></td>
+        <td><%= khungthoigian.den.strftime("%H:%M:%S") %></td>
+        <td style="text-align: right">
+          <%= link_to khungthoigian, :class => 'btn  btn-mini btn-info' do %>
+              <i class="icon-info-sign"></i>
+          <% end %>
+          &nbsp;
+          <% if can? :update, Khungthoigian %>
+              <%= link_to edit_khungthoigian_path(khungthoigian), :class => 'btn  btn-mini btn-warning' do %>
+                  <i class="icon-pencil"></i>
+              <% end %>
+          <% end %>
+          &nbsp;
+          <% if can? :destroy, Khungthoigian %>
+              <%= link_to khungthoigian_path(khungthoigian), method: :delete, data: {confirm: "Bạn có chắc chắn muốn xóa"}, :class => 'btn  btn-mini btn-danger' do %>
+                  <i class="icon-remove"></i>
+              <% end %>
+          <% end %>
+        </td>
+      </tr>
+  <% end %>
 </table>
 
-<br />
+<br/>
 
-<%= link_to 'Thêm mới', new_khungthoigian_path, :class =>'btn btn-success' %>
+<%= link_to 'Thêm mới', new_khungthoigian_path, :class => 'btn btn-success' %>
 
 <div style=" float: right;" class="flickr_pagination">
   <%= will_paginate @posts %>

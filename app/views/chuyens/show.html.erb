@@ -34,8 +34,10 @@
 
   <tr>
     <td>
-
-      <%= link_to 'Cập nhật', edit_chuyen_path(@chuyen), :class => 'btn' %> |
+          <!--
+      % if can? :update, Chuyen %>
+          %= link_to 'Cập nhật', edit_chuyen_path(@chuyen), :class => 'btn' %> |
+      % end %> -->
       <%= link_to 'Quay lại danh sách', chuyens_path, :class => 'btn' %>
     </td>
   </tr>

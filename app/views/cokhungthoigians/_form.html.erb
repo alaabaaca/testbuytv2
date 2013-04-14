@@ -25,9 +25,11 @@
 
             <%
                @taikhoan = Taikhoan.find_by_tentk(current_user.email);
-               if @taikhoan != nil then %>
-                @biensoxe = Chuyen.find_all_by_mact(@taikhoan.mact)
-                <%= f.select("biensoxe", @biensoxe.collect { |c| [c.biensoxe, c.biensoxe] }, {:prompt => "Chọn biển số xe"}) %>
+               if @taikhoan != nil then
+                @chuyen = Chuyen.find_all_by_mact(@taikhoan.mact) %>
+                <% if @chuyen != nil then %>
+                    <%= f.select("biensoxe", @chuyen.collect { |c| [c.biensoxe, c.biensoxe] }, {:prompt => "Chọn biển số xe"}) %>
+                <% end %>
             <% else %>
                 <%= f.select("biensoxe", Chuyen.all.collect { |c| [c.biensoxe, c.biensoxe] }, {:prompt => "Chọn biển số xe"}) %>
             <% end %>

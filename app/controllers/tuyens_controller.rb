@@ -1,10 +1,12 @@
 # encoding: UTF-8
 class TuyensController < ApplicationController
+  load_and_authorize_resource
+  skip_authorize_resource  :only => [:index, :show]
 
 
-  before_filter :authenticate_user!, :kiemtra_quyen, :except => [:tuyens_tram_android,
-                                                 :tuyens_timtheoma_android, :tuyens_timtheotramdau_android,
-                                                  :tuyens_timtheotramcuoi_android, :tuyens_android]
+  #before_filter :authenticate_user!, :kiemtra_quyen, :except => [:tuyens_tram_android,
+   #                                              :tuyens_timtheoma_android, :tuyens_timtheotramdau_android,
+    #                                              :tuyens_timtheotramcuoi_android, :tuyens_android]
 
   def kiemtra_quyen
     if  user_signed_in?

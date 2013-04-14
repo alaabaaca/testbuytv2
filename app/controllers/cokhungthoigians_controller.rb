@@ -1,5 +1,7 @@
 # encoding: UTF-8
 class CokhungthoigiansController < ApplicationController
+  load_and_authorize_resource
+  skip_authorize_resource :only => [:index, :show]
 
   # GET /cokhungthoigians
   # GET /cokhungthoigians.json
@@ -7,28 +9,35 @@ class CokhungthoigiansController < ApplicationController
     require 'will_paginate/array'
     #@cokhungthoigians = Cokhungthoigian.all
 
-    if current_user.email != 'admin@buytcantho.com' then
-      session[:taikhoan] = current_user.email
-      @t = session[:taikhoan]
+    if (user_signed_in?) then
+      @user = User.find_by_email(current_user.email)
+      @coquyen = RolesUser.find_by_user_id(@user.id)
+      @quyen = Role.find_by_id(@coquyen.role_id)
+      if @quyen.name != 'Admin' then
+        session[:taikhoan] = current_user.email
+        @t = session[:taikhoan]
 
-      @taikhoan = Taikhoan.find_by_tentk(@t)
-      if (@taikhoan != nil) then
-        @congty = Congty.find_by_id(@taikhoan.mact)
+        @taikhoan = Taikhoan.find_by_tentk(@t)
+        if (@taikhoan != nil) then
+          @congty = Congty.find_by_id(@taikhoan.mact)
 
-        @chuyens = Chuyen.find_all_by_mact(@congty.id);
+          @chuyens = Chuyen.find_all_by_mact(@congty.id);
 
-        @cokhungtgs = Array.new
-        @chuyens.each do |bs|
-          @cokhungtg = Cokhungthoigian.order('biensoxe ASC').find_all_by_biensoxe(bs.biensoxe)
-          if (@cokhungtg != []) then
+          @cokhungtgs = Array.new
+          @chuyens.each do |bs|
+            @cokhungtg = Cokhungthoigian.order('biensoxe ASC').find_all_by_biensoxe(bs.biensoxe)
+            if (@cokhungtg != []) then
 
-            @cokhungtg.each do |c|
-              @cokhungtgs.append(c)
+              @cokhungtg.each do |c|
+                @cokhungtgs.append(c)
+              end
+              #@cokhungtgs.append(@cokhungtg)
             end
-            #@cokhungtgs.append(@cokhungtg)
           end
+          @cokhungthoigians = @cokhungtgs.paginate(:page => params[:page], :per_page => 10)
         end
-        @cokhungthoigians = @cokhungtgs.paginate(:page => params[:page], :per_page => 10)
+      else
+        @cokhungthoigians = Cokhungthoigian.paginate(:page => params[:page]).order('biensoxe ASC')
       end
     else
       @cokhungthoigians = Cokhungthoigian.paginate(:page => params[:page]).order('biensoxe ASC')
@@ -128,7 +137,7 @@ class CokhungthoigiansController < ApplicationController
       @luots.append(@luot.luot)
     end
 
-      @result = {"success" => 1, "khungtgs" => @khungtg, "luots" => @luots}
+    @result = {"success" => 1, "khungtgs" => @khungtg, "luots" => @luots}
     render :json => @result
   end
 end

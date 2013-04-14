@@ -23,16 +23,18 @@
       <% end %>
 
       &nbsp;
-
+<% if can? :update, Taikhoan %>
       <%= link_to edit_taikhoan_path(taikhoan), :class => 'btn  btn-mini btn-warning' do %>
           <i class="icon-pencil"></i>
       <% end %>
+<% end %>
 
       &nbsp;
-
+<% if can? :destroy, Taikhoan %>
       <%= link_to taikhoan_path(taikhoan), method: :delete, data: {confirm: "Bạn có chắc chắn muốn xóa"}, :class => 'btn  btn-mini btn-danger' do %>
           <i class="icon-remove"></i>
       <% end %>
+<% end %>
     </td>
   </tr>
 <% end %>

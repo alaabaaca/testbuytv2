@@ -1,0 +1,54 @@
+<div class="tieude">
+  <h3>CHUYẾN XE</h3>
+</div>
+
+<table class="table ">
+  <tr>
+    <th>Biển số xe</th>
+    <th>Tuyến</th>
+    <th>Công ty</th>
+    <th>Số ghế</th>
+    <th></th>
+
+  </tr>
+
+  <% if (@chuyens != nil) then %>
+      <% @chuyens.each do |chuyen| %>
+          <tr>
+            <td><%= chuyen.biensoxe %></td>
+            <% @tuyen = Tuyen.find_by_matuyen(chuyen.matuyen) %>
+            <td><%= @tuyen.tentuyen + ' - ' + @tuyen.tentuyen2 %></td>
+            <% @mact = chuyen.mact
+               @congty = Congty.find(@mact) %>
+            <td><%= @congty.tenct %></td>
+            <td><%= chuyen.soghe %></td>
+            <td style="text-align: right">
+              <%= link_to chuyen, :class => 'btn  btn-mini btn-info' do %>
+                  <i class="icon-info-sign"></i>
+              <% end %>
+              &nbsp;
+              <% can? :update, Chuyen %>
+              <%= link_to edit_chuyen_path(chuyen), :class => 'btn  btn-mini btn-warning' do %>
+                  <i class="icon-pencil"></i>
+              <% end %>
+              <% end %>
+              &nbsp;
+              <%= link_to chuyen_path(chuyen), method: :delete, data: {confirm: "Bạn có chắc chắn muốn xóa"}, :class => 'btn  btn-mini btn-danger' do %>
+                  <i class="icon-remove"></i>
+              <% end %>
+            </td>
+          </tr>
+      <% end %>
+  <% end %>
+</table>
+
+<br/>
+
+
+<%= link_to 'Thêm mới', new_chuyen_path, :class => 'btn btn-success' %>
+
+
+<div style=" float: right;" class="flickr_pagination">
+  <%= will_paginate @posts %>
+</div>
+

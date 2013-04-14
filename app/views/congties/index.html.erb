@@ -1,36 +1,40 @@
 <div class="tieude">
-  <h3>CÔNG TY KINH DOANH VẬN TẢI XE BUÝT</h3>
+	<h3>CÔNG TY KINH DOANH VẬN TẢI XE BUÝT</h3>
 </div>
 
 
 <table class="table ">
-  <tr>
-    <th>Tên công ty</th>
-    <th>Địa chỉ</th>
-    <th>Số điện thoại</th>
-    <th></th>
-  </tr>
+	<tr>
+		<th>Tên công ty</th>
+		<th>Địa chỉ</th>
+		<th>Số điện thoại</th>
+		<th></th>
+	</tr>
 
-<% @congties.each do |congty| %>
-  <tr>
-    <td><%= congty.tenct %></td>
-    <td><%= congty.diachict %></td>
-    <td><%= congty.sodtct %></td>
-    <td style="text-align: right">
-      <%= link_to congty, :class => 'btn  btn-mini btn-info' do %>
-          <i class="icon-info-sign"></i>
-      <% end %>
-      &nbsp;
-      <%= link_to edit_congty_path(congty), :class => 'btn  btn-mini btn-warning' do %>
-          <i class="icon-pencil"></i>
-      <% end %>
-      &nbsp;
-      <%= link_to congty_path(congty), method: :delete, data: {confirm: "Bạn có chắc chắn muốn xóa"}, :class => 'btn  btn-mini btn-danger' do %>
-          <i class="icon-remove"></i>
-      <% end %>
-    </td>
-  </tr>
-<% end %>
+	<% @congties.each do |congty| %>
+	<tr>
+		<td><%= congty.tenct %></td>
+		<td><%= congty.diachict %></td>
+		<td><%= congty.sodtct %></td>
+		<td style="text-align: right">
+			<%= link_to congty, :class => 'btn  btn-mini btn-info' do %>
+			<i class="icon-info-sign"></i>
+			<% end %>
+			&nbsp;
+			<% if can? :update, Congty %>
+			<%= link_to edit_congty_path(congty), :class => 'btn  btn-mini btn-warning' do %>
+			<i class="icon-pencil"></i>
+			<% end %>
+			<% end %>
+			&nbsp;
+			<% if can? :destroy, Congty %>
+			<%= link_to congty_path(congty), method: :delete, data: {confirm: "Bạn có chắc chắn muốn xóa"}, :class => 'btn  btn-mini btn-danger' do %>
+			<i class="icon-remove"></i>
+			<% end %>
+			<% end %>
+		</td>
+	</tr>
+	<% end %>
 </table>
 
 <br />
@@ -39,5 +43,5 @@
 
 
 <div style=" float: right;" class="flickr_pagination">
-  <%= will_paginate @posts %>
+	<%= will_paginate @posts %>
 </div>

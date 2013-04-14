@@ -23,13 +23,17 @@
               <i class="icon-info-sign"></i>
           <% end %>
           &nbsp;
+<% if can? :update, Diquatram %>
           <%= link_to edit_diquatram_path(diquatram), :class => 'btn  btn-mini btn-warning' do %>
               <i class="icon-pencil"></i>
           <% end %>
+<% end %>
           &nbsp;
+<%if can? :destroy, Diquatram %>
           <%= link_to diquatram_path(diquatram), method: :delete, data: {confirm: "Bạn có chắc chắn muốn xóa"}, :class => 'btn  btn-mini btn-danger' do %>
               <i class="icon-remove"></i>
           <% end %>
+<% end %>
         </td>
       </tr>
   <% end %>
