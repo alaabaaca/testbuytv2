@@ -103,10 +103,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_navigation.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_navigation.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/_navigation.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="13" selection-start="1781" selection-end="1781" vertical-scroll-proportion="0.21283785">
+            <state line="41" column="13" selection-start="1781" selection-end="1781" vertical-scroll-proportion="-4.6666665">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="46" selection-start="369" selection-end="369" vertical-scroll-proportion="0.46526656">
               <folding />
             </state>
           </provider>
@@ -919,7 +928,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="24" width="1309" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1001,11 +1010,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/tramdungs_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="51" selection-start="149" selection-end="149" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/roles_users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="2" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0" />
@@ -1104,7 +1108,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_navigation.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="13" selection-start="1781" selection-end="1781" vertical-scroll-proportion="0.21283785">
+        <state line="41" column="13" selection-start="1781" selection-end="1781" vertical-scroll-proportion="-4.6666665">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="46" selection-start="369" selection-end="369" vertical-scroll-proportion="0.46526656">
           <folding />
         </state>
       </provider>
