@@ -1,8 +1,7 @@
 # encoding: UTF-8
 class ChuyensController < ApplicationController
   load_and_authorize_resource
-  skip_authorize_resource  :only => [:index, :show, :chuyens_tram_android
-    , :chuyens_tuyen_android, :chuyens_android]
+  skip_authorize_resource  :only => [:index, :show, :chuyens_tram_android , :chuyens_tuyen_android, :chuyens_android]
 
   # GET /chuyens
   # GET /chuyens.json
