@@ -1,5 +1,22 @@
-<p id="notice"><%= notice %></p>
+<table style="margin-left: auto;
+        margin-right: auto;">
+  <tr>
+    <td>
+      <p>
+        <b>Email:</b>
+        <%= @user.email %>
+      </p>
+    </td>
+  </tr>
 
+  <tr>
+    <td>
+      <!--
+  % if can? :update, Chuyen %>
+      %= link_to 'Cập nhật', edit_chuyen_path(@chuyen), :class => 'btn' %> |
+  % end %> -->
+      <%= link_to 'Quay lại danh sách', users_path, :class => 'btn' %>
+    </td>
+  </tr>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+</table>

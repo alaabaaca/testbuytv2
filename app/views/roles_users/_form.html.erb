@@ -1,12 +1,46 @@
-<%= simple_form_for(@roles_user) do |f| %>
-  <%= f.error_notification %>
+<%= simple_form_for @roles_user, :html => {:class => 'form-horizontal'} do |f| %>
 
-  <div class="form-inputs">
-    <%= f.input :user_id %>
-    <%= f.input :role_id %>
-  </div>
+    <% if @roles_user.errors.any? %>
+        <div id="error_explanation">
+          <h2>Có <%= pluralize(@roles_user.errors.count, "") %>lỗi :</h2>
 
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
+          <ul>
+            <% @roles_user.errors.values.each do |msg| %>
+                <% msg.each do |m| %>
+                    <li><%= m %></li>
+                <% end %>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <table style="margin-left: auto;
+            margin-right: auto; ">
+      <tr>
+        <td>
+          <div class="field" style="text-align: left">
+            <%= f.label "Tên người dùng: " %>
+
+            <%= f.select("user_id", User.order('email ASC').all.collect { |c| [c.email, c.id] }, {:prompt => "Chọn người dùng"}) %>
+          </div>
+          <div class="field">
+            <%= f.label "Thuộc nhóm quyền: " %>
+            <br/>
+            <%= f.select("role_id", Role.order('name ASC').all.collect { |c| [c.name, c.id] }, {:prompt => "Chọn nhóm quyền"}) %>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <table style="margin-left: auto;
+            margin-right: auto; ">
+      <tr>
+        <td>
+          <div class="actions">
+            <button class="btn btn-primary" type="submit">Lưu</button>
+            <%= link_to "Hủy", roles_users_path, :class => 'btn' %>
+        </td>
+        </div>
+      </tr>
+    </table>
 <% end %>

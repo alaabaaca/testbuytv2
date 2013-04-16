@@ -1,10 +1,22 @@
-<p id="notice"><%= notice %></p>
+<table style="margin-left: auto;
+        margin-right: auto;">
+  <tr>
+    <td>
+      <p>
+        <b>Tên quyền:</b>
+        <%= @role.name %>
+      </p>
+    </td>
+  </tr>
 
-<p>
-  <b>Name:</b>
-  <%= @role.name %>
-</p>
+  </br>
+
+  <tr>
+    <td>
+      <%= link_to 'Quay lại danh sách', roles_path, :class => 'btn' %>
+    </td>
+  </tr>
 
 
-<%= link_to 'Edit', edit_role_path(@role) %> |
-<%= link_to 'Back', roles_path %>
+</table>
+

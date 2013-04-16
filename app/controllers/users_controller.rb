@@ -1,11 +1,10 @@
 class UsersController < ApplicationController
-  load_and_authorize_resource
-  skip_authorize_resource  :only => [:index, :show]
+  #load_and_authorize_resource
 
   # GET /users
   # GET /users.json
   def index
-    @users = User.all
+    @users = User.paginate(:page => params[:page]).order('email ASC')
 
     respond_to do |format|
       format.html # index.html.erb

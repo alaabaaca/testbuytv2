@@ -1,19 +1,41 @@
-<h2>Đăng nhập</h2>
+<div class="tieude">
+  <h3>Đăng nhập</h3>
+</div>
 
 <%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
-  <div class="form-inputs">
-    <%= f.label "Email: " %>
-    <%= f.text_field :email, :autofocus => true %>
-    <br/>
-    <%= f.label "Mật khẩu: " %>
-    <%= f.password_field :password %>
-    <br/>
-    <!-- f.input :remember_me, :as => :boolean if devise_mapping.rememberable? -->
-  </div>
+    <div class="form-inputs">
+      <table style="margin-left: auto;
+              margin-right: auto; ">
+        <tr>
+          <td>
+            <%= f.label "Email: " %>
+          </td>
+          <td>
+            <%= f.text_field :email, :autofocus => true %>
+          </td>
+        </tr>
+        <br/>
+        <tr>
+          <td>
+            <%= f.label "Mật khẩu: " %>
+          </td>
+          <td>
+            <%= f.password_field :password %>
+          </td>
+        </tr>
+        <br/>
+      </table>
+      <!-- f.input :remember_me, :as => :boolean if devise_mapping.rememberable? -->
+    </div>
 
-  <div class="actions">
-    <button class="btn btn-primary" type="submit">Đăng nhập</button>
-  </div>
+    </br>
+
+    <div class="actions" style="text-align: center">
+      <button class="btn btn-primary" type="submit">Đăng nhập</button>
+      <%= link_to "Hủy", root_url, :class => 'btn' %>
+    </div>
 <% end %>
 
-<%= render "devise/shared/links" %>
+<div style="text-align: center">
+  <!-- %= render "devise/shared/links" %> -->
+</div>

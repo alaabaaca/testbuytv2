@@ -1,47 +1,28 @@
 <ul class="nav-bar">
-  <%= link_to "Trang chủ", root_path, :class => 'brand' %>
+  <!-- %= link_to "Trang chủ", root_path, :class => 'brand' %>
+  %= image_tag('home.png') %>            -->
 
+  <%= link_to image_tag('homeicon.png'), root_url, :class => '' %>
+
+  &nbsp;&nbsp;
 
   <% if user_signed_in? %>
       <% @user = User.find_by_email(current_user.email)
-         @coquyen = RolesUser.find_by_user_id(@user.id)
-         @quyen = Role.find_by_id(@coquyen.role_id) %>
-      <% if @quyen.name == 'Admin' then %>
-          <div class="btn-group">
-            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-              Tuyến - Trạm
-              <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu">
-              <li><%= link_to "Danh sách tuyến xe", tuyens_path %></li>
-              <li><%= link_to "Danh sách trạm xe", tramdungs_path %></li>
-              <li><%= link_to "Trạm của tuyến", diquatrams_path %></li>
-              <li><%= link_to "Vẽ đường cho tuyến", diemtrentuyens_path %></li>
-          </div>
-
-          <div class="btn-group">
-            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-              Chuyến - Khung giờ
-              <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu">
-              <li><%= link_to "Danh sách chuyến xe", chuyens_path %></li>
-              <li><%= link_to "Khung giờ gian", khungthoigians_path %></li>
-              <li><%= link_to "Giờ chạy của chuyến", cokhungthoigians_path %></li>
-          </div>
-
-          <div class="btn-group">
-            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-              Quản lý người dùng
-              <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu">
-              <li><%= link_to "Công ty kinh doanh xe buýt", congties_path %></li>
-              <li><%= link_to "Tài khoản", taikhoans_path %></li>
-          </div>
-      <% else
-           @taikhoan = Taikhoan.find_by_tentk(current_user.email)
-           if @taikhoan != nil %>
+         @coquyen = RolesUser.find_by_user_id(@user.id) %>
+      <% if @coquyen != nil then
+           @quyen = Role.find_by_id(@coquyen.role_id) %>
+          <% if @quyen.name == 'Admin' then %>
+              <div class="btn-group">
+                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                  Tuyến - Trạm
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><%= link_to "Danh sách tuyến xe", tuyens_path %></li>
+                  <li><%= link_to "Danh sách trạm xe", tramdungs_path %></li>
+                  <li><%= link_to "Trạm của tuyến", diquatrams_path %></li>
+                  <li><%= link_to "Vẽ đường cho tuyến", diemtrentuyens_path %></li>
+              </div>
 
               <div class="btn-group">
                 <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
@@ -54,8 +35,54 @@
                   <li><%= link_to "Giờ chạy của chuyến", cokhungthoigians_path %></li>
               </div>
 
-              <%= link_to "Xem góp ý", gopies_path, :class => 'btn' %>
+              <div class="btn-group">
+                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                  Quản lý người dùng
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><%= link_to "Công ty kinh doanh xe buýt", congties_path %></li>
+                  <li><%= link_to "Tài khoản", taikhoans_path %></li>
+              </div>
+          <% else
+               @taikhoan = Taikhoan.find_by_tentk(current_user.email)
+               if @taikhoan != nil %>
+
+                  <div class="btn-group">
+                    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                      Chuyến - Khung giờ
+                      <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><%= link_to "Danh sách chuyến xe", chuyens_path %></li>
+                      <li><%= link_to "Khung giờ gian", khungthoigians_path %></li>
+                      <li><%= link_to "Giờ chạy của chuyến", cokhungthoigians_path %></li>
+                  </div>
+
+                  <%= link_to "Xem góp ý", gopies_path, :class => 'btn' %>
+              <% end %>
           <% end %>
+      <% else %>
+          <div class="btn-group">
+            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+              Tuyến - Trạm
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><%= link_to "Danh sách tuyến xe", tuyens_path %></li>
+              <li><%= link_to "Danh sách trạm xe", tramdungs_path %></li>
+          </div>
+
+          <div class="btn-group">
+            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+              Chuyến - Khung giờ
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><%= link_to "Danh sách chuyến xe", chuyens_path %></li>
+              <li><%= link_to "Giờ chạy của chuyến", cokhungthoigians_path %></li>
+              <li><%= link_to "Công ty kinh doanh xe buýt", congties_path %></li>
+          </div>
       <% end %>
   <% else %>
       <div class="btn-group">
@@ -83,10 +110,11 @@
 
 
 
-  <div id="user" style="float: right">
+  <div id="user" style="float: right; text-align: center" class="">
     <% if user_signed_in? %>
         <%= current_user.email %>
-        <%= link_to "Đăng xuất", destroy_user_session_path, :method => :delete %>
+        <!-- %= link_to "Đăng xuất", destroy_user_session_path, :method => :delete %> -->
+        <%= link_to image_tag('logout.png'), destroy_user_session_path, :method => :delete, :class => '' %>
     <% else %>
         <%= link_to "Đăng kí", new_user_registration_path %>
         hoặc

@@ -1,11 +1,11 @@
 class RolesUsersController < ApplicationController
   load_and_authorize_resource
-  skip_authorize_resource  :only => [:index, :show]
+  #skip_authorize_resource  :only => [:index, :show]
 
   # GET /roles_users
   # GET /roles_users.json
   def index
-    @roles_users = RolesUser.all
+    @roles_users = RolesUser.paginate(:page => params[:page]).order('user_id ASC')
 
     respond_to do |format|
       format.html # index.html.erb
@@ -38,6 +38,7 @@ class RolesUsersController < ApplicationController
   # GET /roles_users/1/edit
   def edit
     @roles_user = RolesUser.find(params[:id])
+    #@roles_user = RolesUser.find_by_id(params[:id])
   end
 
   # POST /roles_users
