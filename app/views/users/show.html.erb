@@ -1,3 +1,9 @@
+<% @taikhoan = Taikhoan.find_by_tentk(@user.email)
+   if @taikhoan != nil then
+     @mact = @taikhoan.mact
+
+     @congty = Congty.find(@mact)
+   end %>
 <table style="margin-left: auto;
         margin-right: auto;">
   <tr>
@@ -6,6 +12,16 @@
         <b>Email:</b>
         <%= @user.email %>
       </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>
+        <b>Công ty:</b>
+        <% if @congty != nil then %>
+        <%= @congty.tenct %>
+    <% end %>
+    </p>
     </td>
   </tr>
 

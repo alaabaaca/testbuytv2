@@ -1,7 +1,8 @@
 # encoding: UTF-8
 class TuyensController < ApplicationController
   load_and_authorize_resource
-  skip_authorize_resource  :only => [:index, :show]
+  skip_authorize_resource  :only => [:index, :show, :tuyens_android, :tuyens_timtheotramcuoi_android,
+    :tuyens_timtheotramdau_android, :tuyens_timtheoma_android, :tuyens_tram_android]
 
 
   #before_filter :authenticate_user!, :kiemtra_quyen, :except => [:tuyens_tram_android,
@@ -40,22 +41,6 @@ class TuyensController < ApplicationController
     end
   end
 
-  def tuyens_android
-    @tuyens = Tuyen.order('matuyen ASC').all
-    result = {"success" => 1, "tuyens" => @tuyens}
-    #result = []#{name: @tuyens.first.culy}
-    #@tuyens.each do |tuyen|
-    # result << {"culy" => tuyen.culy}
-    #end
-    render :json => result
-    #render :json =>
-    #render :json => @tuyens
-    #respond_to do |format|
-    # format.html # index.html.erb
-    #  format.json { render :json => @tuyens }
-    #end
-
-  end
 
   # GET /tuyens/1
   # GET /tuyens/1.json
@@ -127,6 +112,24 @@ class TuyensController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def tuyens_android
+    @tuyens = Tuyen.order('matuyen ASC').all
+    result = {"success" => 1, "tuyens" => @tuyens}
+    #result = []#{name: @tuyens.first.culy}
+    #@tuyens.each do |tuyen|
+    # result << {"culy" => tuyen.culy}
+    #end
+    render :json => result
+    #render :json =>
+    #render :json => @tuyens
+    #respond_to do |format|
+    # format.html # index.html.erb
+    #  format.json { render :json => @tuyens }
+    #end
+
+  end
+
 
   def tuyens_tram_android
     @diquatrams = Diquatram.order('matuyen ASC').find_all_by_matram(params[:id])

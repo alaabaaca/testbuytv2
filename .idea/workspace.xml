@@ -17,7 +17,7 @@
     <file path="/diquatram.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1363167052813" ignored="false" />
     <file path="/tramdung.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365068643517" ignored="false" />
     <file path="/_form.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366021642563" ignored="false" />
-    <file path="/index.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366020636542" ignored="false" />
+    <file path="/index.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366124470772" ignored="false" />
     <file path="/congty.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1363167000385" ignored="false" />
     <file path="/taikhoan.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365056101280" ignored="false" />
     <file path="/chuyen.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1363150152010" ignored="false" />
@@ -26,12 +26,12 @@
     <file path="/application.css" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1363093275841" ignored="false" />
     <file path="/cokhungthoigian.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365066501615" ignored="false" />
     <file path="/application.css.scss" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366018721017" ignored="false" />
-    <file path="/_navigation.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366019981948" ignored="false" />
+    <file path="/_navigation.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366123670845" ignored="false" />
     <file path="/application_helper.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1363140851202" ignored="false" />
     <file path="/chuyens_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365912234029" ignored="false" />
     <file path="/edit.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366019252103" ignored="false" />
     <file path="/new.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366019047877" ignored="false" />
-    <file path="/show.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366020901309" ignored="false" />
+    <file path="/show.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366122985351" ignored="false" />
     <file path="/taikhoans_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365929290567" ignored="false" />
     <file path="/gopies_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365929303810" ignored="false" />
     <file path="/tuyens_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365916264204" ignored="false" />
@@ -82,12 +82,13 @@
     <file path="/application_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365781719880" ignored="false" />
     <file path="/admins_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365650362028" ignored="false" />
     <file path="/chuyens_controller (thinhhung's conflicted copy 2013-04-12).rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365912070372" ignored="false" />
-    <file path="/ability.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365915034556" ignored="false" />
+    <file path="/ability.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366125090388" ignored="false" />
     <file path="/a.dummy" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365870023239" ignored="false" />
     <file path="/role.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366018090490" ignored="false" />
-    <file path="/roles_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366019497034" ignored="false" />
-    <file path="/roles_users_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366022964654" ignored="false" />
+    <file path="/roles_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366125774412" ignored="false" />
+    <file path="/roles_users_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366126156666" ignored="false" />
     <file path="/20130412115146_users_have_and_belong_to_many_roles.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366117198293" ignored="false" />
+    <file path="/roles_user.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366121984774" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,62 +107,7 @@
     <favorites_list name="BuytCanTho" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="20130412115146_users_have_and_belong_to_many_roles.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20130412115146_users_have_and_belong_to_many_roles.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="5" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="10" selection-start="902" selection-end="902" vertical-scroll-proportion="0.83215547">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20130412114913_create_roles.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20130412114913_create_roles.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="19" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20130412115109_create_roles_users.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20130412115109_create_roles_users.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="19" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/application.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="50" selection-start="2891" selection-end="2891" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20130312085029_create_chuyens.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20130312085029_create_chuyens.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="6" selection-start="98" selection-end="111" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -171,22 +117,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/roles/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/roles_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/roles/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_navigation.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/roles_user.rb" />
         <option value="$PROJECT_DIR$/app/views/roles_users/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/chuyens/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/roles_users/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/roles_users/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/roles_users/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/roles_users/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/users/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/ability.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_navigation.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/roles_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/roles_users_controller.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20130412115146_users_have_and_belong_to_many_roles.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20130412114913_create_roles.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20130412115109_create_roles_users.rb" />
-        <option value="$PROJECT_DIR$/config/application.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/controllers/chuyens_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/cokhungthoigians_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/diemtrentuyens_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/diquatrams_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/gopies_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/tramdungs_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/tuyens_controller.rb" />
       </list>
     </option>
   </component>
@@ -312,6 +258,28 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BuytCanThov2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BuytCanThov2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -332,6 +300,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="roles_users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BuytCanThov2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BuytCanThov2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -846,104 +836,116 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/chuyens/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="48" vertical-scroll-proportion="-0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/roles_users/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="11" selection-start="280" selection-end="296" vertical-scroll-proportion="0.3642496" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/tuyens_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.6902801" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/roles_users/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="42" selection-start="1346" selection-end="1346" vertical-scroll-proportion="-0.6666667">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/roles_users/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="8" selection-start="104" selection-end="118" vertical-scroll-proportion="0.0">
+        <state line="14" column="0" selection-start="230" selection-end="342" vertical-scroll-proportion="0.031141868">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/chuyens_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="81" selection-start="898" selection-end="952" vertical-scroll-proportion="-0.35958904" />
+        <state line="34" column="27" selection-start="816" selection-end="816" vertical-scroll-proportion="-18.0">
+          <folding>
+            <element signature="n#style#0;n#td#5;n#tr#1;n#table#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/cokhungthoigians_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_navigation.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.7568493" />
+        <state line="71" column="90" selection-start="3381" selection-end="3381" vertical-scroll-proportion="0.51945853">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/roles_users_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/ability.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="7" selection-start="624" selection-end="627" vertical-scroll-proportion="0.0">
+        <state line="74" column="5" selection-start="2156" selection-end="2156" vertical-scroll-proportion="0.49514562">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/chuyens/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="1355" selection-end="1682" vertical-scroll-proportion="0.37931034">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="1.4444444">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130312085029_create_chuyens.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/roles_users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="6" selection-start="98" selection-end="111" vertical-scroll-proportion="0.0">
+        <state line="19" column="0" selection-start="483" selection-end="703" vertical-scroll-proportion="0.37864077">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130412114913_create_roles.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/diemtrentuyens_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="19" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0">
+        <state line="3" column="2" selection-start="105" selection-end="105" vertical-scroll-proportion="0.08737864">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130412115109_create_roles_users.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/diquatrams_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="19" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0">
+        <state line="3" column="77" selection-start="176" selection-end="176" vertical-scroll-proportion="0.08737864">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/gopies_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="50" selection-start="2891" selection-end="2891" vertical-scroll-proportion="0.0">
+        <state line="2" column="2" selection-start="79" selection-end="79" vertical-scroll-proportion="0.058252428">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130412115146_users_have_and_belong_to_many_roles.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/chuyens_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="5" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0">
+        <state line="4" column="46" selection-start="216" selection-end="216" vertical-scroll-proportion="-2.73719">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
+    <entry file="file://$PROJECT_DIR$/app/controllers/cokhungthoigians_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.2713568">
+        <state line="3" column="70" selection-start="175" selection-end="175" vertical-scroll-proportion="-2.8561983">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/app/controllers/congties_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="10" selection-start="902" selection-end="902" vertical-scroll-proportion="0.83215547">
+        <state line="100" column="0" selection-start="2300" selection-end="2300" vertical-scroll-proportion="2.9126213">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/khungthoigians_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.6796117">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/roles_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="17" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/tramdungs_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="53" selection-start="151" selection-end="151" vertical-scroll-proportion="0.08737864">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/tuyens_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="83" selection-start="280" selection-end="280" vertical-scroll-proportion="0.119008265">
           <folding />
         </state>
       </provider>

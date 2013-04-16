@@ -1,7 +1,7 @@
 # encoding: UTF-8
 class DiemtrentuyensController < ApplicationController
   load_and_authorize_resource
-  #skip_authorize_resource  :only => [:index, :show]
+  skip_authorize_resource  :only => [:diemtrentuyens_android]
 
 
 =begin

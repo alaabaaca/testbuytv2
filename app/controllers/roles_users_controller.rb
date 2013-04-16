@@ -1,3 +1,4 @@
+# encoding: UTF-8
 class RolesUsersController < ApplicationController
   load_and_authorize_resource
   #skip_authorize_resource  :only => [:index, :show]
@@ -16,7 +17,8 @@ class RolesUsersController < ApplicationController
   # GET /roles_users/1
   # GET /roles_users/1.json
   def show
-    @roles_user = RolesUser.find(params[:id])
+    #@roles_user = RolesUser.find(params[:id])
+    @roles_user = RolesUser.find_by_user_id(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -37,8 +39,8 @@ class RolesUsersController < ApplicationController
 
   # GET /roles_users/1/edit
   def edit
-    @roles_user = RolesUser.find(params[:id])
-    #@roles_user = RolesUser.find_by_id(params[:id])
+    #@roles_user = RolesUser.find(params[:id])
+    @roles_user = RolesUser.find_by_id(params[:id])
   end
 
   # POST /roles_users
@@ -48,7 +50,8 @@ class RolesUsersController < ApplicationController
 
     respond_to do |format|
       if @roles_user.save
-        format.html { redirect_to @roles_user, notice: 'Roles user was successfully created.' }
+        #format.html { redirect_to @roles_user, notice: 'Cấp quyền thành công.' }
+        format.html { redirect_to roles_users_path, notice: 'Cấp quyền thành công.' }
         format.json { render json: @roles_user, status: :created, location: @roles_user }
       else
         format.html { render action: "new" }

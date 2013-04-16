@@ -1,6 +1,7 @@
+# encoding: UTF-8
 class RolesController < ApplicationController
   load_and_authorize_resource
-  skip_authorize_resource  :only => [:index, :show]
+  #skip_authorize_resource  :only => [:index, :show]
 
   # GET /roles
   # GET /roles.json
@@ -47,7 +48,7 @@ class RolesController < ApplicationController
 
     respond_to do |format|
       if @role.save
-        format.html { redirect_to @role, notice: 'Role was successfully created.' }
+        format.html { redirect_to @role, notice: 'Thêm nhóm quyền thành công.' }
         format.json { render json: @role, status: :created, location: @role }
       else
         format.html { render action: "new" }
@@ -63,7 +64,7 @@ class RolesController < ApplicationController
 
     respond_to do |format|
       if @role.update_attributes(params[:role])
-        format.html { redirect_to @role, notice: 'Role was successfully updated.' }
+        format.html { redirect_to @role, notice: 'Cập nhật nhóm quyền thành công.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

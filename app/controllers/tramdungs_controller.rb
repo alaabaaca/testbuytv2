@@ -1,7 +1,7 @@
 # encoding: UTF-8
 class TramdungsController < ApplicationController
   load_and_authorize_resource
-  skip_authorize_resource  :only => [:index, :show]
+  skip_authorize_resource  :only => [:index, :show, :tramdungs_android]
 
 =begin
   before_filter :authenticate_user!
@@ -26,13 +26,7 @@ class TramdungsController < ApplicationController
     end
   end
 
-  def tramdungs_android
-    @tramdungs = Tramdung.all
 
-    result = {"success" => 1, "tramdungs" => @tramdungs}
-    render :json => result
-
-  end
 
   # GET /tramdungs/1
   # GET /tramdungs/1.json
@@ -104,4 +98,13 @@ class TramdungsController < ApplicationController
       format.json { head :no_content }
     end
   end
+end
+
+
+def tramdungs_android
+  @tramdungs = Tramdung.all
+
+  result = {"success" => 1, "tramdungs" => @tramdungs}
+  render :json => result
+
 end

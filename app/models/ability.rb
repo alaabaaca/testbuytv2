@@ -63,6 +63,7 @@ class Ability
 
       can :show, Khungthoigian
 
+      can :index, Gopy
       can :show, Gopy do |gopy|
         @chuyen = Chuyen.find_by_biensoxe(gopy.biensoxe);
         @congty = Congty.find_by_id(@chuyen.mact)
@@ -81,6 +82,8 @@ class Ability
         #
         gopy && @congty == @cty
       end
+
+
     end
 
     # Define abilities for the passed in user here. For example:

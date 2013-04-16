@@ -6,34 +6,57 @@
 <table class="table">
   <tr>
     <th>Email</th>
+    <th>Công ty</th>
     <th></th>
   </tr>
 
-<% @users.each do |user| %>
-  <tr>
-    <td><%= user.email %></td>
-    <td style="text-align: right">
-      <%= link_to user, :class => 'btn  btn-mini btn-info' do %>
-          <i class="icon-info-sign"></i>
-      <% end %>
-      &nbsp;
-     <!-- % if can? :update, User %>
-          %= link_to edit_user_path(user), :class => 'btn  btn-mini btn-warning' do %>
-              <i class="icon-pencil"></i>
-          % end %>
-      % end %> -->
-      &nbsp;
-      <% if can? :destroy, User %>
-          <%= link_to user_path(user), method: :delete, data: {confirm: "Bạn có chắc chắn muốn xóa"}, :class => 'btn  btn-mini btn-danger' do %>
-              <i class="icon-remove"></i>
+  <% @users.each do |user| %>
+      <tr>
+        <td><%= user.email %></td>
+        <% @taikhoan = Taikhoan.find_by_tentk(user.email)
+           if @taikhoan != nil then
+             @mact = @taikhoan.mact
+
+             @congty = Congty.find(@mact)
+           end %>
+
+        <% if @taikhoan != nil then %>
+            <td><%= @congty.tenct %></td>
+
+        <% else %>
+            <td><%= %></td>
+        <% end %>
+
+        <% @roles_users = RolesUser.find_by_user_id(user.id)
+           if @roles_users != nil then
+             @role = Role.find_by_id(@roles_users.role_id) %>
+            <td><%= @role.name %></td>
+        <% else %>
+            <td><%= %></td>
+        <% end %>
+
+        <td style="text-align: right">
+          <%= link_to user, :class => 'btn  btn-mini btn-info' do %>
+              <i class="icon-info-sign"></i>
           <% end %>
-      <% end %>
-    </td>
-  </tr>
-<% end %>
+          &nbsp;
+          <!-- % if can? :update, User %>
+               %= link_to edit_user_path(user), :class => 'btn  btn-mini btn-warning' do %>
+                   <i class="icon-pencil"></i>
+               % end %>
+           % end %> -->
+          &nbsp;
+          <% if can? :destroy, User %>
+              <%= link_to user_path(user), method: :delete, data: {confirm: "Bạn có chắc chắn muốn xóa"}, :class => 'btn  btn-mini btn-danger' do %>
+                  <i class="icon-remove"></i>
+              <% end %>
+          <% end %>
+        </td>
+      </tr>
+  <% end %>
 </table>
 
-<br />
+<br/>
 
 <!-- %= link_to 'Thêm mới', new_user_path, :class => 'btn btn-success' %> -->
 
