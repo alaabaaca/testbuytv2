@@ -1,7 +1,7 @@
 # encoding: UTF-8
 class CokhungthoigiansController < ApplicationController
-  #load_and_authorize_resource
-  #skip_authorize_resource :only => [:index, :show, :cokhungtgs_android]
+  load_and_authorize_resource
+  skip_authorize_resource :only => [:index, :show, :cokhungtgs_android]
 
   # GET /cokhungthoigians
   # GET /cokhungthoigians.json
