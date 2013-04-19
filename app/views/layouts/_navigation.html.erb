@@ -121,15 +121,15 @@
 
 
 
-  <div id="user" style="float: right; text-align: center" class="">
+  <div id="user" style="float: right; text-align: center" class="t">
     <% if user_signed_in? %>
         <%= current_user.email %>
         <!-- %= link_to "Đăng xuất", destroy_user_session_path, :method => :delete %> -->
-        <%= link_to image_tag('logout.png'), destroy_user_session_path, :method => :delete, :class => '' %>
+        <%= link_to image_tag('off.png'), destroy_user_session_path, :method => :delete, :class => 'nut' %>
     <% else %>
-        <%= link_to "Đăng kí", new_user_registration_path %>
-        hoặc
-        <%= link_to "Đăng nhập", new_user_session_path %>
+        <%= link_to image_tag('enter.png'), new_user_session_path, :class => 'nut' %>
+        |
+        <%= link_to image_tag('access.png'), new_user_registration_path, :class => 'nut' %>
     <% end %>
   </div>
 

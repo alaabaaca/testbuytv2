@@ -1,0 +1,58 @@
+<%= simple_form_for @cokhungthoigian, :html => {:class => 'form-horizontal'} do |f| %>
+    <% if @cokhungthoigian.errors.any? %>
+        <div id="error_explanation">
+          <h2>Có <%= pluralize(@cokhungthoigian.errors.count, "") %>lỗi :</h2>
+
+          <ul>
+            <% @cokhungthoigian.errors.values.each do |msg| %>
+                <% msg.each do |m| %>
+                    <li><%= m %></li>
+                <% end %>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+
+    <table style="margin-left: auto;
+            margin-right: auto; ">
+      <tr>
+        <td>
+
+
+          <div class="field">
+            <%= f.label "Biển số xe:" %>
+
+            <%
+               @taikhoan = Taikhoan.find_by_tentk(current_user.email);
+               if @taikhoan != nil then
+                @chuyen = Chuyen.find_all_by_mact(@taikhoan.mact) %>
+                <% if @chuyen != nil then %>
+                    <%= f.select("biensoxe", @chuyen.collect { |c| [c.biensoxe, c.biensoxe] }, {:prompt => "Chọn biển số xe"}, :disabled => true) %>
+                <% end %>
+            <% else %>
+                <%= f.select("biensoxe", Chuyen.all.collect { |c| [c.biensoxe, c.biensoxe] }, {:prompt => "Chọn biển số xe"}, :disabled => true) %>
+            <% end %>
+          </div>
+          <div class="field">
+            <%= f.label "Lượt:" %>
+            <br/>
+            <%= f.select("luot", [["Đi", 0], ["Về", 1]], {:prompt => "Chọn lượt đi hoặc về"}) %>
+          </div>
+          <div class="field">
+            <%= f.label "Khung thời gian:" %>
+            <br/>
+            <%= f.select("makhungtg", Khungthoigian.all.collect { |k| [k.di.strftime("%H:%M:%S")+' - '+k.den.strftime("%H:%M:%S"), k.id] }, {:prompt => "Chọn khung thời gian"}) %>
+          </div>
+
+        </td>
+      </tr>
+    </table>
+
+    </br>
+
+    <div class="actions" style="text-align: center">
+      <button class="btn btn-primary" type="submit">Lưu</button>
+      <%= link_to "Hủy", cokhungthoigians_path, :class => 'btn' %>
+    </div>
+<% end %>

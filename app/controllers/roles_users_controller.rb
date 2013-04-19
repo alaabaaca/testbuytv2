@@ -17,8 +17,8 @@ class RolesUsersController < ApplicationController
   # GET /roles_users/1
   # GET /roles_users/1.json
   def show
-    #@roles_user = RolesUser.find(params[:id])
-    @roles_user = RolesUser.find_by_user_id(params[:id])
+    @roles_user = RolesUser.find(params[:id])
+    #@roles_user = RolesUser.find_by_user_id(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -39,8 +39,8 @@ class RolesUsersController < ApplicationController
 
   # GET /roles_users/1/edit
   def edit
-    #@roles_user = RolesUser.find(params[:id])
-    @roles_user = RolesUser.find_by_id(params[:id])
+    @roles_user = RolesUser.find(params[:id])
+    #@roles_user = RolesUser.find_by_id(params[:id])
   end
 
   # POST /roles_users

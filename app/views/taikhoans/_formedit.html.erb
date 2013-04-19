@@ -19,6 +19,11 @@
       <tr>
         <td>
           <div class="field">
+            <%= f.label "Tên tài khoản" %>
+            <br/>
+            <%= f.text_field :tentk, :disabled => true %>
+          </div>
+          <div class="field">
             <%= f.label "Công ty:" %>
 
             <%= f.select("mact", Congty.all.collect { |c| [c.tenct, c.id] }, {:promt => "Chọn công ty"}) %>
