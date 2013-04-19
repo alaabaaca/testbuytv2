@@ -17,17 +17,17 @@
         <td><%= @user.email %></td>
         <td><%= @role.name %></td>
         <td style="text-align: right">
-          <!--
-          %= link_to roles_user, :class => 'btn  btn-mini btn-info' do %>
+
+          <%= link_to roles_user, :class => 'btn  btn-mini btn-info' do %>
               <i class="icon-info-sign"></i>
-          % end %>
+          <% end %>
           &nbsp;
-          % if can? :update, RolesUser %>
-              %= link_to edit_roles_user_path(roles_user), :class => 'btn  btn-mini btn-warning' do %>
+          <% if can? :update, RolesUser %>
+              <%= link_to edit_roles_user_path(roles_user), :class => 'btn  btn-mini btn-warning' do %>
                   <i class="icon-pencil"></i>
-              % end %>
-          % end %>
-          &nbsp;       -->
+              <% end %>
+          <% end %>
+          &nbsp;
           <% if can? :destroy, RolesUser %>
               <%= link_to roles_user_path(roles_user), method: :delete, data: {confirm: "Bạn có chắc chắn muốn xóa"}, :class => 'btn  btn-mini btn-danger' do %>
                   <i class="icon-remove"></i>
