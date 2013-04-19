@@ -2,7 +2,7 @@
   <!-- %= link_to "Trang chủ", root_path, :class => 'brand' %>
   %= image_tag('home.png') %>            -->
 
-  <%= link_to image_tag('homeicon.png'), root_url, :class => '' %>
+  <%= link_to image_tag('homeicon.png'), root_url, :class => '', title: 'Trang chủ', rel: 'tooltip'  %>
 
   &nbsp;&nbsp;
 
@@ -125,11 +125,11 @@
     <% if user_signed_in? %>
         <%= current_user.email %>
         <!-- %= link_to "Đăng xuất", destroy_user_session_path, :method => :delete %> -->
-        <%= link_to image_tag('off.png'), destroy_user_session_path, :method => :delete, :class => 'nut' %>
+        <%= link_to image_tag('off.png'), destroy_user_session_path, :method => :delete, :class => 'nut', title: 'Đăng xuất', rel: 'tooltip'  %>
     <% else %>
-        <%= link_to image_tag('enter.png'), new_user_session_path, :class => 'nut' %>
+        <%= link_to image_tag('enter.png'), new_user_session_path, :class => 'nut', title: 'Đăng nhập', rel: 'tooltip'  %>
         |
-        <%= link_to image_tag('access.png'), new_user_registration_path, :class => 'nut' %>
+        <%= link_to image_tag('goldkey.png'), new_user_registration_path, :class => 'nut', title: 'Đăng kí', rel: 'tooltip' %>
     <% end %>
   </div>
 
