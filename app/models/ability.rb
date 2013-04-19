@@ -10,7 +10,7 @@ class Ability
       can :manage, Congty
       can :manage, Diemtrentuyen
       can :manage, Diquatram
-      can :manage, Cokhungthoigian
+      can :manage, Khungthoigian
       can :manage, Role
       can :manage, RolesUser
       can :manage, Taikhoan

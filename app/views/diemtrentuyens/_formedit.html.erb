@@ -19,6 +19,12 @@
       <tr>
         <td>
           <div class="field">
+            <%= f.label "Tuyến xe: " %>
+
+            <%= f.select("matuyen", Tuyen.all.collect { |c| [c.tentuyen+ " - " + c.tentuyen2, c.matuyen] }, {:promt => "Chọn tuyen"}, :disabled => true) %>
+          </div>
+
+          <div class="field">
             <%= f.label "Vĩ độ: " %>
 
             <%= f.text_field :vido %>

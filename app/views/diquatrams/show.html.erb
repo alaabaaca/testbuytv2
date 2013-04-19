@@ -5,11 +5,6 @@
   <tr>
     <td>
       <p>
-        <b>Mã:</b>
-        <%= @diquatram.id %>
-      </p>
-
-      <p>
         <b>Tuyến xe:</b>
         <% @tuyen = Tuyen.find_by_matuyen(@diquatram.matuyen) %>
         [<%= @tuyen.matuyen %>] <%= @tuyen.tentuyen + ' - ' + @tuyen.tentuyen2 %>
