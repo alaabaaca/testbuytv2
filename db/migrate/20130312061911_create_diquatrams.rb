@@ -12,7 +12,7 @@ class CreateDiquatrams < ActiveRecord::Migration
       ALTER TABLE diquatrams
         ADD CONSTRAINT fk_tuyens_diquatrams
         FOREIGN KEY (id)
-        REFERENCES categories(matuyen)
+        REFERENCES tuyens(matuyen)
         ON DELETE RESTRICT
     SQL
   end
