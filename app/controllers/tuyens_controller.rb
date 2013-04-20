@@ -145,7 +145,7 @@ class TuyensController < ApplicationController
   def tuyens_timtheoma_android
     @tuyens = Tuyen.order('matuyen ASC').find_all_by_matuyen(params[:id])
 
-    if @tuyens != nill then
+    if @tuyens != nil then
       @result = {"success" => "1", "tuyens" => @tuyens}
     else
       @result = {"success" => "1", "tuyens" => []}

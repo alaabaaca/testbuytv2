@@ -114,7 +114,7 @@
       <file leaf-file-name="tuyens_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/tuyens_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="152" column="50" selection-start="3943" selection-end="3943" vertical-scroll-proportion="0.64415157">
+            <state line="147" column="21" selection-start="3785" selection-end="3785" vertical-scroll-proportion="0.14003295">
               <folding />
             </state>
           </provider>
@@ -906,7 +906,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/tuyens_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="152" column="50" selection-start="3943" selection-end="3943" vertical-scroll-proportion="0.64415157">
+        <state line="147" column="21" selection-start="3785" selection-end="3785" vertical-scroll-proportion="0.14003295">
           <folding />
         </state>
       </provider>
