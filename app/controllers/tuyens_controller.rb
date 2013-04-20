@@ -1,13 +1,13 @@
 # encoding: UTF-8
 class TuyensController < ApplicationController
   load_and_authorize_resource
-  skip_authorize_resource  :only => [:index, :show, :tuyens_android, :tuyens_timtheotramcuoi_android,
-    :tuyens_timtheotramdau_android, :tuyens_timtheoma_android, :tuyens_tram_android]
+  skip_authorize_resource :only => [:index, :show, :tuyens_android, :tuyens_timtheotramcuoi_android,
+                                    :tuyens_timtheotramdau_android, :tuyens_timtheoma_android, :tuyens_tram_android]
 
 
   #before_filter :authenticate_user!, :kiemtra_quyen, :except => [:tuyens_tram_android,
-   #                                              :tuyens_timtheoma_android, :tuyens_timtheotramdau_android,
-    #                                              :tuyens_timtheotramcuoi_android, :tuyens_android]
+  #                                              :tuyens_timtheoma_android, :tuyens_timtheotramdau_android,
+  #                                              :tuyens_timtheotramcuoi_android, :tuyens_android]
 
   def kiemtra_quyen
     if  user_signed_in?
@@ -26,8 +26,6 @@ class TuyensController < ApplicationController
       session[:quyen] = 'khach'
     end
   end
-
-
 
 
   # GET /tuyens
@@ -147,7 +145,11 @@ class TuyensController < ApplicationController
   def tuyens_timtheoma_android
     @tuyens = Tuyen.order('matuyen ASC').find_all_by_matuyen(params[:id])
 
-    @result = {"success" => "1", "tuyens" => @tuyens}
+    if @tuyens != nill then
+      @result = {"success" => "1", "tuyens" => @tuyens}
+    else
+      @result = {"success" => "1", "tuyens" => []}
+    end
     render :json => @result
   end
 
