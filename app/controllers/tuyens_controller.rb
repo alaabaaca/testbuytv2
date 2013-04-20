@@ -143,12 +143,12 @@ class TuyensController < ApplicationController
   end
 
   def tuyens_timtheoma_android
-    @tuyens = nil
-    #@tuyens = Tuyen.order('matuyen ASC').find_all_by_matuyen(params[:id])
+    #@tuyens = nil
+    @tuyens = Tuyen.order('matuyen ASC').find_all_by_matuyen(params[:id])
 
-    if @tuyens != nil then
+
       @result = {"success" => "1", "tuyens" => @tuyens}
-    end
+
     render :json => @result
   end
 
