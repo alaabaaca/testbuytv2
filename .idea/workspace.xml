@@ -16,8 +16,8 @@
     <file path="/tuyen.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1364961061353" ignored="false" />
     <file path="/diquatram.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1363167052813" ignored="false" />
     <file path="/tramdung.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365068643517" ignored="false" />
-    <file path="/_form.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366021642563" ignored="false" />
-    <file path="/index.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366124470772" ignored="false" />
+    <file path="/_form.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366428374992" ignored="false" />
+    <file path="/index.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366428015341" ignored="false" />
     <file path="/congty.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1363167000385" ignored="false" />
     <file path="/taikhoan.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365056101280" ignored="false" />
     <file path="/chuyen.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1363150152010" ignored="false" />
@@ -25,17 +25,17 @@
     <file path="/khungthoigian.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1363167126707" ignored="false" />
     <file path="/application.css" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1363093275841" ignored="false" />
     <file path="/cokhungthoigian.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365066501615" ignored="false" />
-    <file path="/application.css.scss" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366379119634" ignored="false" />
+    <file path="/application.css.scss" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366381454711" ignored="false" />
     <file path="/_navigation.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366379922162" ignored="false" />
     <file path="/application_helper.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1363140851202" ignored="false" />
     <file path="/chuyens_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365912234029" ignored="false" />
     <file path="/edit.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366376607428" ignored="false" />
     <file path="/new.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366378963169" ignored="false" />
-    <file path="/show.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366376259853" ignored="false" />
+    <file path="/show.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366428491323" ignored="false" />
     <file path="/taikhoans_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365929290567" ignored="false" />
     <file path="/gopies_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365929303810" ignored="false" />
     <file path="/tuyens_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365916264204" ignored="false" />
-    <file path="/routes.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365650787470" ignored="false" />
+    <file path="/routes.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366427471437" ignored="false" />
     <file path="/Gemfile" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1364976843976" ignored="false" />
     <file path="/tramdungs_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366249018545" ignored="false" />
     <file path="/diquatrams_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365080836637" ignored="false" />
@@ -67,7 +67,7 @@
     <file path="/trangchu_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1364978445333" ignored="false" />
     <file path="/20130403034347_add_tentuyens_to_tuyens.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1364979476764" ignored="false" />
     <file path="/devise.en.yml" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1364980665785" ignored="false" />
-    <file path="/user.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1364984146109" ignored="false" />
+    <file path="/user.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366428358877" ignored="false" />
     <file path="/_links.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365052155941" ignored="false" />
     <file path="/congties_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365080795319" ignored="false" />
     <file path="/khungthoigians_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365068132193" ignored="false" />
@@ -89,6 +89,7 @@
     <file path="/roles_users_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366376359660" ignored="false" />
     <file path="/20130412115146_users_have_and_belong_to_many_roles.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366117198293" ignored="false" />
     <file path="/roles_user.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366121984774" ignored="false" />
+    <file path="/create.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366427409076" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,10 +109,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_navigation.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/_navigation.html.erb">
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="82" selection-start="212" selection-end="212" vertical-scroll-proportion="0.12456747">
+            <state line="17" column="21" selection-start="275" selection-end="275" vertical-scroll-proportion="0.15517241">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="80" selection-start="468" selection-end="468" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="30" selection-start="833" selection-end="833" vertical-scroll-proportion="-15.962963">
               <folding />
             </state>
           </provider>
@@ -127,22 +146,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/taikhoans/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/taikhoans/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/users/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/roles_users/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/roles_users_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/chuyens/_formedit.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/cokhungthoigians/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/cokhungthoigians/_formedit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/taikhoans/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/taikhoans/_formedit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/roles_users/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/roles_users/_formedit.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.scss" />
         <option value="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
         <option value="$PROJECT_DIR$/app/views/layouts/_navigation.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/users/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/users/create.html.erb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/views/users/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/app/views/users/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/users/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
       </list>
     </option>
   </component>
@@ -349,6 +368,50 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BuytCanThov2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BuytCanThov2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BuytCanThov2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BuytCanThov2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taikhoans" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -433,28 +496,6 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chuyens" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BuytCanThov2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BuytCanThov2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -505,20 +546,20 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/users" />
       <recent name="$PROJECT_DIR$/public/assets" />
       <recent name="$PROJECT_DIR$/app/views/roles_users" />
       <recent name="$PROJECT_DIR$/app/views/cokhungthoigians" />
       <recent name="$PROJECT_DIR$/app/views/admins" />
-      <recent name="$PROJECT_DIR$/app/views/diemtrentuyens" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/db/migrate" />
@@ -792,10 +833,10 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32662538" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32561728" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24940239" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2874109" sideWeight="0.6733746" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29216152" sideWeight="0.6743827" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -870,81 +911,19 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/roles_users/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="38" selection-start="76" selection-end="86" vertical-scroll-proportion="0.030354131">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/cokhungthoigians/_formedit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="143" selection-start="1246" selection-end="1246" vertical-scroll-proportion="0.80968857">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/taikhoans/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="757" selection-end="903" vertical-scroll-proportion="-16.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/taikhoans/_formedit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="54" selection-start="708" selection-end="708" vertical-scroll-proportion="0.67005074">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/cokhungthoigians/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="20" selection-start="93" selection-end="93" vertical-scroll-proportion="0.15228426">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/roles_users/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="20" selection-start="91" selection-end="91" vertical-scroll-proportion="0.15228426">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/roles_users/_formedit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="146" selection-start="819" selection-end="819" vertical-scroll-proportion="0.6851211">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="30" selection-start="2015" selection-end="2015" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.2132232">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.2132232" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/locales/devise.en.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/chuyens/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.2802768">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.2802768" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/chuyens/_formedit.html.erb">
@@ -961,23 +940,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_navigation.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="82" selection-start="212" selection-end="212" vertical-scroll-proportion="0.12456747" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="21" selection-start="1611" selection-end="1611" vertical-scroll-proportion="0.8512397">
+        <state line="32" column="2" selection-start="789" selection-end="789" vertical-scroll-proportion="0.6842975">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/_form(origin).html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="16" selection-start="35" selection-end="35" vertical-scroll-proportion="0.060708262">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="16" selection-start="372" selection-end="372" vertical-scroll-proportion="0.4982699">
+        <state line="20" column="20" selection-start="425" selection-end="425" vertical-scroll-proportion="-1.3333334">
+          <folding>
+            <element signature="n#style#0;n#table#0;n#div#2;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="20" selection-start="127" selection-end="127" vertical-scroll-proportion="0.29654035">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_navigation.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/users/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="82" selection-start="212" selection-end="212" vertical-scroll-proportion="0.12456747">
+        <state line="2" column="16" selection-start="18" selection-end="18" vertical-scroll-proportion="-1.3333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="80" selection-start="468" selection-end="468" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="30" selection-start="833" selection-end="833" vertical-scroll-proportion="-15.962963">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="18" selection-start="22" selection-end="22" vertical-scroll-proportion="0.060708262">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="21" selection-start="275" selection-end="275" vertical-scroll-proportion="0.15517241">
           <folding />
         </state>
       </provider>

@@ -1,7 +1,7 @@
-<% @taikhoan = Taikhoan.find_by_tentk(@user.email)
-   if @taikhoan != nil then
-     @mact = @taikhoan.mact
+<%
 
+     @mact = @user.mact
+     if @mact != nil then
      @congty = Congty.find(@mact)
    end %>
 <table style="margin-left: auto;

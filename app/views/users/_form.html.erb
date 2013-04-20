@@ -1,10 +1,43 @@
-<%= simple_form_for(@user) do |f| %>
-  <%= f.error_notification %>
+<%= simple_form_for @user, :html => {:class => 'form-horizontal'} do |f| %>
+    <% if @user.errors.any? %>
+        <div id="error_explanation">
+          <h2>Có <%= pluralize(@user.errors.count, "") %>lỗi :</h2>
 
-  <div class="form-inputs">
-  </div>
+          <ul>
+            <% @user.errors.values.each do |msg| %>
+                <% msg.each do |m| %>
+                    <li><%= m %></li>
+                <% end %>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
 
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
+
+    <table style="margin-left: auto;
+            margin-right: auto; ">
+      <tr>
+        <td>
+          <%= f.label "Email: " %>
+        </td>
+        <td>
+          <%= f.text_field :email, :autofocus => true, :disabled => true %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+
+            <%= f.label "Công ty:" %>
+          </td>
+        <td>
+            <%= f.select("mact", Congty.order('tenct ASC').all.collect { |c| [c.tenct, c.id] }, {:promt => "Chọn công ty"}, :autofocus => true) %>
+        </td>
+      </tr>
+
+    </table>
+    </br>
+    <div class="actions" style="text-align: center">
+      <button class="btn btn-primary" type="submit">Lưu</button>
+      <%= link_to "Hủy", users_path, :class => 'btn' %>
+    </div>
 <% end %>

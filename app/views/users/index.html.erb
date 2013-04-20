@@ -13,14 +13,14 @@
   <% @users.each do |user| %>
       <tr>
         <td><%= user.email %></td>
-        <% @taikhoan = Taikhoan.find_by_tentk(user.email)
-           if @taikhoan != nil then
-             @mact = @taikhoan.mact
+        <%
 
+             @mact = user.mact
+             if @mact != nil then
              @congty = Congty.find(@mact)
            end %>
 
-        <% if @taikhoan != nil then %>
+        <% if @mact != nil then %>
             <td><%= @congty.tenct %></td>
 
         <% else %>
@@ -40,11 +40,11 @@
               <i class="icon-info-sign"></i>
           <% end %>
           &nbsp;
-          <!-- % if can? :update, User %>
-               %= link_to edit_user_path(user), :class => 'btn  btn-mini btn-warning' do %>
+           <% if can? :update, User %>
+               <%= link_to edit_user_path(user), :class => 'btn  btn-mini btn-warning' do %>
                    <i class="icon-pencil"></i>
-               % end %>
-           % end %> -->
+               <% end %>
+           <% end %>
           &nbsp;
           <% if can? :destroy, User %>
               <%= link_to user_path(user), method: :delete, data: {confirm: "Bạn có chắc chắn muốn xóa"}, :class => 'btn  btn-mini btn-danger' do %>
