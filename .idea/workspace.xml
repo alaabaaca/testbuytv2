@@ -34,7 +34,7 @@
     <file path="/show.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366429382728" ignored="false" />
     <file path="/taikhoans_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365929290567" ignored="false" />
     <file path="/gopies_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366429974631" ignored="false" />
-    <file path="/tuyens_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366444411693" ignored="false" />
+    <file path="/tuyens_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366445797263" ignored="false" />
     <file path="/routes.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366430332915" ignored="false" />
     <file path="/Gemfile" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1364976843976" ignored="false" />
     <file path="/tramdungs_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366249018545" ignored="false" />
@@ -114,8 +114,10 @@
       <file leaf-file-name="tuyens_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/tuyens_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="147" column="21" selection-start="3785" selection-end="3785" vertical-scroll-proportion="0.14003295">
-              <folding />
+            <state line="150" column="47" selection-start="3882" selection-end="3882" vertical-scroll-proportion="0.22899505">
+              <folding>
+                <marker date="1366445798000" expanded="true" signature="3768:3888" placeholder="if ... end" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -906,8 +908,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/tuyens_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="147" column="21" selection-start="3785" selection-end="3785" vertical-scroll-proportion="0.14003295">
-          <folding />
+        <state line="150" column="47" selection-start="3882" selection-end="3882" vertical-scroll-proportion="0.22899505">
+          <folding>
+            <marker date="1366445798000" expanded="true" signature="3768:3888" placeholder="if ... end" />
+          </folding>
         </state>
       </provider>
     </entry>

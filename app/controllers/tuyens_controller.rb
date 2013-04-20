@@ -147,8 +147,6 @@ class TuyensController < ApplicationController
 
     if @tuyens != nil then
       @result = {"success" => "1", "tuyens" => @tuyens}
-    else
-      @result = {"success" => "1", "tuyens" => []}
     end
     render :json => @result
   end
