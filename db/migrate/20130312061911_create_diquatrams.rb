@@ -13,7 +13,7 @@ class CreateDiquatrams < ActiveRecord::Migration
         ADD CONSTRAINT fk_tuyens_diquatrams
         FOREIGN KEY (id)
         REFERENCES tuyens(matuyen)
-        ON DELETE RESTRICT
+        ON DELETE NO ACTION
     SQL
   end
 end
