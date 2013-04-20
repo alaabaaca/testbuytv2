@@ -1,6 +1,6 @@
 # encoding: UTF-8
 class TuyensController < ApplicationController
-  load_and_authorize_resource
+  authorize_resource
   skip_authorize_resource :only => [:index, :show, :tuyens_android, :tuyens_timtheotramcuoi_android,
                                     :tuyens_timtheotramdau_android, :tuyens_timtheoma_android, :tuyens_tram_android]
 
@@ -143,7 +143,8 @@ class TuyensController < ApplicationController
   end
 
   def tuyens_timtheoma_android
-    @tuyens = Tuyen.order('matuyen ASC').find_all_by_matuyen(params[:id])
+    @tuyens = nil
+    #@tuyens = Tuyen.order('matuyen ASC').find_all_by_matuyen(params[:id])
 
     if @tuyens != nil then
       @result = {"success" => "1", "tuyens" => @tuyens}

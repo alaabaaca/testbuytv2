@@ -1,7 +1,7 @@
 # encoding: UTF-8
 class TramdungsController < ApplicationController
-  #load_and_authorize_resource
-  #skip_authorize_resource  :only => [:index, :show, :tramdungs_android]
+  authorize_resource
+  skip_authorize_resource  :only => [:index, :show, :tramdungs_android]
 
 =begin
   before_filter :authenticate_user!
