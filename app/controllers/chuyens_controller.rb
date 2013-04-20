@@ -14,7 +14,7 @@ class ChuyensController < ApplicationController
         session[:taikhoan] = current_user.email
         @t = session[:taikhoan]
 
-        @taikhoan = Taikhoan.find_by_tentk(@t)
+        @taikhoan = User.find_by_email(@t)
         if (@taikhoan != nil) then
           @congty = Congty.find_by_id(@taikhoan.mact)
           @chuyens = Chuyen.paginate(:page => params[:page]).order('biensoxe ASC').find_all_by_mact(@congty.id)

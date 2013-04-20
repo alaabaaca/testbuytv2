@@ -42,17 +42,8 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li><%= link_to "Công ty kinh doanh xe buýt", congties_path %></li>
-                  <li><%= link_to "Tài khoản", taikhoans_path %></li>
-              </div>
-
-              <div class="btn-group">
-                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-                  Quản lý quyền của người dùng
-                  <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu">
-                  <li><%= link_to "Các nhóm quyền", roles_path %></li>
                   <li><%= link_to "Tài khoản người dùng đăng ký", users_path %></li>
+                  <li><%= link_to "Các nhóm quyền", roles_path %></li>
                   <li><%= link_to "Cấp quyền cho tài khoản", roles_users_path %></li>
               </div>
           <% else

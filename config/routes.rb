@@ -10,14 +10,14 @@ BuytCanTho::Application.routes.draw do
   devise_for :users
   resources :users
 
-  resources :diemtrentuyens  do
+  resources :diemtrentuyens do
     member do
       get 'diemtrentuyens_android'
     end
   end
 
 
-  resources :cokhungthoigians     do
+  resources :cokhungthoigians do
     collection do
       post :cokhungtgs_android
     end
@@ -27,7 +27,7 @@ BuytCanTho::Application.routes.draw do
   resources :khungthoigians
 
 
-  resources :gopies  do
+  resources :gopies do
     collection do
       post 'gopies_android'
     end
@@ -46,18 +46,14 @@ BuytCanTho::Application.routes.draw do
   end
 
 
-  resources :taikhoans    do
-    collection do
-      post 'login'
-      post 'authen'
-    end
-  end
+  #resources :taikhoans    do
+  #end
 
 
   resources :congties
 
 
-  resources :diquatrams   do
+  resources :diquatrams do
     member do
       get :diquatrams_android
       get :diquatrams_tuyen_android
@@ -65,14 +61,14 @@ BuytCanTho::Application.routes.draw do
   end
 
 
-  resources :tramdungs  do
+  resources :tramdungs do
     collection do
       get 'tramdungs_android'
     end
   end
 
 
-  resources :tuyens   do
+  resources :tuyens do
     collection do
       get 'tuyens_android'
       post 'tuyens_timtheotramdau_android'
@@ -135,7 +131,7 @@ BuytCanTho::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-   root :to => 'trangchu#index'
+  root :to => 'trangchu#index'
 
   # See how all your routes lay out with "rake routes"
 

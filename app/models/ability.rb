@@ -25,7 +25,7 @@ class Ability
       can :update, Chuyen do |chuyen|
         @congty = Congty.find_by_id(chuyen.mact)
         #
-        @tkhoan = Taikhoan.find_by_tentk(user.email)
+        @tkhoan = User.find_by_email(user.email)
         @cty = Congty.find_by_id(@tkhoan.mact)
         #
         chuyen && @congty == @cty
@@ -33,7 +33,7 @@ class Ability
       can :destroy, Chuyen do |chuyen|
         @congty = Congty.find_by_id(chuyen.mact)
         #
-        @tkhoan = Taikhoan.find_by_tentk(user.email)
+        @tkhoan = User.find_by_email(user.email)
         @cty = Congty.find_by_id(@tkhoan.mact)
         #
         chuyen && @congty == @cty
@@ -46,7 +46,7 @@ class Ability
         @chuyen = Chuyen.find_by_biensoxe(cokhungthoigian.biensoxe);
         @congty = Congty.find_by_id(@chuyen.mact)
         #
-        @tkhoan = Taikhoan.find_by_tentk(user.email)
+        @tkhoan = User.find_by_email(user.email)
         @cty = Congty.find_by_id(@tkhoan.mact)
         #
         cokhungthoigian && @congty == @cty
@@ -55,7 +55,7 @@ class Ability
         @chuyen = Chuyen.find_by_biensoxe(cokhungthoigian.biensoxe);
         @congty = Congty.find_by_id(@chuyen.mact)
         #
-        @tkhoan = Taikhoan.find_by_tentk(user.email)
+        @tkhoan = User.find_by_email(user.email)
         @cty = Congty.find_by_id(@tkhoan.mact)
         #
         cokhungthoigian && @congty == @cty
@@ -68,7 +68,7 @@ class Ability
         @chuyen = Chuyen.find_by_biensoxe(gopy.biensoxe);
         @congty = Congty.find_by_id(@chuyen.mact)
         #
-        @tkhoan = Taikhoan.find_by_tentk(user.email)
+        @tkhoan = User.find_by_email(user.email)
         @cty = Congty.find_by_id(@tkhoan.mact)
         #
         gopy && @congty == @cty
@@ -77,7 +77,7 @@ class Ability
         @chuyen = Chuyen.find_by_biensoxe(gopy.biensoxe);
         @congty = Congty.find_by_id(@chuyen.mact)
         #
-        @tkhoan = Taikhoan.find_by_tentk(user.email)
+        @tkhoan = User.find_by_email(user.email)
         @cty = Congty.find_by_id(@tkhoan.mact)
         #
         gopy && @congty == @cty
