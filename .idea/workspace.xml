@@ -31,7 +31,7 @@
     <file path="/chuyens_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365912234029" ignored="false" />
     <file path="/edit.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366376607428" ignored="false" />
     <file path="/new.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366378963169" ignored="false" />
-    <file path="/show.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366428491323" ignored="false" />
+    <file path="/show.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366429382728" ignored="false" />
     <file path="/taikhoans_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365929290567" ignored="false" />
     <file path="/gopies_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365929303810" ignored="false" />
     <file path="/tuyens_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365916264204" ignored="false" />
@@ -109,10 +109,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="21" selection-start="275" selection-end="275" vertical-scroll-proportion="0.15517241">
+            <state line="31" column="58" selection-start="535" selection-end="682" vertical-scroll-proportion="-12.666667">
               <folding />
             </state>
           </provider>
@@ -131,6 +131,15 @@
         <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="32" column="30" selection-start="833" selection-end="833" vertical-scroll-proportion="-15.962963">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="45" selection-start="136" selection-end="136" vertical-scroll-proportion="0.1821248">
               <folding />
             </state>
           </provider>
@@ -1003,16 +1012,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="18" selection-start="22" selection-end="22" vertical-scroll-proportion="0.060708262">
+        <state line="31" column="58" selection-start="535" selection-end="682" vertical-scroll-proportion="-12.666667">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="21" selection-start="275" selection-end="275" vertical-scroll-proportion="0.15517241">
+        <state line="6" column="45" selection-start="136" selection-end="136" vertical-scroll-proportion="0.1821248">
           <folding />
         </state>
       </provider>

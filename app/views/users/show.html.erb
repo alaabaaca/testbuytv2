@@ -1,8 +1,12 @@
 <%
 
-     @mact = @user.mact
-     if @mact != nil then
+   @mact = @user.mact
+   if @mact != nil then
      @congty = Congty.find(@mact)
+   end
+   @roles_users = RolesUser.find_by_user_id(@user.id)
+   if @roles_users != nil then
+     @role = Role.find_by_id(@roles_users.role_id)
    end %>
 <table style="margin-left: auto;
         margin-right: auto;">
@@ -19,11 +23,22 @@
       <p>
         <b>Công ty:</b>
         <% if @congty != nil then %>
-        <%= @congty.tenct %>
-    <% end %>
-    </p>
+            <%= @congty.tenct %>
+        <% end %>
+      </p>
     </td>
   </tr>
+  <tr>
+    <td>
+      <p>
+        <b>Quyền:</b>
+        <% if @role != nil then %>
+            <%= @role.name %>
+        <% end %>
+      </p>
+    </td>
+  </tr>
+
 
   <tr>
     <td>
