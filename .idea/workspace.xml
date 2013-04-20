@@ -30,7 +30,7 @@
     <file path="/application_helper.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1363140851202" ignored="false" />
     <file path="/chuyens_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366429893831" ignored="false" />
     <file path="/edit.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366376607428" ignored="false" />
-    <file path="/new.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366378963169" ignored="false" />
+    <file path="/new.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366436692849" ignored="false" />
     <file path="/show.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366429382728" ignored="false" />
     <file path="/taikhoans_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1365929290567" ignored="false" />
     <file path="/gopies_controller.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366429974631" ignored="false" />
@@ -90,7 +90,7 @@
     <file path="/20130412115146_users_have_and_belong_to_many_roles.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366117198293" ignored="false" />
     <file path="/roles_user.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366121984774" ignored="false" />
     <file path="/create.html.erb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366427409076" ignored="false" />
-    <file path="/20130312061911_create_diquatrams.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366435074907" ignored="false" />
+    <file path="/20130312061911_create_diquatrams.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366435529021" ignored="false" />
     <file path="/20130312050642_create_tuyens.rb" changelist="ac7aa2a5-95b2-4b7d-b1a7-8cc7e1d0d426" time="1366433843631" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -110,26 +110,7 @@
     <favorites_list name="BuytCanTho" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="20130312061911_create_diquatrams.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20130312061911_create_diquatrams.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="27" selection-start="375" selection-end="375" vertical-scroll-proportion="0.43548387">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20130312050642_create_tuyens.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20130312050642_create_tuyens.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="25" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -139,7 +120,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/users/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/users/create.html.erb" />
         <option value="$PROJECT_DIR$/app/views/users/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
@@ -155,6 +135,7 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130312050642_create_tuyens.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130312061911_create_diquatrams.rb" />
+        <option value="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
       </list>
     </option>
   </component>
@@ -316,7 +297,55 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
+              <option name="myItemId" value="devise" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BuytCanThov2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BuytCanThov2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="devise" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="registrations" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BuytCanThov2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BuytCanThov2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="congties" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -702,14 +731,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="24" width="1309" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32561728" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24940239" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29216152" sideWeight="0.6743827" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29216152" sideWeight="0.6743827" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -784,41 +813,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/users/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="16" selection-start="18" selection-end="18" vertical-scroll-proportion="-1.3333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="45" selection-start="136" selection-end="136" vertical-scroll-proportion="0.1821248">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="30" selection-start="833" selection-end="833" vertical-scroll-proportion="0.74310344">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="80" selection-start="468" selection-end="468" vertical-scroll-proportion="0.2612903">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="58" selection-start="535" selection-end="682" vertical-scroll-proportion="0.58965516">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/locales/devise.en.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="60" selection-start="1559" selection-end="1559" vertical-scroll-proportion="0.85996705">
@@ -882,16 +876,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130312050642_create_tuyens.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130312061911_create_diquatrams.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="25" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0">
+        <state line="8" column="7" selection-start="194" selection-end="194" vertical-scroll-proportion="0.23225807">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130312061911_create_diquatrams.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130312050642_create_tuyens.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="27" selection-start="375" selection-end="375" vertical-scroll-proportion="0.43548387">
+        <state line="3" column="19" selection-start="109" selection-end="109" vertical-scroll-proportion="0.08709677">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/congties/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/congties/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="154" selection-end="154" vertical-scroll-proportion="0.21724138">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/congties/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="15" selection-start="82" selection-end="456" vertical-scroll-proportion="0.3946037">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="2" selection-start="186" selection-end="213" vertical-scroll-proportion="0.093103446">
           <folding />
         </state>
       </provider>

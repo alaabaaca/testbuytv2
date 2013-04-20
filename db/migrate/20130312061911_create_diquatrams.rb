@@ -7,13 +7,5 @@ class CreateDiquatrams < ActiveRecord::Migration
 
       t.timestamps
     end
-
-    execute <<-SQL
-      ALTER TABLE diquatrams
-        ADD CONSTRAINT fk_tuyens_diquatrams
-        FOREIGN KEY (id)
-        REFERENCES tuyens(matuyen)
-        ON DELETE NO ACTION
-    SQL
   end
 end

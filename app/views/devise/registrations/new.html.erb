@@ -5,17 +5,15 @@
 
 <%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
 
-
-
     <% if resource.errors.any? %>
         <div id="error_explanation">
-          <h2>Có lỗi :</h2>
+          <h2>Có lỗi. Vui lòng kiểm tra các điều kiện sau:</h2>
 
-          <p>Phải điền đầy đủ tất cả thông tin và mật khẩu phải có 8 kí tự trở lên</p>
+          <p>-Phải điền đầy đủ tất cả thông tin và mật khẩu phải có 8 kí tự trở lên</p>
+          <p>-Email không được trùng.</p>
 
         </div>
     <% end %>
-
 
     <div class="form-inputs">
       <table style="margin-left: auto;
