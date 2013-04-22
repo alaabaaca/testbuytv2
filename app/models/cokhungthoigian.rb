@@ -13,4 +13,6 @@ class Cokhungthoigian < ActiveRecord::Base
   validates :makhungtg, :presence => {
       :message => "Khung thời gian không được rỗng"
   }
+  validates :biensoxe, :uniqueness => {:scope => [:makhungtg, :luot],
+  :message => 'Dữ liệu này đã bị trùng. Vui lòng chọn giá trị khác'}
 end
