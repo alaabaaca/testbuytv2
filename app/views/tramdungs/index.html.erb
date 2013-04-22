@@ -40,7 +40,9 @@
 
 <br />
 
+<% if can? :destroy, Tramdung %>
 <%= link_to 'Thêm mới', new_tramdung_path, :class =>'btn btn-success' %>
+<% end %>
 
 <div style=" float: right;" class="flickr_pagination">
   <%= will_paginate @posts %>

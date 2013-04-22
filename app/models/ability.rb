@@ -40,6 +40,9 @@ class Ability
       end
 
 
+      can :show, Khungthoigian
+      can :index, Khungthoigian
+
       can :new, Cokhungthoigian
       can :show, Cokhungthoigian
       can :update, Cokhungthoigian do |cokhungthoigian|

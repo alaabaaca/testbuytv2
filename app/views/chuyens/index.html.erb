@@ -46,8 +46,9 @@
 
 <br/>
 
-
+<% if can? :new, Chuyen %>
 <%= link_to 'Thêm mới', new_chuyen_path, :class => 'btn btn-success' %>
+<% end %>
 
 
 <div style=" float: right;" class="flickr_pagination">

@@ -38,8 +38,9 @@
 </table>
 
 <br />
-
+<% if can? :new, Congty %>
 <%= link_to 'Thêm công ty', new_congty_path, :class =>'btn btn-success' %>
+<% end %>
 
 
 <div style=" float: right;" class="flickr_pagination">

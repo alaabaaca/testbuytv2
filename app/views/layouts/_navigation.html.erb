@@ -50,6 +50,17 @@
                @taikhoan = Taikhoan.find_by_tentk(current_user.email)
                if @taikhoan != nil %>
 
+              <div class="btn-group">
+                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                  Tuyến - Trạm
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><%= link_to "Danh sách tuyến xe", tuyens_path %></li>
+                  <li><%= link_to "Danh sách trạm xe", tramdungs_path %></li>
+                  <li><%= link_to "Trạm của tuyến", diquatrams_path %></li>
+              </div>
+
                   <div class="btn-group">
                     <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
                       Chuyến - Khung giờ

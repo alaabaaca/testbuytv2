@@ -38,8 +38,9 @@
 </table>
 
 <br/>
-
+ <% if can? :new, Khungthoigian %>
 <%= link_to 'Thêm mới', new_khungthoigian_path, :class => 'btn btn-success' %>
+<% end %>
 
 <div style=" float: right;" class="flickr_pagination">
   <%= will_paginate @posts %>

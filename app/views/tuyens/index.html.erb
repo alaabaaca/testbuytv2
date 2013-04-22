@@ -45,8 +45,9 @@
 </table>
 
 <br/>
-
+<% if can? :new , Tuyen %>
 <%= link_to 'Thêm mới', new_tuyen_path, :class => 'btn btn-success' %>
+<% end %>
 
 <div style=" float: right;" class="flickr_pagination">
   <%= will_paginate @posts %>

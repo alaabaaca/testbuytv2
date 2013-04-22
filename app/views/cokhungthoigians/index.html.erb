@@ -53,7 +53,9 @@
 
 <br/>
 
+<% if can? :new, Cokhungthoigian %>
 <%= link_to 'Thêm mới', new_cokhungthoigian_path, :class => 'btn btn-success' %>
+<% end %>
 
 <div style=" float: right;" class="flickr_pagination">
   <%= will_paginate @cokhungthoigians %>
