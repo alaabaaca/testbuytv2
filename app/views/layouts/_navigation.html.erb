@@ -11,6 +11,7 @@
          @coquyen = RolesUser.find_by_user_id(@user.id) %>
       <% if @coquyen != nil then
            @quyen = Role.find_by_id(@coquyen.role_id) %>
+             
           <% if @quyen.name == 'Admin' then %>
               <div class="btn-group">
                 <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
@@ -47,9 +48,8 @@
                   <li><%= link_to "Cấp quyền cho tài khoản", roles_users_path %></li>
               </div>
           <% else
-               @taikhoan = Taikhoan.find_by_tentk(current_user.email)
-               if @taikhoan != nil %>
-
+               @taikhoan = User.find_by_email(current_user.email) %>
+              <% if @taikhoan != nil %>
               <div class="btn-group">
                 <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
                   Tuyến - Trạm
