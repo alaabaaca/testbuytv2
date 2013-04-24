@@ -73,6 +73,7 @@ BuytCanTho::Application.routes.draw do
       get 'tuyens_android'
       post 'tuyens_timtheotramdau_android'
       post 'tuyens_timtheotramcuoi_android'
+      post 'tuyens_timtheotentuyen_android'
     end
     member do
       get :tuyens_tram_android

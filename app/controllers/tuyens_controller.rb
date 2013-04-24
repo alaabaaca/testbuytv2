@@ -169,5 +169,12 @@ class TuyensController < ApplicationController
     @result = {"success" => "1", "tuyens" => @tuyens}
     render :json => @result
   end
+  
+  def tuyens_timtheotentuyen_android
+    @tuyens = Tuyen.order("matuyen ASC").all.where(:tentuyen => params[:tentuyen]).where(:tentuyen2 => params[:tentuyens2]).first 
+    
+    @result = {"success" => "1", "tuyens" => @tuyens}
+    render :json => @result
+  end
 
 end
