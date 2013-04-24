@@ -7,6 +7,8 @@ class Tuyen < ActiveRecord::Base
   has_many :chuyen
   has_many :diemtrentuyen
 
+  validates :matuyen,
+            :presence => {:message => "Mã tuyến không được rỗng"}
   validates :tentuyen,
             :presence => {:message => "Điểm xuất phát không được rỗng"}
   validates :tentuyen2,
@@ -31,6 +33,10 @@ class Tuyen < ActiveRecord::Base
   validates :culy,
             :numericality => {:only_integer => true, :greater_than => 0,
                               :message => "Cự ly phải là số nguyên dương"}
+
+  validates :matuyen,
+            :numericality => {:only_integer => true, :greater_than => 0,
+                              :message => "Mã tuyến phải là số nguyên dương"}
 
   self.per_page = 10
 
