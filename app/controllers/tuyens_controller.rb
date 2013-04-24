@@ -2,7 +2,8 @@
 class TuyensController < ApplicationController
   authorize_resource
   skip_authorize_resource :only => [:index, :show, :tuyens_android, :tuyens_timtheotramcuoi_android,
-                                    :tuyens_timtheotramdau_android, :tuyens_timtheoma_android, :tuyens_tram_android]
+                                    :tuyens_timtheotramdau_android, :tuyens_timtheoma_android, :tuyens_tram_android,
+                                    :tuyens_timtheotentuyen_android]
 
 
   #before_filter :authenticate_user!, :kiemtra_quyen, :except => [:tuyens_tram_android,
@@ -144,6 +145,7 @@ class TuyensController < ApplicationController
 
   def tuyens_timtheoma_android
     #@tuyens = nil
+    puts "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
     @tuyens = Tuyen.order('matuyen ASC').find_all_by_matuyen(params[:id])
 
 
@@ -153,7 +155,7 @@ class TuyensController < ApplicationController
   end
 
   def tuyens_timtheotramdau_android
-    #puts "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    puts "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
     #puts params[:id]
     @tuyens = Tuyen.order('matuyen ASC').find_all_by_tentuyen(params[:id])
 
@@ -171,7 +173,12 @@ class TuyensController < ApplicationController
   end
   
   def tuyens_timtheotentuyen_android
-    @tuyens = Tuyen.order("matuyen ASC").all.where(:tentuyen => params[:tentuyen]).where(:tentuyen2 => params[:tentuyens2]).first 
+    puts "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    puts params[:tentuyen]
+    puts params[:tentuyen2]
+    @tuyens = Tuyen.order("matuyen ASC").where(:tentuyen => params[:tentuyen]).where(:tentuyen2 => params[:tentuyens2]).first 
+    #@tuyens = Tuyen.find_by_id("1")
+    #@tuyens = Tuyen.all
     
     @result = {"success" => "1", "tuyens" => @tuyens}
     render :json => @result
