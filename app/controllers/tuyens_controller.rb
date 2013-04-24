@@ -185,13 +185,13 @@ class TuyensController < ApplicationController
   end
   
   def tuyens_autotext_ten_android
-    @tuyens = Tuyen.order('tentuyen ASC').all
+    @tuyens = Tuyen.order('tentuyen ASC').select('tentuyen as tentuyen').uniq
     result = {"success" => 1, "tuyens" => @tuyens}
     render :json => result
   end
   
   def tuyens_autotext_ten2_android
-    @tuyens = Tuyen.order('tentuyen2 ASC').all
+    @tuyens = Tuyen.order('tentuyen2 ASC').select('tentuyen2 as tentuyen2').uniq
     result = {"success" => 1, "tuyens" => @tuyens}
     render :json => result
   end
