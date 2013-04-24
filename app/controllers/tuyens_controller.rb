@@ -3,7 +3,7 @@ class TuyensController < ApplicationController
   authorize_resource
   skip_authorize_resource :only => [:index, :show, :tuyens_android, :tuyens_timtheotramcuoi_android,
                                     :tuyens_timtheotramdau_android, :tuyens_timtheoma_android, :tuyens_tram_android,
-                                    :tuyens_timtheotentuyen_android]
+                                    :tuyens_timtheotentuyen_android, :tuyens_autotext_ten_android, :tuyens_autotext_ten2_android]
 
 
   #before_filter :authenticate_user!, :kiemtra_quyen, :except => [:tuyens_tram_android,
@@ -182,6 +182,18 @@ class TuyensController < ApplicationController
     
     @result = {"success" => "1", "tuyens" => @tuyens}
     render :json => @result
+  end
+  
+  def tuyens_autotext_ten_android
+    @tuyens = Tuyen.order('tentuyen ASC').all
+    result = {"success" => 1, "tuyens" => @tuyens}
+    render :json => result
+  end
+  
+  def tuyens_autotext_ten2_android
+    @tuyens = Tuyen.order('tentuyen2 ASC').all
+    result = {"success" => 1, "tuyens" => @tuyens}
+    render :json => result
   end
 
 end
