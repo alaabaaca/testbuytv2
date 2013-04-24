@@ -176,7 +176,7 @@ class TuyensController < ApplicationController
     puts "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
     puts params[:tentuyen]
     puts params[:tentuyen2]
-    @tuyens = Tuyen.order("matuyen ASC").where(:tentuyen => params[:tentuyen]).where(:tentuyen2 => params[:tentuyens2]).first 
+    @tuyens = Tuyen.order("matuyen ASC").where(:tentuyen => params[:tentuyen]).where(:tentuyen2 => params[:tentuyen2]).first 
     #@tuyens = Tuyen.find_by_id("1")
     #@tuyens = Tuyen.all
     
