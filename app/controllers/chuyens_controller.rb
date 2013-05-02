@@ -120,7 +120,7 @@ class ChuyensController < ApplicationController
     @chuyens = Chuyen.order('biensoxe ASC').find_all_by_matuyen(params[:id])
 
     @congties = Array.new
-    @tuyens = Tuyen.find_by_id(params[:id])
+    @tuyens = Tuyen.find_by_matuyen(params[:id])
 
     @chuyens.each do |c|
       @congty = Congty.find_by_id(c.mact)
