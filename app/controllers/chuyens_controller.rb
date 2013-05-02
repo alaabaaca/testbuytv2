@@ -161,7 +161,7 @@ class ChuyensController < ApplicationController
       @chuyen = Chuyen.find_by_matuyen(d.matuyen)
       @chuyens.append(@chuyen)
 
-      @tuyen = Tuyen.find_by_id(d.matuyen)
+      @tuyen = Tuyen.find_by_matuyen(d.matuyen)
       @ten = @tuyen.tentuyen + " - " + @tuyen.tentuyen2
       @tuyens.append(@ten)
 
