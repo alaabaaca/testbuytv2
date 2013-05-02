@@ -31,7 +31,7 @@
           <div class="field">
             <%= f.label "Tuyến xe: " %>
             <br/>
-            <%= f.select("matuyen", Tuyen.all.collect { |t| [t.tentuyen + " - " + t.tentuyen2, t.id] }, {:prompt => "Chọn tuyến"}) %>
+            <%= f.select("matuyen", Tuyen.all.collect { |t| [t.tentuyen + " - " + t.tentuyen2, t.matuyen] }, {:prompt => "Chọn tuyến"}) %>
           </div>
           <div class="field">
             <%= f.label "Số ghế: " %>
