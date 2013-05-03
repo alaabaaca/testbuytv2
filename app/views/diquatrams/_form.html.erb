@@ -21,12 +21,12 @@
           <div class="field">
             <%= f.label "Tuyến xe:" %>
 
-            <%= f.select("matuyen", Tuyen.all.collect { |t| [t.tentuyen+ " - " + t.tentuyen2, t.matuyen] }, {:prompt => "Chọn tuyến xe"}) %>
+            <%= f.select("matuyen", Tuyen.order('matuyen ASC').all.collect { |t| [t.tentuyen+ " - " + t.tentuyen2, t.matuyen] }, {:prompt => "Chọn tuyến xe"}) %>
           </div>
           <div class="field">
             <%= f.label "Trạm dừng:" %>
             <br/>
-            <%= f.select("matram", Tramdung.all.collect { |t| [t.tentram, t.id] }, {:prompt => "Chọn tên trạm xe"}) %>
+            <%= f.select("matram", Tramdung.order('tentram ASC').all.collect { |t| [t.tentram, t.id] }, {:prompt => "Chọn tên trạm xe"}) %>
           </div>
         </td>
       </tr>
