@@ -31,7 +31,7 @@
                     <%= f.select("biensoxe", @chuyen.collect { |c| [c.biensoxe, c.biensoxe] }, {:prompt => "Chọn biển số xe"}) %>
                 <% end %>
             <% else %>
-                <%= f.select("biensoxe", Chuyen.all.collect { |c| [c.biensoxe, c.biensoxe] }, {:prompt => "Chọn biển số xe"}) %>
+                <%= f.select("biensoxe", Chuyen.order('biensoxe ASC').all.collect { |c| [c.biensoxe, c.biensoxe] }, {:prompt => "Chọn biển số xe"}) %>
             <% end %>
           </div>
           <div class="field">
@@ -42,7 +42,7 @@
           <div class="field">
             <%= f.label "Khung thời gian:" %>
             <br/>
-            <%= f.select("makhungtg", Khungthoigian.all.collect { |k| [k.di.strftime("%H:%M:%S")+' - '+k.den.strftime("%H:%M:%S"), k.id] }, {:prompt => "Chọn khung thời gian"}) %>
+            <%= f.select("makhungtg", Khungthoigian.order('di ASC').all.collect { |k| [k.di.strftime("%H:%M:%S")+' - '+k.den.strftime("%H:%M:%S"), k.id] }, {:prompt => "Chọn khung thời gian"}) %>
           </div>
 
         </td>
