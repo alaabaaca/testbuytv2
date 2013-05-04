@@ -50,7 +50,7 @@ class GopiesController < ApplicationController
     if @gopy.save
       render :json => {"status" => 200}
     else
-      render :json => {"status" => 403}
+      render :json => {"status" => 2}
     end
   end
 
