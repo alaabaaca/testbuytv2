@@ -5,6 +5,7 @@
 
 <table class="table">
   <tr>
+  	<th>Ngày</th>
     <th>Biển số xe</th>
     <th>Nội dung</th>
     <th></th>
@@ -14,6 +15,7 @@
 
   <% @gopies.each do  |gopy| %>
       <tr>
+      	<td><%= gopy.ngay.strftime("%d/%m/%Y") %></td>
         <td><%= gopy.biensoxe %></td>
         <td><%= gopy.noidung %></td>
         <td style="text-align: right">

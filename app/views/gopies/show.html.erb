@@ -1,26 +1,23 @@
-
-
 <table style="margin-left: auto;
-        margin-right: auto;">
-  <tr>
-    <td>
-      <p>
-        <b>Biển số xe:</b>
-        <%= @gopy.biensoxe %>
-      </p>
+margin-right: auto;">
+	<tr>
+		<td>
+		<p>
+			<b>Ngày:</b>
+			<%= @gopy.ngay.strftime("%d/%m/%Y") %>
+		</p>
+		<p>
+			<b>Biển số xe:</b>
+			<%= @gopy.biensoxe %>
+		</p>
+		<p>
+			<b>Nội dung:</b>
+			<%= @gopy.noidung %>
+		</p></td>
+	</tr>
 
-      <p>
-        <b>Nội dung:</b>
-        <%= @gopy.noidung %>
-      </p>
-    </td>
-  </tr>
-
-  <tr>
-    <td>
-
-      <%= link_to 'Quay lại danh sách', gopies_path, :class => 'btn' %>
-    </td>
-  </tr>
+	<tr>
+		<td> <%= link_to 'Quay lại danh sách', gopies_path, :class => 'btn' %> </td>
+	</tr>
 
 </table>
