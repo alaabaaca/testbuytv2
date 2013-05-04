@@ -14,12 +14,12 @@ class GopiesController < ApplicationController
     if (@taikhoan != nil) then
       @congty = Congty.find_by_id(@taikhoan.mact)
 
-      @chuyens = Chuyen.order('ngay ASC').find_all_by_mact(@congty.id);
+      @chuyens = Chuyen.order('biensoxe ASC').find_all_by_mact(@congty.id);
 
       #@gopies = Array.new
       @gop =  []
       @chuyens.each do |bs|
-        @gopy = Gopy.find_all_by_biensoxe(bs.biensoxe)
+        @gopy = Gopy.order('ngay ASC').find_all_by_biensoxe(bs.biensoxe)
         if (@gopy != []) then
           #@gopies.append(@gopy)
           @gopy.each do |g|
