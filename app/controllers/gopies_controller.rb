@@ -46,11 +46,14 @@ class GopiesController < ApplicationController
   def gopies_android
     puts "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxparams[:gopy]xx"
     puts params[:gopy]
+    render :json => {"status" => 2}
+    
     @gopy = Gopy.new(params[:gopy])
+    
     if @gopy.save
       render :json => {"status" => 200}
-    else
-      render :json => {"status" => 2}
+   
+      
     end
   end
 
