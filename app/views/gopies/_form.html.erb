@@ -1,30 +1,66 @@
-<%= form_for(@gopy) do |f| %>
-  <% if @gopy.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@gopy.errors.count, "error") %> prohibited this gopy from being saved:</h2>
+<!--%= form_for(@gopy) do |f| %>
+<%= simple_form_for @gopy, :html => {:class => 'form-horizontal'} do |f| %>
+<% if @gopy.errors.any? %>
+<div id="error_explanation">
+<h2><%= pluralize(@gopy.errors.count, "error") %> prohibited this gopy from being saved:</h2>
 
-      <ul>
-      <% @gopy.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+<ul>
+<% @gopy.errors.full_messages.each do |msg| %>
+<li><%= msg %></li>
+<% end %>
+</ul>
+</div>
+<% end %>
 
-  <div class="field">
-    <%= f.label :id %><br />
-    <%= f.number_field :id %>
-  </div>
-  <div class="field">
-    <%= f.label :noidung %><br />
-    <%= f.text_field :noidung %>
-  </div>
-  <div class="field">
-    <%= f.label :biensoxe %><br />
-    <%= f.text_field :biensoxe %>
-  </div>
-  <div class="actions">
+<div class="field">
+<%= f.label :id %><br />
+<%= f.number_field :id %>
+</div>
+<div class="field">
+<%= f.label :noidung %><br />
+<%= f.text_field :noidung %>
+</div>
+<div class="field">
+<%= f.label :biensoxe %><br />
+<%= f.text_field :biensoxe %>
+</div>
+<div class="actions">
 
-    <%= f.submit %>
-  </div>
+<%= f.submit %>
+</div>
+<% end %>
+-->
+<%= simple_form_for @gopy, :url => 'xuly', :method => :post ,:html => {:class => 'form-horizontal'} do |f| %>
+<table style="margin-left: auto;
+margin-right: auto; ">
+	<tr>
+		<td>
+		<div class="field">
+
+			<%
+			@taikhoan = User.find_by_email(current_user.email);
+			if @taikhoan != nil then
+			@chuyen = Chuyen.find_all_by_mact(@taikhoan.mact) %>
+			<% if @chuyen != nil then %>
+			<%= f.select("biensoxe", @chuyen.collect { |c| [c.biensoxe, c.biensoxe] }, {:prompt => "Chọn biển số xe"}) %>
+
+			<% else %>
+			<%= f.select("biensoxe", Chuyen.order('biensoxe ASC').all.collect { |c| [c.biensoxe, c.biensoxe] }, {:prompt => "Chọn biển số xe"}) %>
+			<% end %>
+			<% end %>
+		</div></td>
+	</tr>
+
+</table>
+<div class="actions" style="text-align: center">
+	<button class="btn btn-primary" type="submit">
+		Lọc theo biển số xe đã chọn
+	</button>
+</div>
+
+<div class="btn" style="text-align: left">
+	<%= link_to "Xem toàn bộ góp ý", :action => :xoasessiongopy %>
+</div>
+
+</table>
 <% end %>

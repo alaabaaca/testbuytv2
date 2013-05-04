@@ -30,6 +30,9 @@ BuytCanTho::Application.routes.draw do
   resources :gopies do
     collection do
       post 'gopies_android'
+      get 'hienthi'
+      post 'xuly'
+      get 'xoasessiongopy'      
     end
   end
 

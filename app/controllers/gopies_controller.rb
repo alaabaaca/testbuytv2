@@ -1,6 +1,6 @@
 class GopiesController < ApplicationController
   authorize_resource
-  skip_authorize_resource :only => [:gopies_android]
+  skip_authorize_resource :only => [:gopies_android, :hienthi, :xuly, :xoasessiongopy]
   # GET /gopies
   # GET /gopies.json
   def index_origin
@@ -68,6 +68,7 @@ class GopiesController < ApplicationController
       format.html # index.html.erb
       format.json { render json: @gopies }
     end
+
   end
 
   def gopies_android
@@ -152,4 +153,81 @@ class GopiesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def hienthi
+    require 'will_paginate/array'
+
+    @gopy = Gopy.new
+    
+    if session['bs'].nil?  then
+
+      session[:taikhoan] = current_user.email
+      @t = session[:taikhoan]
+
+      @taikhoan = User.find_by_email(@t)
+      if (@taikhoan != nil) then
+        @congty = Congty.find_by_id(@taikhoan.mact)
+
+        @chuyens = Chuyen.order('biensoxe ASC').find_all_by_mact(@congty.id)
+        @allgopy = Gopy.order('ngay ASC').all
+
+        #@gopies = Array.new
+        @gop =  []
+
+        @allgopy.each do |g|
+          @chuyens.each do |bs|
+            if (g.biensoxe == bs.biensoxe) then
+            #@gopies.append(@gopy)
+            @gop << g
+            end
+          end
+        end
+        @gopies = @gop.paginate(:page => params[:page], :per_page => 10)
+      end
+    else if session['bs'] != ''
+            @chuyens = Chuyen.order('biensoxe ASC').find_by_biensoxe(session['bs'])
+      @tatcagopy = Gopy.order('ngay ASC').all
+      @gop =  []
+      @tatcagopy.each do |g|
+        if (g.biensoxe == @chuyens.biensoxe) then
+        @gop << g
+        end
+      end
+      @gopies = @gop.paginate(:page => params[:page], :per_page => 10)
+    end
+    end
+    
+    
+    respond_to do |format|
+      format.html # new.html.erb
+      format.json { render json: @gopies }
+    end
+  end
+
+  def xuly
+    #@test = 'hung'#params[:biensoxe]
+    @test = params[:gopy]
+    if @test != nil then
+      session['bs'] = @test['biensoxe']
+    else
+      session['bs'] = nil
+    end
+
+    respond_to do |format|
+
+      format.html { redirect_to :action => :hienthi }
+    #format.json { render json: @gopy, status: :created, location: @gopy }
+
+    end
+  end
+
+  def xoasessiongopy
+    session['bs'] = nil
+    
+    respond_to do |format|
+      format.html { redirect_to :action => :hienthi }
+    end
+  end
+
 end
+
