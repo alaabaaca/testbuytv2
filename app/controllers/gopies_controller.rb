@@ -150,7 +150,8 @@ class GopiesController < ApplicationController
     @gopy.destroy
 
     respond_to do |format|
-      format.html { redirect_to gopies_url }
+      #format.html { redirect_to gopies_url }
+      format.html { redirect_to hienthi_gopies_path }
       format.json { head :no_content }
     end
   end
