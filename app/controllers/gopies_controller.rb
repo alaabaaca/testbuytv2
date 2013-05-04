@@ -1,6 +1,7 @@
 class GopiesController < ApplicationController
   authorize_resource
-  skip_authorize_resource :only => [:gopies_android, :hienthi, :xuly, :xoasessiongopy]
+  #skip_authorize_resource :only => [:gopies_android, :hienthi, :xuly, :xoasessiongopy]
+  skip_authorize_resource :only => [:gopies_android]
   # GET /gopies
   # GET /gopies.json
   def index_origin

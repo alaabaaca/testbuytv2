@@ -85,7 +85,9 @@ class Ability
         #
         gopy && @congty == @cty
       end
-
+      can :hienthi, Gopy
+      can :xuly, Gopy
+      can :xoasessiongopy, Gopy
 
     end
 
