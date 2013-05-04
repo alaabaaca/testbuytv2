@@ -14,7 +14,7 @@ class GopiesController < ApplicationController
     if (@taikhoan != nil) then
       @congty = Congty.find_by_id(@taikhoan.mact)
 
-      @chuyens = Chuyen.order('biensoxe').find_all_by_mact(@congty.id);
+      @chuyens = Chuyen.order('ngay ASC').find_all_by_mact(@congty.id);
 
       #@gopies = Array.new
       @gop =  []
