@@ -22,18 +22,16 @@ margin-right: auto; ">
 		<div class="field">
 			<%= f.label "Biển số xe:" %>
 
-			<%
-			@taikhoan = User.find_by_email(current_user.email);
-			if @taikhoan != nil then
-			@chuyen = Chuyen.find_all_by_mact(@taikhoan.mact) %>
-			<% if @chuyen != nil then %>
-			<%= f.select("biensoxe", @chuyen.collect { |c| [c.biensoxe, c.biensoxe] }, {:prompt => "Chọn biển số xe"}, :disabled => true) %>
-			<% else %>
-			<%= f.select("biensoxe", Chuyen.order('biensoxe ASC').all.collect { |c| [c.biensoxe, c.biensoxe] }, {:prompt => "Chọn biển số xe"}, :disabled => true) %>
-			<% end %>
-			<% else %>
-			<%= f.select("biensoxe", Chuyen.order('biensoxe ASC').all.collect { |c| [c.biensoxe, c.biensoxe] }, {:prompt => "Chọn biển số xe"}, :disabled => true) %>
-			<% end %>
+            <%
+               @taikhoan = Taikhoan.find_by_tentk(current_user.email);
+               if @taikhoan != nil then
+                @chuyen = Chuyen.find_all_by_mact(@taikhoan.mact) %>
+                <% if @chuyen != nil then %>
+                    <%= f.select("biensoxe", @chuyen.collect { |c| [c.biensoxe, c.biensoxe] }, {:prompt => "Chọn biển số xe"}, :disabled => true) %>
+                <% end %>
+            <% else %>
+                <%= f.select("biensoxe", Chuyen.order('biensoxe ASC').all.collect { |c| [c.biensoxe, c.biensoxe] }, {:prompt => "Chọn biển số xe"}, :disabled => true) %>
+            <% end %>
 		</div>
 		<div class="field">
 			<%= f.label "Lượt:" %>
