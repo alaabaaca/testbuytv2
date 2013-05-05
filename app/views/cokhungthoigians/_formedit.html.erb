@@ -23,7 +23,7 @@ margin-right: auto; ">
 			<%= f.label "Biển số xe:" %>
 
             <%
-               @taikhoan = Taikhoan.find_by_tentk(current_user.email);
+               @taikhoan = User.find_by_email(current_user.email);
                if @taikhoan != nil then
                 @chuyen = Chuyen.find_all_by_mact(@taikhoan.mact) %>
                 <% if @chuyen != nil then %>

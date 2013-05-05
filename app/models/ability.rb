@@ -21,6 +21,7 @@ class Ability
 
     if user.role? :Congty
       can :new, Chuyen
+      can :create, Chuyen
       can :show, Chuyen
       can :update, Chuyen do |chuyen|
         @congty = Congty.find_by_id(chuyen.mact)
@@ -44,6 +45,7 @@ class Ability
       can :index, Khungthoigian
 
       can :new, Cokhungthoigian
+      can :create, Cokhungthoigian
       can :show, Cokhungthoigian
       can :update, Cokhungthoigian do |cokhungthoigian|
         @chuyen = Chuyen.find_by_biensoxe(cokhungthoigian.biensoxe);
