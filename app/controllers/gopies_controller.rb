@@ -171,7 +171,7 @@ class GopiesController < ApplicationController
         @congty = Congty.find_by_id(@taikhoan.mact)
 
         @chuyens = Chuyen.order('biensoxe ASC').find_all_by_mact(@congty.id)
-        @allgopy = Gopy.order('ngay ASC').all
+        @allgopy = Gopy.order('ngay DESC').all
 
         #@gopies = Array.new
         @gop =  []
@@ -188,7 +188,7 @@ class GopiesController < ApplicationController
       end
     else if session['bs'] != ''
             @chuyens = Chuyen.order('biensoxe ASC').find_by_biensoxe(session['bs'])
-      @tatcagopy = Gopy.order('ngay ASC').all
+      @tatcagopy = Gopy.order('ngay DESC').all
       @gop =  []
       @tatcagopy.each do |g|
         if (g.biensoxe == @chuyens.biensoxe) then
