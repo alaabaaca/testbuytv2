@@ -49,7 +49,7 @@ class GopiesController < ApplicationController
       @congty = Congty.find_by_id(@taikhoan.mact)
 
       @chuyens = Chuyen.order('biensoxe ASC').find_all_by_mact(@congty.id)
-      @gopy = Gopy.order('ngay ASC').all
+      @gopy = Gopy.order('ngay DESC').all
 
       #@gopies = Array.new
       @gop =  []
